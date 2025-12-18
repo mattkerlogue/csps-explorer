@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "CSPS Explorer"
+  navbar:
+    right:
+      - text: Results
+        menu: 
+          - text: Introduction
+            href: results/index.qmd
+          - text: "---"
+          - text: Civil Service results
+          - text: Civil Service Benchmark
+            href: benchmark_results/index.qmd
+          - text: All respondents
+            href: benchmark_results/all_respondents/index.qmd
+          - text: "---"
+          - text: Organisations
+          - text: Demographics
+          - text: Interactive
+      - text: Insights
+      - about.qmd
+  bread-crumbs: true
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme:
+      - custom.scss
+    css: 
+      - styles.css
+    toc: true
+
+
+extensions:
+  iconify:
+    set: "carbon"
+    flip: "horizontal"
+    rotate: "90deg"
+    inline: true
+    mode: "svg"

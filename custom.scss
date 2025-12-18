@@ -1,0 +1,513 @@
+/*-- scss:defaults --*/
+
+// Colour
+
+$white:    #fff !default;
+$gray-100: #f4f4f4 !default;
+$gray-200: #e0e0e0 !default;
+$gray-300: #c6c6c6 !default;
+$gray-400: #a8a8a8 !default;
+$gray-500: #8d8d8d !default;
+$gray-600: #6f6f6f !default;
+$gray-700: #525252 !default;
+$gray-800: #393939 !default;
+$gray-900: #262626 !default;
+$black:    #161616 !default;
+
+$dark-cyan: #012749 !default;
+$green: #198038 !default;
+$cyan: #1192e8 !default;
+$yellow: #f1c21b !default;
+$red: #da1e28 !default;
+$teal: #007d79 !default;
+
+$primary:       $dark-cyan !default;
+$secondary:     $gray-800 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   2.6 !default;
+
+$body-bg:       $white !default;
+$body-color:    $gray-900 !default;
+$link-color:    $cyan !default;
+$input-bg:      $gray-200 !default;
+$popover-bg:    $gray-200 !default;
+
+// Fonts
+
+$font-family-sans-serif:    "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace:     "Inconsolata", monospace !default;
+
+$headings-font-weight:      400 !default;
+
+// navs
+
+$navbar-bg:     $white !default;
+$navbar-fg:     $teal !default;
+$footer-bg:     $gray-800 !default;
+$footer-fg:     $white !default;
+
+// callouts
+
+$callout-border-width: 3px !default;
+$callout-color-note: $cyan !default;
+$callout-color-warning: $yellow !default;
+$callout-color-tip: $yellow !default;
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inconsolata:wght@200..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+$content-padding-top: 50px;
+
+// Typography
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+// Navbar
+
+.navbar {
+    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.navbar .dropdown-header {
+    font-family: $font-family-sans-serif;
+    color: $teal;
+    text-transform: none !important;
+}
+
+// callouts
+
+.callout {
+    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+    color: $gray-700;
+    font-size: 0.9rem;
+    border-radius: 0px;
+    border-right: 0px !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+
+    .callout-header {
+        background-color: $body-bg !important;
+    }
+}
+
+.callout-note {
+    .callout-title-container {
+        color: $cyan;
+    }
+}
+
+
+// custom layout
+
+.headline {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $teal;
+}
+
+.theme-card, .theme-card-wide {
+    background-color: $gray-100;
+    padding: 10px;
+    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+
+    .theme-header {
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+
+    .driver-strength {
+        display: inline-block;
+    }
+
+    .data-value {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    .change-value {
+        padding: 0px 10px;
+        font-size: 1.25rem;
+    }
+
+    .change-value.increase::after{
+        content: "\25B2";
+        color: $green;
+        font-size: 0.75rem;
+        padding-left: 5px;
+    }
+
+    .change-value.decrease::after{
+        content: "\25BC";
+        color: $red;
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+
+}
+
+.card-row {
+    margin-bottom: 1.5rem;
+}
+
+.theme-card, .theme-card-wide > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    p:first-child {
+        justify-self: flex-start;
+        flex-grow: 2;
+    }
+
+}
+
+.results-table {
+    table {
+        font-size: 0.8rem;
+        
+        td, th {
+            padding: 0.25rem;
+        }
+
+        caption {
+            text-align: left;
+            color: $gray-800;
+            font-weight: 500;
+        }
+    }
+}
+
+.micro-chart {
+    width: 100px;
+    display: flex;
+    background-color: $gray-100;
+    print-color-adjust: exact;
+    height: 1em;
+    
+    .micro-bar {
+        display: inline-block;
+        background-color: $cyan;
+        print-color-adjust: exact;
+    }
+
+    .micro-bar[data-value="0"] {
+        width: 0px;
+    }
+    .micro-bar[data-value="1"] {
+        width: 1px;
+    }
+    .micro-bar[data-value="2"] {
+        width: 2px;
+    }
+    .micro-bar[data-value="3"] {
+        width: 3px;
+    }
+    .micro-bar[data-value="4"] {
+        width: 4px;
+    }
+    .micro-bar[data-value="5"] {
+        width: 5px;
+    }
+    .micro-bar[data-value="6"] {
+        width: 6px;
+    }
+    .micro-bar[data-value="7"] {
+        width: 7px;
+    }
+    .micro-bar[data-value="8"] {
+        width: 8px;
+    }
+    .micro-bar[data-value="9"] {
+        width: 9px;
+    }
+    .micro-bar[data-value="10"] {
+        width: 10px;
+    }
+    .micro-bar[data-value="11"] {
+        width: 11px;
+    }
+    .micro-bar[data-value="12"] {
+        width: 12px;
+    }
+    .micro-bar[data-value="13"] {
+        width: 13px;
+    }
+    .micro-bar[data-value="14"] {
+        width: 14px;
+    }
+    .micro-bar[data-value="15"] {
+        width: 15px;
+    }
+    .micro-bar[data-value="16"] {
+        width: 16px;
+    }
+    .micro-bar[data-value="17"] {
+        width: 17px;
+    }
+    .micro-bar[data-value="18"] {
+        width: 18px;
+    }
+    .micro-bar[data-value="19"] {
+        width: 19px;
+    }
+    .micro-bar[data-value="20"] {
+        width: 20px;
+    }
+    .micro-bar[data-value="21"] {
+        width: 21px;
+    }
+    .micro-bar[data-value="22"] {
+        width: 22px;
+    }
+    .micro-bar[data-value="23"] {
+        width: 23px;
+    }
+    .micro-bar[data-value="24"] {
+        width: 24px;
+    }
+    .micro-bar[data-value="25"] {
+        width: 25px;
+    }
+    .micro-bar[data-value="26"] {
+        width: 26px;
+    }
+    .micro-bar[data-value="27"] {
+        width: 27px;
+    }
+    .micro-bar[data-value="28"] {
+        width: 28px;
+    }
+    .micro-bar[data-value="29"] {
+        width: 29px;
+    }
+    .micro-bar[data-value="30"] {
+        width: 30px;
+    }
+    .micro-bar[data-value="31"] {
+        width: 31px;
+    }
+    .micro-bar[data-value="32"] {
+        width: 32px;
+    }
+    .micro-bar[data-value="33"] {
+        width: 33px;
+    }
+    .micro-bar[data-value="34"] {
+        width: 34px;
+    }
+    .micro-bar[data-value="35"] {
+        width: 35px;
+    }
+    .micro-bar[data-value="36"] {
+        width: 36px;
+    }
+    .micro-bar[data-value="37"] {
+        width: 37px;
+    }
+    .micro-bar[data-value="38"] {
+        width: 38px;
+    }
+    .micro-bar[data-value="39"] {
+        width: 39px;
+    }
+    .micro-bar[data-value="40"] {
+        width: 40px;
+    }
+    .micro-bar[data-value="41"] {
+        width: 41px;
+    }
+    .micro-bar[data-value="42"] {
+        width: 42px;
+    }
+    .micro-bar[data-value="43"] {
+        width: 43px;
+    }
+    .micro-bar[data-value="44"] {
+        width: 44px;
+    }
+    .micro-bar[data-value="45"] {
+        width: 45px;
+    }
+    .micro-bar[data-value="46"] {
+        width: 46px;
+    }
+    .micro-bar[data-value="47"] {
+        width: 47px;
+    }
+    .micro-bar[data-value="48"] {
+        width: 48px;
+    }
+    .micro-bar[data-value="49"] {
+        width: 49px;
+    }
+    .micro-bar[data-value="50"] {
+        width: 50px;
+    }
+    .micro-bar[data-value="51"] {
+        width: 51px;
+    }
+    .micro-bar[data-value="52"] {
+        width: 52px;
+    }
+    .micro-bar[data-value="53"] {
+        width: 53px;
+    }
+    .micro-bar[data-value="54"] {
+        width: 54px;
+    }
+    .micro-bar[data-value="55"] {
+        width: 55px;
+    }
+    .micro-bar[data-value="56"] {
+        width: 56px;
+    }
+    .micro-bar[data-value="57"] {
+        width: 57px;
+    }
+    .micro-bar[data-value="58"] {
+        width: 58px;
+    }
+    .micro-bar[data-value="59"] {
+        width: 59px;
+    }
+    .micro-bar[data-value="60"] {
+        width: 60px;
+    }
+    .micro-bar[data-value="61"] {
+        width: 61px;
+    }
+    .micro-bar[data-value="62"] {
+        width: 62px;
+    }
+    .micro-bar[data-value="63"] {
+        width: 63px;
+    }
+    .micro-bar[data-value="64"] {
+        width: 64px;
+    }
+    .micro-bar[data-value="65"] {
+        width: 65px;
+    }
+    .micro-bar[data-value="66"] {
+        width: 66px;
+    }
+    .micro-bar[data-value="67"] {
+        width: 67px;
+    }
+    .micro-bar[data-value="68"] {
+        width: 68px;
+    }
+    .micro-bar[data-value="69"] {
+        width: 69px;
+    }
+    .micro-bar[data-value="70"] {
+        width: 70px;
+    }
+    .micro-bar[data-value="71"] {
+        width: 71px;
+    }
+    .micro-bar[data-value="72"] {
+        width: 72px;
+    }
+    .micro-bar[data-value="73"] {
+        width: 73px;
+    }
+    .micro-bar[data-value="74"] {
+        width: 74px;
+    }
+    .micro-bar[data-value="75"] {
+        width: 75px;
+    }
+    .micro-bar[data-value="76"] {
+        width: 76px;
+    }
+    .micro-bar[data-value="77"] {
+        width: 77px;
+    }
+    .micro-bar[data-value="78"] {
+        width: 78px;
+    }
+    .micro-bar[data-value="79"] {
+        width: 79px;
+    }
+    .micro-bar[data-value="80"] {
+        width: 80px;
+    }
+    .micro-bar[data-value="81"] {
+        width: 81px;
+    }
+    .micro-bar[data-value="82"] {
+        width: 82px;
+    }
+    .micro-bar[data-value="83"] {
+        width: 83px;
+    }
+    .micro-bar[data-value="84"] {
+        width: 84px;
+    }
+    .micro-bar[data-value="85"] {
+        width: 85px;
+    }
+    .micro-bar[data-value="86"] {
+        width: 86px;
+    }
+    .micro-bar[data-value="87"] {
+        width: 87px;
+    }
+    .micro-bar[data-value="88"] {
+        width: 88px;
+    }
+    .micro-bar[data-value="89"] {
+        width: 89px;
+    }
+    .micro-bar[data-value="90"] {
+        width: 90px;
+    }
+    .micro-bar[data-value="91"] {
+        width: 91px;
+    }
+    .micro-bar[data-value="92"] {
+        width: 92px;
+    }
+    .micro-bar[data-value="93"] {
+        width: 93px;
+    }
+    .micro-bar[data-value="94"] {
+        width: 94px;
+    }
+    .micro-bar[data-value="95"] {
+        width: 95px;
+    }
+    .micro-bar[data-value="96"] {
+        width: 96px;
+    }
+    .micro-bar[data-value="97"] {
+        width: 97px;
+    }
+    .micro-bar[data-value="98"] {
+        width: 98px;
+    }
+    .micro-bar[data-value="99"] {
+        width: 99px;
+    }
+    .micro-bar[data-value="100"] {
+        width: 100px;
+    }
+}

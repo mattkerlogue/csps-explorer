@@ -1,0 +1,51 @@
+---
+title: ""
+pagetitle: "UK Civil Service People Survey Explorer"
+page-layout: full
+title-block-style: none
+title-block-banner: true
+toc: false
+---
+
+:::{.column-screen .site-home .headline}
+:::{.column-screen-inset}
+test
+:::
+:::
+
+This is a Quarto website.
+
+:::{.plex}
+This block uses IBM Plex
+:::
+
+:::{.plex-thin}
+This block uses IBM Plex Condensed
+:::
+
+:::{.newsreader}
+This block uses Newsreader
+:::
+
+:::{.inconsolata}
+This block uses Inconsolata
+:::
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
+:::{.grid}
+
+:::{.g-col-4}
+Test 1
+:::
+
+:::{.g-col-4}
+Test 2
+:::
+
+:::{.g-col-4}
+Test 3
+:::
+
+:::

@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>UK Civil Service benchmark results – CSPS Explorer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8a5d2426d2772284d6c4e077af3c41fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6c43d2c506ce7bb574f9d7061151e5f8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">CSPS Explorer</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-results" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Results</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-results">    
+        <li>
+    <a class="dropdown-item" href="../results/index.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Civil Service results</li>
+        <li>
+    <a class="dropdown-item" href="../benchmark_results/index.html">
+ <span class="dropdown-text">Civil Service Benchmark</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../benchmark_results/all_respondents/index.html">
+ <span class="dropdown-text">All respondents</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Organisations</li>
+        <li class="dropdown-header">Demographics</li>
+        <li class="dropdown-header">Interactive</li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">Insights</span>
+    </span>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">UK Civil Service benchmark results</h1>
+            <p class="subtitle lead"></p><p>The benchmark (median) results for organisations participating in the UK Civil Service People Survey.</p><p></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#headline-results" id="toc-headline-results" class="nav-link active" data-scroll-target="#headline-results">Headline results</a>
+  <ul class="collapse">
+  <li><a href="#drivers-of-engagement" id="toc-drivers-of-engagement" class="nav-link" data-scroll-target="#drivers-of-engagement">Drivers of engagement</a></li>
+  <li><a href="#discrimination-bullying-and-harassment" id="toc-discrimination-bullying-and-harassment" class="nav-link" data-scroll-target="#discrimination-bullying-and-harassment">Discrimination, bullying and harassment</a></li>
+  </ul></li>
+  <li><a href="#question-results-overview" id="toc-question-results-overview" class="nav-link" data-scroll-target="#question-results-overview">Question results: overview</a>
+  <ul class="collapse">
+  <li><a href="#biggest-increases" id="toc-biggest-increases" class="nav-link" data-scroll-target="#biggest-increases">Biggest increases</a></li>
+  <li><a href="#biggest-decreases" id="toc-biggest-decreases" class="nav-link" data-scroll-target="#biggest-decreases">Biggest decreases</a></li>
+  </ul></li>
+  <li><a href="#question-results-employee-engagement-and-core-themes" id="toc-question-results-employee-engagement-and-core-themes" class="nav-link" data-scroll-target="#question-results-employee-engagement-and-core-themes">Question results: Employee engagement and core themes</a>
+  <ul class="collapse">
+  <li><a href="#my-work" id="toc-my-work" class="nav-link" data-scroll-target="#my-work">My work</a></li>
+  <li><a href="#organisational-objectives-and-purpose" id="toc-organisational-objectives-and-purpose" class="nav-link" data-scroll-target="#organisational-objectives-and-purpose">Organisational objectives and purpose</a></li>
+  <li><a href="#my-manager" id="toc-my-manager" class="nav-link" data-scroll-target="#my-manager">My manager</a></li>
+  <li><a href="#my-team" id="toc-my-team" class="nav-link" data-scroll-target="#my-team">My team</a></li>
+  <li><a href="#learning-and-development" id="toc-learning-and-development" class="nav-link" data-scroll-target="#learning-and-development">Learning and development</a></li>
+  <li><a href="#inclusion-and-fair-treatment" id="toc-inclusion-and-fair-treatment" class="nav-link" data-scroll-target="#inclusion-and-fair-treatment">Inclusion and fair treatment</a></li>
+  <li><a href="#resources-and-workload" id="toc-resources-and-workload" class="nav-link" data-scroll-target="#resources-and-workload">Resources and workload</a></li>
+  <li><a href="#pay-and-benefits" id="toc-pay-and-benefits" class="nav-link" data-scroll-target="#pay-and-benefits">Pay and benefits</a></li>
+  <li><a href="#leadership-and-managing-change" id="toc-leadership-and-managing-change" class="nav-link" data-scroll-target="#leadership-and-managing-change">Leadership and managing change</a></li>
+  <li><a href="#employee-engagement" id="toc-employee-engagement" class="nav-link" data-scroll-target="#employee-engagement">Employee engagement</a></li>
+  <li><a href="#taking-action" id="toc-taking-action" class="nav-link" data-scroll-target="#taking-action">Taking action</a></li>
+  <li><a href="#future-intentions" id="toc-future-intentions" class="nav-link" data-scroll-target="#future-intentions">Future intentions</a></li>
+  </ul></li>
+  <li><a href="#question-results-discrimination-bullying-and-harassment" id="toc-question-results-discrimination-bullying-and-harassment" class="nav-link" data-scroll-target="#question-results-discrimination-bullying-and-harassment">Question results: Discrimination, bullying and harassment</a>
+  <ul class="collapse">
+  <li><a href="#discrimination-at-work" id="toc-discrimination-at-work" class="nav-link" data-scroll-target="#discrimination-at-work">Discrimination at work</a></li>
+  <li><a href="#bullying-and-harassment" id="toc-bullying-and-harassment" class="nav-link" data-scroll-target="#bullying-and-harassment">Bullying and harassment</a></li>
+  </ul></li>
+  <li><a href="#question-results-wellbeing" id="toc-question-results-wellbeing" class="nav-link" data-scroll-target="#question-results-wellbeing">Question results: Wellbeing</a></li>
+  <li><a href="#question-results-other-questions" id="toc-question-results-other-questions" class="nav-link" data-scroll-target="#question-results-other-questions">Question results: Other questions</a>
+  <ul class="collapse">
+  <li><a href="#civil-service-code" id="toc-civil-service-code" class="nav-link" data-scroll-target="#civil-service-code">Civil Service Code</a></li>
+  <li><a href="#topical-questions" id="toc-topical-questions" class="nav-link" data-scroll-target="#topical-questions">Topical questions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Civil Service benchmark is calculated for each measure as the median score of the participating organisations - half of organisations will score above this figure and half of organisations will score below this figure. The figures for <a href="../benchmark_results/all_respondents/index.html">all respondents</a> are also available.</p>
+</div>
+</div>
+<!--close 18 -->
+<section id="headline-results" class="level2">
+<h2 class="anchored" data-anchor-id="headline-results">Headline results</h2>
+<div class="print-break-after">
+<p>The People Survey’s headline results focus on measuring employee engagement and it’s key drivers. The employee engagement index is based on five questions that measure civil servants’ levels of advocacy for, attachment to and motivation towards the civil service organisation they currently work for.</p>
+<p>In 2024 the Civil Service benchmark for employee engagement 64%, unchanged from 2023.</p>
+<div class="grid theme-card-wide">
+<div class="g-col-4">
+<p><span class="theme-header">Engagement index</span></p>
+<div>
+<span class="data-value">64%</span> <span class="change-value no-change">±0</span>
+<p>
+<a href="#employee-engagement" class="read-more">Skip to question results</a>
+</p>
+</div>
+</div>
+<!--close 39-->
+<div class="g-col-8 text-end">
+<iframe width="400" height="200" ,="" src="test.svg"></iframe>
+</div>
+<!--close 50-->
+</div>
+<!--close 38-->
+<div class="callout callout-style-default callout-note callout-titled" title="Engagement index calculation">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Engagement index calculation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The engagement index is calculated as a weighted average of the five questions that make up the index. An index score of 0% represents all respondents answering strongly disagree to all five questions while a index score of 100% represents all respondents answering strongly agree to all five questions.</p>
+</div>
+</div>
+</div>
+<!--close 58-->
+</div>
+<!--close 28-->
+<section id="drivers-of-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="drivers-of-engagement">Drivers of engagement</h3>
+<p>The People Survey measures nine ‘themes’ that are drivers of employee engagement. The summary cards below show the overall score for each theme, the difference from last year and the long-term trend from 2009 to 2024.</p>
+<p>All themes have an influence on levels of employee engagement, but some have stronger associations with levels of employee engagement than others. Next to the name of each theme is a small signal-bar icon indicating the strength of association between that theme and the engagement index.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Guide to symbols">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Guide to symbols
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="table-sm small caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 92%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Icon</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></td>
+<td style="text-align: left;"><strong>Strong association:</strong> if scores in these themes are low then prioritise action in these areas to improve employee engagement.</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></td>
+<td style="text-align: left;"><strong>Moderate association:</strong> while not as direct as the first three drivers these themes still have a notable impact, they’re often important for maintaining high levels of employee engagement.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></td>
+<td style="text-align: left;"><strong>Weak association:</strong> these themes have background influence on levels of employee engagement, keep a watch to make sure they don’t drop.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="grid card-row">
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">My work</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">77%</span> <span class="change-value decrease">-1</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#my-work" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 95-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Organisational objectives and purpose</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">83%</span> <span class="change-value decrease">-1</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#organisational-objectives-and-purpose" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 112-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">My manager</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">78%</span> <span class="change-value increase">+1</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#my-manager" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 129-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">My team</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">84%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#my-team" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 147-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Learning and development</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">56%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#learning-and-development" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 164-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Inclusion and fair treatment</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">81%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#inclusion-and-fair-treatment" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 181-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Resources and workload</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">76%</span> <span class="change-value no-change">+1</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#resources-and-workload" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 198-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Pay and benefits</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">34%</span> <span class="change-value no-change">+2</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#pay-and-benefits" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 216-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Leadership and managing change</span> <span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span></p>
+<p><span class="data-value">52%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#leadership-and-managing-change" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 233-->
+</div>
+<!--close 93-->
+<div class="callout callout-style-default callout-note callout-titled" title="Theme score calculation">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Theme score calculation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The score for a given theme is the average percent positive response (a ‘strongly agree’ or ‘agree’ response) across its constituent questions.</p>
+</div>
+</div>
+</div>
+<!--close 253-->
+<div class="callout callout-style-default callout-note callout-titled" title="Driver calculation">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Driver calculation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The strength of association is derived from a combination of factor analysis and regression modelling of the published results.</p>
+</div>
+</div>
+</div>
+<!--close 259-->
+</section>
+<section id="discrimination-bullying-and-harassment" class="level3">
+<h3 class="anchored" data-anchor-id="discrimination-bullying-and-harassment">Discrimination, bullying and harassment</h3>
+<div class="grid">
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Experienced discrimination</span></p>
+<p><span class="data-value">7%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#discrimination-at-work" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 268-->
+<div class="g-col-12 g-col-sm-4 theme-card">
+<p><span class="theme-header">Experienced bullying</span></p>
+<p><span class="data-value">8%</span> <span class="change-value no-change">±0</span></p>
+<div>
+<p><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIHhtbG5zID0gImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94ID0gIjAgMCAyMDAgMTAwIj48cmVjdCB3aWR0aCA9ICIyMDAiIGhlaWdodCA9ICIxMDAiIGZpbGwgPSAiI2RkZCIgLz48dGV4dCB4ID0gIjUwJSIgeSA9ICI1MCUiIGZvbnQtZmFtaWx5ID0gInNhbnMtc2VyaWYiIGZvbnQtc2l6ZSA9ICIxMCIgZmlsbCA9ICIjMDAwIiB0ZXh0LWFuY2hvciA9ICJtaWRkbGUiPjIwMCB4IDEwMDwvdGV4dD48L3N2Zz4=" class="img-fluid"></p>
+<p><a href="#bullying-and-harassment" class="read-more">Skip to question results</a></p>
+</div>
+</div>
+<!--close 284-->
+</div>
+<!--close 267-->
+<p>…</p>
+</section>
+</section>
+<section id="question-results-overview" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="question-results-overview">Question results: overview</h2>
+<p>The engagement index and theme scores are headline scores that provide a quick overview of the People Survey results, these scores are derived from the results of individual questions. The rest of this report provides an overview of the results of each question in the survey, grouped by survey section and theme.</p>
+<p>Overall we divide the survey results into four broad sections:</p>
+<ul>
+<li><a href="#question-results-employee-engagement-and-core-themes">Employee engagement and core themes</a></li>
+<li><a href="#question-results-future-intentions">Future intentions</a></li>
+<li><a href="#discrimination-bullying-and-harassment">Discrimination, bullying and harassment</a></li>
+<li><a href="#question-results-wellbeing">Wellbeing</a></li>
+<li><a href="#question-results-other-questions">Other questions</a></li>
+</ul>
+<p>Unless otherwise stated results are the percentage responding ‘strongly agree’ or ‘agree’ to the statement/question.</p>
+<section id="biggest-increases" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="biggest-increases">Biggest increases</h3>
+<p>The five questions with the biggest increases in score between 2023 and 2024 were:</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Over the last 12 months money worries have affected my ability to do my job (% seldom or never)</td>
+<td style="text-align: right;">55.7%</td>
+<td style="text-align: right;">61.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="62"></span></span></td>
+<td style="text-align: right;">+5.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I understand the Civil Service Code and what it means for my conduct</td>
+<td style="text-align: right;">88.2%</td>
+<td style="text-align: right;">92.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="92"></span></span></td>
+<td style="text-align: right;">+3.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I feel that my pay adequately reflects my performance</td>
+<td style="text-align: right;">31.7%</td>
+<td style="text-align: right;">35.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="36"></span></span></td>
+<td style="text-align: right;">+3.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Senior managers in [my organisation] are sufficiently visible</td>
+<td style="text-align: right;">70.6%</td>
+<td style="text-align: right;">73.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="73"></span></span></td>
+<td style="text-align: right;">+2.4 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">How often do you collaborate with civil servants in other government departments and agencies to achieve common goals? (% always, often, some of the time)</td>
+<td style="text-align: right;">37.3%</td>
+<td style="text-align: right;">39.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="39"></span></span></td>
+<td style="text-align: right;">+1.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--close 329-->
+</section>
+<section id="biggest-decreases" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="biggest-decreases">Biggest decreases</h3>
+<p>The five questions with the biggest decreases in score between 2023 and 2024 were:</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I have a choice in deciding where I do my work (usual workplace or base, another workplace, home)</td>
+<td style="text-align: right;">83.2%</td>
+<td style="text-align: right;">73.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="73"></span></span></td>
+<td style="text-align: right;">-9.9 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Efficiency is pursued as a priority in [my organisation]</td>
+<td style="text-align: right;">54.8%</td>
+<td style="text-align: right;">52.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="39"></span></span></td>
+<td style="text-align: right;">-2.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I think that [my organisation] respects individual differences (for example, cultures, working styles, backgrounds, ideas, etc.)</td>
+<td style="text-align: right;">80.5%</td>
+<td style="text-align: right;">79.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="79"></span></span></td>
+<td style="text-align: right;">-1.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I feel involved in the decisions that affect my work</td>
+<td style="text-align: right;">61.4%</td>
+<td style="text-align: right;">60.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="60"></span></span></td>
+<td style="text-align: right;">-1.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">There are opportunities for me to develop my career in [my organisation]</td>
+<td style="text-align: right;">53.3%</td>
+<td style="text-align: right;">52.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="52"></span></span></td>
+<td style="text-align: right;">-1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--close 347-->
+</section>
+</section>
+<section id="question-results-employee-engagement-and-core-themes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="question-results-employee-engagement-and-core-themes">Question results: Employee engagement and core themes</h2>
+<p>The main focus of the People Survey is measuring levels of employee engagement and its drivers. This section highlights the key results for each of the driver themes and the engagement index.</p>
+<section id="my-work" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="my-work">My work</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a strong association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I am interested in my work</td>
+<td style="text-align: right;">90.2%</td>
+<td style="text-align: right;">90.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="90"></span></span></td>
+<td style="text-align: right;">-0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I am sufficiently challenged by my work</td>
+<td style="text-align: right;">82.6%</td>
+<td style="text-align: right;">82.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="82"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">My work gives me a sense of personal accomplishment</td>
+<td style="text-align: right;">77.6%</td>
+<td style="text-align: right;">77.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="78"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I feel involved in the decisions that affect my work</td>
+<td style="text-align: right;">61.4%</td>
+<td style="text-align: right;">60.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="60"></span></span></td>
+<td style="text-align: right;">-1.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I have a choice in deciding how I do my work</td>
+<td style="text-align: right;">80.8%</td>
+<td style="text-align: right;">80.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="81"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--close 371-->
+</section>
+<section id="organisational-objectives-and-purpose" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="organisational-objectives-and-purpose">Organisational objectives and purpose</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a medium association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I have a clear understanding of [my organisation]’s objectives</td>
+<td style="text-align: right;">82.9%</td>
+<td style="text-align: right;">81.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="82"></span></span></td>
+<td style="text-align: right;">-1.0 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I understand how my work contributes to [my organisation]’s objectives</td>
+<td style="text-align: right;">85.0%</td>
+<td style="text-align: right;">84.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="85"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--close 389-->
+</section>
+<section id="my-manager" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="my-manager">My manager</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a strong association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">My manager motivates me to be more effective in my job</td>
+<td style="text-align: right;">76.3%</td>
+<td style="text-align: right;">76.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="76"></span></span></td>
+<td style="text-align: right;">-0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">My manager is considerate of my life outside work</td>
+<td style="text-align: right;">89.8%</td>
+<td style="text-align: right;">90.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="90"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">My manager is open to my ideas</td>
+<td style="text-align: right;">86.6%</td>
+<td style="text-align: right;">86.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="86"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">My manager helps me to understand how I contribute to [my organisation]’s objectives</td>
+<td style="text-align: right;">72.0%</td>
+<td style="text-align: right;">71.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="71"></span></span></td>
+<td style="text-align: right;">-0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Overall, I have confidence in the decisions made by my manager</td>
+<td style="text-align: right;">80.9%</td>
+<td style="text-align: right;">81.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="81"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">My manager recognises when I have done my job well</td>
+<td style="text-align: right;">83.4%</td>
+<td style="text-align: right;">83.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="84"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I receive regular feedback on my performance</td>
+<td style="text-align: right;">72.5%</td>
+<td style="text-align: right;">73.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="74"></span></span></td>
+<td style="text-align: right;">+1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The feedback I receive helps me to improve my performance</td>
+<td style="text-align: right;">68.7%</td>
+<td style="text-align: right;">68.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="69"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I think that my performance is evaluated fairly</td>
+<td style="text-align: right;">72.9%</td>
+<td style="text-align: right;">73.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="73"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Have you heard of the Civil Service line management standards? (% yes)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">49.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="49"></span></span></td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--close 404-->
+<div class="callout callout-style-default callout-tip callout-titled" title="Questionnaire changes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Questionnaire changes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The question <em>‘Have you heard of the Civil Service line management standards’</em> is new for 2024 and does not contribute towards the calculation of the ‘My manager’ theme score.</p>
+</div>
+</div>
+</div>
+<!--close 421-->
+</section>
+<section id="my-team" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="my-team">My team</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a medium association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The people in my team can be relied upon to help when things get difficult in my job</td>
+<td style="text-align: right;">87.5%</td>
+<td style="text-align: right;">88.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="88"></span></span></td>
+<td style="text-align: right;">+0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The people in my team work together to find ways to improve the service we provide</td>
+<td style="text-align: right;">84.5%</td>
+<td style="text-align: right;">85.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="85"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">The people in my team are encouraged to come up with new and better ways of doing things</td>
+<td style="text-align: right;">78.4%</td>
+<td style="text-align: right;">78.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="79"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="learning-and-development" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="learning-and-development">Learning and development</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-intermediate" style="color:#1192e8;" aria-label="Moderate association icon" title="Moderate association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a moderate association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I am able to access the right learning and development opportunities when I need to</td>
+<td style="text-align: right;">66.9%</td>
+<td style="text-align: right;">67.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="68"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Learning and development activities I have completed in the past 12 months have helped to improve my performance</td>
+<td style="text-align: right;">52.3%</td>
+<td style="text-align: right;">53.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="54"></span></span></td>
+<td style="text-align: right;">+1.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">There are opportunities for me to develop my career in [my organisation]</td>
+<td style="text-align: right;">53.3%</td>
+<td style="text-align: right;">52.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="52"></span></span></td>
+<td style="text-align: right;">-1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Learning and development activities I have completed while working for [my organisation] are helping me to develop my career</td>
+<td style="text-align: right;">50.6%</td>
+<td style="text-align: right;">51.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="51"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="inclusion-and-fair-treatment" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="inclusion-and-fair-treatment">Inclusion and fair treatment</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a weak association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I am treated fairly at work</td>
+<td style="text-align: right;">84.1%</td>
+<td style="text-align: right;">83.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="84"></span></span></td>
+<td style="text-align: right;">-0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I am treated with respect by the people I work with</td>
+<td style="text-align: right;">88.2%</td>
+<td style="text-align: right;">88.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="88"></span></span></td>
+<td style="text-align: right;">-0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I feel valued for the work I do</td>
+<td style="text-align: right;">72.1%</td>
+<td style="text-align: right;">71.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="72"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I think that [my organisation] respects individual differences (for example, cultures, working styles, backgrounds, ideas, etc.)</td>
+<td style="text-align: right;">80.5%</td>
+<td style="text-align: right;">79.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="79"></span></span></td>
+<td style="text-align: right;">-1.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="resources-and-workload" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="resources-and-workload">Resources and workload</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a weak association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I get the information I need to do my job well</td>
+<td style="text-align: right;">70.9%</td>
+<td style="text-align: right;">70.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="71"></span></span></td>
+<td style="text-align: right;">-0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I have clear work objectives</td>
+<td style="text-align: right;">77.3%</td>
+<td style="text-align: right;">77.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="77"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I have the skills I need to do my job effectively</td>
+<td style="text-align: right;">89.3%</td>
+<td style="text-align: right;">90.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="90"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I have the tools I need to do my job effectively</td>
+<td style="text-align: right;">73.5%</td>
+<td style="text-align: right;">75.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="75"></span></span></td>
+<td style="text-align: right;">+1.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I have an acceptable workload</td>
+<td style="text-align: right;">64.1%</td>
+<td style="text-align: right;">65.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="66"></span></span></td>
+<td style="text-align: right;">+1.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I achieve a good balance between my work life and my private life</td>
+<td style="text-align: right;">74.4%</td>
+<td style="text-align: right;">75.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="76"></span></span></td>
+<td style="text-align: right;">+1.4 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="pay-and-benefits" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="pay-and-benefits">Pay and benefits</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-basic" style="color:#1192e8;" aria-label="Weak association icon" title="Weak association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a weak association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I feel that my pay adequately reflects my performance</td>
+<td style="text-align: right;">31.7%</td>
+<td style="text-align: right;">35.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="36"></span></span></td>
+<td style="text-align: right;">+3.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I am satisfied with the total benefits package (e.g.&nbsp;base pay, benefits and pension)</td>
+<td style="text-align: right;">38.8%</td>
+<td style="text-align: right;">39.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="40"></span></span></td>
+<td style="text-align: right;">+1.0 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Compared to people doing a similar job in other organisations I feel my pay is reasonable</td>
+<td style="text-align: right;">25.7%</td>
+<td style="text-align: right;">27.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="27"></span></span></td>
+<td style="text-align: right;">+1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I am fully aware of the benefits available in [my organisation], in addition to pay</td>
+<td style="text-align: right;">70.3%</td>
+<td style="text-align: right;">70.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="71"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Over the last 12 months money worries have affected my ability to do my job (% seldom or never)</td>
+<td style="text-align: right;">55.7%</td>
+<td style="text-align: right;">61.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="62"></span></span></td>
+<td style="text-align: right;">+5.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Questionnaire changes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Questionnaire changes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The questions <em>‘I am fully aware of the benefits available in [my organisation], in addition to pay’</em> and <em>‘Over the last 12 months money worries have affected my ability to do my job’</em> were first introduced in 2023 and doe not contribute towards the calculation of the ‘Pay and benefits’ theme score.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="leadership-and-managing-change" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="leadership-and-managing-change">Leadership and managing change</h3>
+<p><span class="driver-strength"><iconify-icon role="img" inline="" icon="carbon:skill-level-advanced" style="color:#1192e8;" aria-label="Strong association icon" title="Strong association icon" width="1em" height="1em" mode="svg"></iconify-icon></span> This theme has a strong association with higher levels of employee engagement.</p>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Senior managers in [my organisation] are sufficiently visible</td>
+<td style="text-align: right;">70.6%</td>
+<td style="text-align: right;">73.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="73"></span></span></td>
+<td style="text-align: right;">+2.4 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I believe the actions of senior managers are consistent with [my organisation]’s values</td>
+<td style="text-align: right;">64.8%</td>
+<td style="text-align: right;">65.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="66"></span></span></td>
+<td style="text-align: right;">+0.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I believe that [my organisation]’s senior leaders have a clear vision for the future of [my organisation]</td>
+<td style="text-align: right;">53.7%</td>
+<td style="text-align: right;">53.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="54"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Overall, I have confidence in the decisions made by [my organisation]’s senior managers</td>
+<td style="text-align: right;">56.0%</td>
+<td style="text-align: right;">56.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="56"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I feel that change is managed well in [my organisation]</td>
+<td style="text-align: right;">34.2%</td>
+<td style="text-align: right;">33.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="33"></span></span></td>
+<td style="text-align: right;">-1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When changes are made in [my organisation] they are usually for the better</td>
+<td style="text-align: right;">34.1%</td>
+<td style="text-align: right;">34.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="35"></span></span></td>
+<td style="text-align: right;">+0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">[My organisation] keeps me informed about matters that affect me</td>
+<td style="text-align: right;">64.2%</td>
+<td style="text-align: right;">64.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="64"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I have the opportunity to contribute my views before decisions are made that affect me</td>
+<td style="text-align: right;">40.3%</td>
+<td style="text-align: right;">39.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="39"></span></span></td>
+<td style="text-align: right;">-1.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I think it is safe to challenge the way things are done in [my organisation]</td>
+<td style="text-align: right;">51.4%</td>
+<td style="text-align: right;">51.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="51"></span></span></td>
+<td style="text-align: right;">-0.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="employee-engagement" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="employee-engagement">Employee engagement</h3>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I am proud when I tell others I am part of [my organisation]</td>
+<td style="text-align: right;">65.2%</td>
+<td style="text-align: right;">65.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="66"></span></span></td>
+<td style="text-align: right;">+0.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I would recommend [my organisation] as a great place to work</td>
+<td style="text-align: right;">61.5%</td>
+<td style="text-align: right;">63.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="63"></span></span></td>
+<td style="text-align: right;">+1.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I feel a strong personal attachment to [my organisation]</td>
+<td style="text-align: right;">50.0%</td>
+<td style="text-align: right;">50.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="51"></span></span></td>
+<td style="text-align: right;">+0.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">[My organisation] inspires me to do the best in my job</td>
+<td style="text-align: right;">53.9%</td>
+<td style="text-align: right;">55.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="55"></span></span></td>
+<td style="text-align: right;">+1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">[My organisation] motivates me to help it achieve its objectives</td>
+<td style="text-align: right;">51.7%</td>
+<td style="text-align: right;">52.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="53"></span></span></td>
+<td style="text-align: right;">+1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="taking-action" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="taking-action">Taking action</h3>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Question</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I believe that senior managers in [my organisation] will take action on the results from this survey</td>
+<td style="text-align: right;">51.2%</td>
+<td style="text-align: right;">51.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="52"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Where I work, I think effective action has been taken on the results of the last survey</td>
+<td style="text-align: right;">38.1%</td>
+<td style="text-align: right;">37.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="38"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="future-intentions" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="future-intentions">Future intentions</h3>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<caption>Which of the following statements most reflects your current thoughts about working for [your organisation]?</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">I want to leave [my organisation] as soon as possible</td>
+<td style="text-align: right;">7.2%</td>
+<td style="text-align: right;">6.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="6"></span></span></td>
+<td style="text-align: right;">-0.8 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I want to leave [my organisation] within the next 12 months</td>
+<td style="text-align: right;">14.8%</td>
+<td style="text-align: right;">13.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="14"></span></span></td>
+<td style="text-align: right;">-1.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I want to stay working for [my organisation] for at least the next year</td>
+<td style="text-align: right;">35.9%</td>
+<td style="text-align: right;">35.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="35"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">I want to stay working for [my organisation] for at least the next three years</td>
+<td style="text-align: right;">42.5%</td>
+<td style="text-align: right;">44.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="45"></span></span></td>
+<td style="text-align: right;">+2.0 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>Why do you want to leave [your organisation] immediately or within the next 12 months? <em>(asked only to those who said they wanted to leave their organisation as soon as possible or in the next 12 months)</em></caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response (multiple-choice)</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">End of my current contract or loan</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: right;">2.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="3"></span></span></td>
+<td style="text-align: right;">-1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A promotion or career progression within the Civil Service</td>
+<td style="text-align: right;">35.6%</td>
+<td style="text-align: right;">37.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="38"></span></span></td>
+<td style="text-align: right;">+1.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A promotion or career progression outside of the Civil Service</td>
+<td style="text-align: right;">21.3%</td>
+<td style="text-align: right;">22.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="22"></span></span></td>
+<td style="text-align: right;">+1.0 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">For a better pay and benefit package</td>
+<td style="text-align: right;">50.0%</td>
+<td style="text-align: right;">44.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="44"></span></span></td>
+<td style="text-align: right;">-5.6 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">For more interesting work</td>
+<td style="text-align: right;">29.3%</td>
+<td style="text-align: right;">30.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="31"></span></span></td>
+<td style="text-align: right;">+1.5 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Due to unmanageable workload</td>
+<td style="text-align: right;">18.3%</td>
+<td style="text-align: right;">16.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="16"></span></span></td>
+<td style="text-align: right;">-2.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">For a better work-life balance</td>
+<td style="text-align: right;">19.9%</td>
+<td style="text-align: right;">20.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="21"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lack of inclusion and fair treatment</td>
+<td style="text-align: right;">13.9%</td>
+<td style="text-align: right;">16.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="16"></span></span></td>
+<td style="text-align: right;">+2.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Don’t like organisational culture</td>
+<td style="text-align: right;">25.5%</td>
+<td style="text-align: right;">26.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="27"></span></span></td>
+<td style="text-align: right;">+1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Due to poor line management</td>
+<td style="text-align: right;">16.7%</td>
+<td style="text-align: right;">17.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="18"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Due to poor work relationships</td>
+<td style="text-align: right;">6.9%</td>
+<td style="text-align: right;">7.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="8"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Due to poor leadership</td>
+<td style="text-align: right;">28.3%</td>
+<td style="text-align: right;">28.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="29"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Personal circumstances (for example, caring responsibilities, ill health)</td>
+<td style="text-align: right;">6.6%</td>
+<td style="text-align: right;">7.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="8"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Retiring</td>
+<td style="text-align: right;">5.7%</td>
+<td style="text-align: right;">6.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="7"></span></span></td>
+<td style="text-align: right;">+0.9 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Just want a change</td>
+<td style="text-align: right;">16.9%</td>
+<td style="text-align: right;">18.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="18"></span></span></td>
+<td style="text-align: right;">+1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Other</td>
+<td style="text-align: right;">8.2%</td>
+<td style="text-align: right;">8.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="9"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Caution when interpreting differences between years">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Caution when interpreting differences between years
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The benchmark figures are calculated as the median score across all participating organisations for each separate measure. For the questions on future intentions each question response is treated as a separate measure, as a result the net sum of differences may not be zero due to the underlying variation in organisation scores.</p>
+<p>Depending on the nature of your interest in this question, the results for <a href="../benchmark_results/all_respondents/index.html">all respondents</a> may be more relevant than the Civil Service benchmark.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="question-results-discrimination-bullying-and-harassment" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="question-results-discrimination-bullying-and-harassment">Question results: Discrimination, bullying and harassment</h2>
+<p>The People Survey asks civil servants if they have experienced either discrimination, or bullying or harassment in the past 12 months. For those that say they have the survey goes on to ask some follow-up questions to better understand the nature of their experiences.</p>
+<section id="discrimination-at-work" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="discrimination-at-work">Discrimination at work</h3>
+<blockquote class="blockquote">
+<p>Discrimination is when an employer treats an employee less favourably than someone else, or when a working condition, policy, procedure or rule disadvantages one group of people more than another.</p>
+<p><em>Civil Service People Survey questionnaire (2013)</em></p>
+</blockquote>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<caption>Have you been discriminated against at work in the last 12 months?</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">7.3%</td>
+<td style="text-align: right;">7.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="7"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">86.5%</td>
+<td style="text-align: right;">86.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="86"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Prefer not to say</td>
+<td style="text-align: right;">6.3%</td>
+<td style="text-align: right;">6.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="7"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>On which of the following grounds were you discriminated against? <em>(asked only to those whose who said they experienced discrimination at work in the past 12 months)</em></caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response (multiple-choice)</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Age</td>
+<td style="text-align: right;">16.2%</td>
+<td style="text-align: right;">16.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="16"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Caring responsibilities</td>
+<td style="text-align: right;">10.0%</td>
+<td style="text-align: right;">10.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="11"></span></span></td>
+<td style="text-align: right;">+0.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Disability</td>
+<td style="text-align: right;">14.7%</td>
+<td style="text-align: right;">18.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="19"></span></span></td>
+<td style="text-align: right;">+4.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ethnic background</td>
+<td style="text-align: right;">8.4%</td>
+<td style="text-align: right;">9.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="9"></span></span></td>
+<td style="text-align: right;">+0.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gender</td>
+<td style="text-align: right;">15.3%</td>
+<td style="text-align: right;">15.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="16"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gender reassignment or perceived gender</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Grade or responsibility level</td>
+<td style="text-align: right;">23.2%</td>
+<td style="text-align: right;">25.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="25"></span></span></td>
+<td style="text-align: right;">+2.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Main spoken, written language or language ability</td>
+<td style="text-align: right;">3.7%</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="4"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Marital status or civil partnership</td>
+<td style="text-align: right;">0.2%</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">-0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mental health</td>
+<td style="text-align: right;">12.7%</td>
+<td style="text-align: right;">12.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="13"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pay</td>
+<td style="text-align: right;">7.6%</td>
+<td style="text-align: right;">7.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="7"></span></span></td>
+<td style="text-align: right;">-0.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Pregnancy, maternity or paternity</td>
+<td style="text-align: right;">1.4%</td>
+<td style="text-align: right;">2.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="2"></span></span></td>
+<td style="text-align: right;">+0.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Religion or belief</td>
+<td style="text-align: right;">2.1%</td>
+<td style="text-align: right;">2.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="2"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sex</td>
+<td style="text-align: right;">3.3%</td>
+<td style="text-align: right;">3.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="4"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sexual orientation</td>
+<td style="text-align: right;">1.8%</td>
+<td style="text-align: right;">1.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="2"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Social or educational background</td>
+<td style="text-align: right;">4.1%</td>
+<td style="text-align: right;">5.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="5"></span></span></td>
+<td style="text-align: right;">+1.0 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Working location</td>
+<td style="text-align: right;">14.7%</td>
+<td style="text-align: right;">14.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="15"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Working pattern</td>
+<td style="text-align: right;">15.3%</td>
+<td style="text-align: right;">15.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="15"></span></span></td>
+<td style="text-align: right;">-0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Any other grounds</td>
+<td style="text-align: right;">10.8%</td>
+<td style="text-align: right;">10.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="10"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prefer not to say</td>
+<td style="text-align: right;">10.6%</td>
+<td style="text-align: right;">11.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="11"></span></span></td>
+<td style="text-align: right;">+0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="bullying-and-harassment" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="bullying-and-harassment">Bullying and harassment</h3>
+<blockquote class="blockquote">
+<p>Bullying is offensive, intimidating, malicious or insulting behaviour, an abuse or misuse of power through means intended to undermine, humiliate, denigrate or injure the recipient.</p>
+<p>Harassment is unwanted actions or comments that are demeaning and unacceptable to the recipient. It may be related to any personal characteristic of the individual, and may be persistent or an isolated incident.</p>
+<p><em>Civil Service People Survey questionnaire (2013)</em></p>
+</blockquote>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<caption>Have you been bullied or harassed at work, in the past 12 months?</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">7.9%</td>
+<td style="text-align: right;">7.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="8"></span></span></td>
+<td style="text-align: right;">-0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">86.8%</td>
+<td style="text-align: right;">86.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="87"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Prefer not to say</td>
+<td style="text-align: right;">5.4%</td>
+<td style="text-align: right;">5.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="6"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="nature-of-bullying-and-harassment" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="nature-of-bullying-and-harassment">Nature of bullying and harassment</h4>
+<div class="column-page-inset-right results-table">
+<table class="caption-top table">
+<caption>How would you describe the nature of the bullying and or harassment you experienced? <em>(asked only to those whose who said they experienced bullying or harassment at work in the past 12 months)</em></caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response (multiple-choice)</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Comments about my personal appearance or accent</td>
+<td style="text-align: right;">8.0%</td>
+<td style="text-align: right;">7.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="7"></span></span></td>
+<td style="text-align: right;">-0.7 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sexual harassment (for example, sexual comments or jokes, unwelcome sexual advances, touching or assault)</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: right;">2.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="3"></span></span></td>
+<td style="text-align: right;">-1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Spreading gossip or making false accusations about me</td>
+<td style="text-align: right;">22.3%</td>
+<td style="text-align: right;">25.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="25"></span></span></td>
+<td style="text-align: right;">+2.7 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intimidation, or verbal or written aggression (for example, shouting, making threats, sending aggressive emails)</td>
+<td style="text-align: right;">35.8%</td>
+<td style="text-align: right;">35.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="36"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Physical assault (for example, object thrown at me, pushed, hit)</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Humiliated in front of team or others</td>
+<td style="text-align: right;">36.4%</td>
+<td style="text-align: right;">36.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="37"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Negative micromanagement (for example, excessive control, made to feel incompetent)</td>
+<td style="text-align: right;">52.9%</td>
+<td style="text-align: right;">51.6%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="52"></span></span></td>
+<td style="text-align: right;">-1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Removal of job responsibilities, unconstructive criticism, or changing expectations</td>
+<td style="text-align: right;">30.9%</td>
+<td style="text-align: right;">30.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="31"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Treated less favourably to others</td>
+<td style="text-align: right;">37.8%</td>
+<td style="text-align: right;">39.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="39"></span></span></td>
+<td style="text-align: right;">+1.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ignored, excluded, marginalised</td>
+<td style="text-align: right;">35.3%</td>
+<td style="text-align: right;">37.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="37"></span></span></td>
+<td style="text-align: right;">+2.0 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Undermining or taking credit for my work</td>
+<td style="text-align: right;">30.1%</td>
+<td style="text-align: right;">27.4%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="27"></span></span></td>
+<td style="text-align: right;">-2.7 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Denied time off for personal ill health</td>
+<td style="text-align: right;">1.6%</td>
+<td style="text-align: right;">1.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="2"></span></span></td>
+<td style="text-align: right;">+0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Denied time off for family or caring responsibilities</td>
+<td style="text-align: right;">2.3%</td>
+<td style="text-align: right;">2.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="3"></span></span></td>
+<td style="text-align: right;">+0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Disclosure of personal or sensitive information to colleagues without my consent</td>
+<td style="text-align: right;">7.9%</td>
+<td style="text-align: right;">8.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="9"></span></span></td>
+<td style="text-align: right;">+0.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Unhelpful comments about my mental health or being off sick</td>
+<td style="text-align: right;">10.0%</td>
+<td style="text-align: right;">11.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="11"></span></span></td>
+<td style="text-align: right;">+1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Something else not listed here</td>
+<td style="text-align: right;">7.3%</td>
+<td style="text-align: right;">7.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="8"></span></span></td>
+<td style="text-align: right;">+0.4 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Prefer not to say</td>
+<td style="text-align: right;">2.9%</td>
+<td style="text-align: right;">3.5%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="4"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>Who bullied or harassed you? <em>(asked only to those whose who said they experienced bullying or harassment at work in the past 12 months)</em></caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Response (multiple-choice)</th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A colleague in my area, directorate or division</td>
+<td style="text-align: right;">33.7%</td>
+<td style="text-align: right;">36.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="36"></span></span></td>
+<td style="text-align: right;">+2.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A colleague in a different area, directorate, division of my organisation</td>
+<td style="text-align: right;">11.2%</td>
+<td style="text-align: right;">11.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="11"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">My manager</td>
+<td style="text-align: right;">31.8%</td>
+<td style="text-align: right;">30.8%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="31"></span></span></td>
+<td style="text-align: right;">-1.0 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Another senior member of staff in my organisation</td>
+<td style="text-align: right;">23.4%</td>
+<td style="text-align: right;">24.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="24"></span></span></td>
+<td style="text-align: right;">+0.8 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Someone I manage</td>
+<td style="text-align: right;">4.8%</td>
+<td style="text-align: right;">5.1%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="5"></span></span></td>
+<td style="text-align: right;">+0.3 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Someone working in a different Civil Service organisation</td>
+<td style="text-align: right;">3.0%</td>
+<td style="text-align: right;">1.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="2"></span></span></td>
+<td style="text-align: right;">-1.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Someone working for a non-Civil Service organisation</td>
+<td style="text-align: right;">0.5%</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">-0.5 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A contractor</td>
+<td style="text-align: right;">0.8%</td>
+<td style="text-align: right;">0.7%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="1"></span></span></td>
+<td style="text-align: right;">-0.1 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A service user (for example, customer, claimant, offender)</td>
+<td style="text-align: right;">0.7%</td>
+<td style="text-align: right;">0.3%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">-0.4 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A member of the public</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: right;">0.0%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="0"></span></span></td>
+<td style="text-align: right;">±0.0 <iconify-icon role="img" inline="" icon="carbon:not-available" style="color: #6f6f6f" aria-label="Score unchanged icon" title="Score unchanged icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Someone else not listed here</td>
+<td style="text-align: right;">4.1%</td>
+<td style="text-align: right;">3.9%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="4"></span></span></td>
+<td style="text-align: right;">-0.2 <iconify-icon role="img" inline="" icon="carbon:triangle-down-solid" style="color:#da1e28" aria-label="Score decreased icon" title="Score decreased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Prefer not to say</td>
+<td style="text-align: right;">8.6%</td>
+<td style="text-align: right;">9.2%</td>
+<td style="text-align: left;"><span class="micro-chart"><span class="micro-bar" data-value="9"></span></span></td>
+<td style="text-align: right;">+0.6 <iconify-icon role="img" inline="" icon="carbon:triangle-solid" style="color:#007d79" aria-label="Score increased icon" title="Score increased icon" width="1em" height="1em" mode="svg"></iconify-icon></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="question-results-wellbeing" class="level2">
+<h2 class="anchored" data-anchor-id="question-results-wellbeing">Question results: Wellbeing</h2>
+<p>Vestibulum ultrices, tortor at mattis porta, odio nisi rutrum nulla, sit amet tincidunt eros quam facilisis tellus. Fusce eleifend lectus in elementum lacinia. Nam auctor nunc in massa ullamcorper, sit amet auctor ante accumsan. Nam ut varius metus. Curabitur eget tristique leo. Cras finibus euismod erat eget elementum. Integer vel placerat ex. Ut id eros quis lectus lacinia venenatis hendrerit vel ante.</p>
+</section>
+<section id="question-results-other-questions" class="level2">
+<h2 class="anchored" data-anchor-id="question-results-other-questions">Question results: Other questions</h2>
+<p>Nunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.</p>
+<section id="civil-service-code" class="level3">
+<h3 class="anchored" data-anchor-id="civil-service-code">Civil Service Code</h3>
+<p>Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi.</p>
+</section>
+<section id="topical-questions" class="level3">
+<h3 class="anchored" data-anchor-id="topical-questions">Topical questions</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
