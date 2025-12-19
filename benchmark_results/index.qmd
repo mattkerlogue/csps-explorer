@@ -23,11 +23,8 @@ median score of the participating organisations - half of organisations will
 score above this figure and half of organisations will score below this figure.
 The figures for [all respondents](all_respondents/index.qmd) are also available.
 :::
-<!--close 18 -->
 
 ## Headline results
-
-:::{.print-break-after}
 
 The People Survey's headline results focus on measuring employee engagement
 and it's key drivers. The employee engagement index is based on five questions
@@ -103,7 +100,6 @@ summary_plot = function(theme, w, h) {
 </div>
 
 :::
-<!--close 39-->
 
 :::{.g-col-8 .text-end}
 
@@ -112,34 +108,37 @@ summary_plot("000.engagement_index", 400, 200)
 ```
 
 :::
-<!--close 50-->
 
 :::
-<!--close 38-->
 
-:::{.callout-note title="Engagement index calculation" collapse="true"}
-The engagement index is calculated as a weighted average of the five questions
-that make up the index. An index score of 0% represents all respondents
-answering strongly disagree to all five questions while a index score of 100%
-represents all respondents answering strongly agree to all five questions.
+:::{.callout-tip title="Engagement index calculation" collapse="true"}
+The engagement index is calculated as a weighted average of the
+five questions that make up the index. An index score of 0% represents all
+respondents answering strongly disagree to all five questions while a index
+score of 100% represents all respondents answering strongly agree to all five questions.
 :::
-<!--close 58-->
 
-:::
-<!--close 28-->
 
 ### Drivers of engagement
 
 The People Survey measures nine 'themes' that are drivers of employee
-engagement. The summary cards below show the overall score for each theme,
-the difference from last year and the long-term trend from 2009 to 2024.
+engagement. The summary cards below show the overall score for each theme, the difference from last year and the long-term trend from 2009 to
+2024.
 
 All themes have an influence on levels of employee engagement, but some have
 stronger associations with levels of employee engagement than others. Next to
 the name of each theme is a small signal-bar icon indicating the strength of
 association between that theme and the engagement index.
 
-:::{.callout-tip title="Guide to signal-bar symbols" collapse="true"}
+:::{.callout-tip title="Theme score calculation, driver analysis and the signal-bar symbols" collapse="true"}
+
+The strength of association is derived from a combination of factor analysis
+and regression modelling of the published results. The factor analysis is
+related to the grouping of questions into themes based on their correlation
+with each other. The regression analysis assesses how correlated each factor
+is with the engagement index, the output from this analysis is then used to
+determine the strength of association between the factor and the engagement
+index.
 
 | Icon | Description |
 | -: | :------------------------- |
@@ -169,7 +168,6 @@ summary_plot("000.my_work", 200, 150)
 </div>
 
 :::
-<!--close 95-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Organisational objectives and purpose]{.theme-header}
@@ -188,7 +186,6 @@ summary_plot("000.objectives_purpose", 200, 150)
 </div>
 
 :::
-<!--close 112-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 
@@ -208,7 +205,6 @@ summary_plot("000.my_manager", 200, 150)
 </div>
 
 :::
-<!--close 129-->
 
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
@@ -228,7 +224,6 @@ summary_plot("000.my_team", 200, 150)
 </div>
 
 :::
-<!--close 147-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Learning and development]{.theme-header}
@@ -247,7 +242,6 @@ summary_plot("000.learning_development", 200, 150)
 </div>
 
 :::
-<!--close 164-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Inclusion and fair treatment]{.theme-header}
@@ -266,7 +260,6 @@ summary_plot("000.inclusion_treatment", 200, 150)
 </div>
 
 :::
-<!--close 181-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 
@@ -286,7 +279,6 @@ summary_plot("000.resources_workload", 200, 150)
 </div>
 
 :::
-<!--close 198-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Pay and benefits]{.theme-header}
@@ -305,7 +297,6 @@ summary_plot("000.pay_benefits", 200, 150)
 </div>
 
 :::
-<!--close 216-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Leadership and managing change]{.theme-header}
@@ -324,22 +315,8 @@ summary_plot("000.leadership_change", 200, 150)
 </div>
 
 :::
-<!--close 233-->
 
 :::
-<!--close 93-->
-
-:::{.callout-note title="Theme score calculation" collapse="true"}
-The score for a given theme is the average percent positive response (a
-'strongly agree' or 'agree' response) across its constituent questions.
-:::
-<!--close 253-->
-
-:::{.callout-note title="Driver calculation" collapse="true"}
-The strength of association is derived from a combination of factor analysis
-and regression modelling of the published results.
-:::
-<!--close 259-->
 
 ### Discrimination, bullying and harassment
 
@@ -360,7 +337,6 @@ summary_plot("dhb.experienced_discrimination", 200, 150)
 </div>
 
 :::
-<!--close 268-->
 
 :::{.g-col-12 .g-col-sm-4 .theme-card}
 [Experienced bullying]{.theme-header}
@@ -378,10 +354,8 @@ summary_plot("dhb.experienced_bullying", 200, 150)
 </div>
 
 :::
-<!--close 284-->
 
 :::
-<!--close 267-->
 
 ...
 
@@ -420,7 +394,6 @@ were:
 | How often do you collaborate with civil servants in other government departments and agencies to achieve common goals? (% always, often, some of the time) | 37.3% | 39.1% | <span class="micro-chart"><span class="micro-bar" data-value="39"></span></span> | +1.8 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
 
 :::
-<!--close 329-->
 
 ### Biggest decreases
 
@@ -438,7 +411,6 @@ were:
 | There are opportunities for me to develop my career in [my organisation] | 53.3% | 52.0% | <span class="micro-chart"><span class="micro-bar" data-value="52"></span></span> | -1.3 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
 
 :::
-<!--close 347-->
 
 ## Question results: Employee engagement and core themes
 
@@ -462,7 +434,6 @@ This theme has a strong association with higher levels of employee engagement.
 | I have a choice in deciding how I do my work | 80.8% | 80.9% | <span class="micro-chart"><span class="micro-bar" data-value="81"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}}|
 
 :::
-<!--close 371-->
 
 ### Organisational objectives and purpose
 
@@ -477,7 +448,6 @@ This theme has a medium association with higher levels of employee engagement.
 | I understand how my work contributes to [my organisation]'s objectives | 85.0% | 84.9% | <span class="micro-chart"><span class="micro-bar" data-value="85"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}}|
 
 :::
-<!--close 389-->
 
 ### My manager
 
@@ -500,14 +470,12 @@ This theme has a strong association with higher levels of employee engagement.
 | Have you heard of the Civil Service line management standards? (% yes) | — | 49.0% | <span class="micro-chart"><span class="micro-bar" data-value="49"></span> | — |
 
 :::
-<!--close 404-->
 
 :::{.callout-tip title="Questionnaire changes" collapse="true"}
 The question *'Have you heard of the Civil Service line management standards'*
 is new for 2024 and does not contribute towards the calculation of the 'My
 manager' theme score.
 :::
-<!--close 421-->
 
 ### My team
 
@@ -977,7 +945,7 @@ service.
 
 :::
 
-:::{.callout-tip title="Questionnaire changes" collapse="true"}
+:::{.callout-tip title="New questions" collapse="true"}
 The two questions relating to devolution policy ('I know about the devolution
 of powers from uk government and parliament to the devolved governments and
 parliaments or legislatures in Scotland, Wales and Northern Ireland' and 'I

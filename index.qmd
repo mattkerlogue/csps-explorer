@@ -9,8 +9,8 @@ toc: false
 
 :::{.column-screen .site-home .headline}
 :::{.column-screen-inset}
-This is a draft/experimental website, unless you know you're supposed to be
-here you'll probably find website a bit confusing.
+This is a draft/experimental website and is regularly being developed and
+updated so things may change.
 :::
 :::
 
