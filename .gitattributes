@@ -1,0 +1,10 @@
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.rmd linguist-detectable
+*.Rmd linguist-detectable
+*.qmd linguist-detectable
+*.R linguist-detectable
+*.lua linguist-detectable=false
+*.tex linguist-detectable=false
+*.scss linguist-detectable=false
+*.css linguist-detectable=false
