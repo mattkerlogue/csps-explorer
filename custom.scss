@@ -41,6 +41,7 @@ $popover-bg:    $gray-200 !default;
 // Fonts
 
 $font-family-sans-serif:    "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-thin:     "IBM Plex Sans Condensed", "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-monospace:     "Inconsolata", monospace !default;
 
 $headings-font-weight:      400 !default;
@@ -77,10 +78,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.read-more {
+    font-family: $font-family-sans-thin;
+    font-size: 0.75rem;
+}
+
 // Navbar
 
 .navbar {
-    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+    font-family: $font-family-sans-thin;
     font-weight: 600;
     padding-top: 20px;
 }
@@ -94,7 +100,7 @@ body {
 // callouts
 
 .callout {
-    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+    font-family: $font-family-sans-thin;
     color: $gray-700;
     font-size: 0.9rem;
     border-radius: 0px;
@@ -125,7 +131,7 @@ body {
 .theme-card, .theme-card-wide {
     background-color: $gray-100;
     padding: 10px;
-    font-family: "IBM Plex Sans Condensed", $font-family-sans-serif;
+    font-family: $font-family-sans-thin;
 
     .theme-header {
         font-weight: 700;
@@ -173,7 +179,32 @@ body {
     
     p:first-child {
         justify-self: flex-start;
-        flex-grow: 2;
+        flex-grow: 3;
+    }
+
+}
+
+.theme-card {
+    .chart-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 50%;
+        max-width: 200px;
+        max-height: 100px;
+
+        .chart-iframe {
+            position:absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 200px;
+            max-height: 100px;
+        }
+
     }
 
 }
