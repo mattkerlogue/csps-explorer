@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!R/"
+    - "!partials/"
 
 website:
   title: "CSPS Explorer"

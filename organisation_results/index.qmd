@@ -15,212 +15,11 @@ page provides a summary of all organisation scores as well as a focus on the
 results of the main departments, use the drop-down below to view the results
 for a particular organisation.
 
-[^organisation]: Add organisation defintiion note.
+[^organisation]: Add organisation definition note.
 
-```{=html}
-<form id="org-select-form" class="mb-3" method="dialog">
-<select id="org-select" name="organisations" aria-label="Select an organisation">
-    <option value="">Select an organisation to view their results</option>
-    <option value="ACAS">Acas</option>
-    <option value="ACTIBK">Accountant in Bankruptcy</option>
-    <option value="ACTREN">Active Travel England</option>
-    <option value="ANPHEL">Animal and Plant Health Agency</option>
-    <option value="ANMHEL">Animal Health</option>
-    <option value="ANHVLA">Animal Health and Veterinary Laboratories Agency</option>
-    <option value="ATTGEN">Attorney General's Office</option>
-    <option value="BLDDIG">Building Digital UK</option>
-    <option value="CABOFF">Cabinet Office</option>
-    <option value="COFINF">Central Office of Information</option>
-    <option value="CEFAS">Centre for Environment, Fisheries and Aquaculture Science</option>
-    <option value="CRTCOM">Charity Commission</option>
-    <option value="CMECOM">Child Maintenance and Enforcement Commission</option>
-    <option value="CMECCE">Child Maintenance and Enforcement Commission: Commission Executive</option>
-    <option value="CMECCS">Child Maintenance and Enforcement Commission: Corporate Services</option>
-    <option value="CMTGRP">Child Maintenance Group</option>
-    <option value="CLDSUP">Child Support Agency</option>
-    <option value="CSRVHR">Civil Service HR</option>
-    <option value="CMPHSE">Companies House</option>
-    <option value="CMPMKT">Competition and Markets Authority</option>
-    <option value="CRMINJ">Criminal Injuries Compensation Authority</option>
-    <option value="CRMRCD">Criminal Records Bureau</option>
-    <option value="CRNCOM">Crown Commercial Service</option>
-    <option value="COPFSV">Crown Office and Procurator Fiscal Service</option>
-    <option value="CRNPRS">Crown Prosecution Service</option>
-    <option value="DEFELC">Defence Electronics and Components Agency</option>
-    <option value="DEFEQP">Defence Equipment and Support</option>
-    <option value="DEFSUP">Defence Support Group</option>
-    <option value="BUSTRD">Department for Business and Trade</option>
-    <option value="BUSENG">Department for Business, Energy and Industrial Strategy</option>
-    <option value="BUSINV">Department for Business, Innovation and Skills</option>
-    <option value="CHLSCH">Department for Children, Schools and Families</option>
-    <option value="COMLGV">Department for Communities and Local Government</option>
-    <option value="CLMDSP">Department for Culture, Media and Sport</option>
-    <option value="DGCLMD">Department for Digital, Culture, Media and Sport</option>
-    <option value="EDUCAT">Department for Education</option>
-    <option value="ENGNET">Department for Energy Security and Net Zero</option>
-    <option value="DEFRA">Department for Environment, Food and Rural Affairs</option>
-    <option value="EXITEU">Department for Exiting the European Union</option>
-    <option value="INTDEV">Department for International Development</option>
-    <option value="INTTRD">Department for International Trade</option>
-    <option value="LEVLUP">Department for Levelling Up, Housing and Communities</option>
-    <option value="SCITCH">Department for Science, Innovation and Technology</option>
-    <option value="TRNSPT">Department for Transport</option>
-    <option value="WRKPEN">Department for Work and Pensions</option>
-    <option value="ENGCLM">Department of Energy and Climate Change</option>
-    <option value="HEALTH">Department of Health and Social Care</option>
-    <option value="DSCSCT">Disclosure Scotland</option>
-    <option value="DRVLIC">Driver and Vehicle Licensing Agency</option>
-    <option value="DRVHST">Driver and Vehicle Standards Agency</option>
-    <option value="DRVSTD">Driving Standards Agency</option>
-    <option value="DSTL">Dstl</option>
-    <option value="EDUSCT">Education Scotland</option>
-    <option value="ESTYN">Estyn</option>
-    <option value="FCDSRV">FCDO Services</option>
-    <option value="FRSVCL">Fire Service College</option>
-    <option value="FDENRS">Food and Environment Research Agency</option>
-    <option value="FDSTDS">Food Standards Agency</option>
-    <option value="FDSTSC">Food Standards Scotland</option>
-    <option value="FORCOM">Foreign and Commonwealth Office</option>
-    <option value="FRCMDV">Foreign, Commonwealth and Development Office</option>
-    <option value="FRLDSC">Forestry and Land Scotland</option>
-    <option value="GREGSC">General Register Office for Scotland</option>
-    <option value="GVACTS">Government Actuary's Department</option>
-    <option value="GVCARD">Government Car and Despatch Agency</option>
-    <option value="GOVEQU">Government Equalities Office</option>
-    <option value="INTAUD">Government Internal Audit Agency</option>
-    <option value="GOVLEG">Government Legal Department</option>
-    <option value="GVOFNT">Government Office Network</option>
-    <option value="GVPRCM">Government Procurement Service</option>
-    <option value="GVPRPT">Government Property Agency</option>
-    <option value="HELSFT">Health and Safety Executive</option>
-    <option value="HIGHAG">Highways Agency</option>
-    <option value="HISTSC">Historic Scotland</option>
-    <option value="CRTTRB">HM Courts and Tribunals Service</option>
-    <option value="CRTSRV">HM Courts Service</option>
-    <option value="HMCPSI">HM CPS Inspectorate</option>
-    <option value="ISPCNS">HM Inspectorate of Constabulary</option>
-    <option value="ISCFRS">HM Inspectorate of Constabulary and Fire and Rescue Services</option>
-    <option value="HMIEDU">HM Inspectorate of Education</option>
-    <option value="LNDREG">HM Land Registry</option>
-    <option value="PSSOFF">HM Passport Office</option>
-    <option value="PRPBHQ">HM Prison and Probation Service Headquarters</option>
-    <option value="PRISON">HM Prison Service</option>
-    <option value="HMRC">HM Revenue and Customs</option>
-    <option value="HMTRES">HM Treasury</option>
-    <option value="HOMEOF">Home Office</option>
-    <option value="HOFGRP">Home Office (group)</option>
-    <option value="BRDFCE">Home Office: Border Force</option>
-    <option value="IMMENF">Home Office: Immigration Enforcement</option>
-    <option value="VISAIM">Home Office: UK Visas and Immigration</option>
-    <option value="IDPASS">Identity and Passport Service</option>
-    <option value="APPTCH">Institute for Apprenticeships and Technical Education</option>
-    <option value="INTPRP">Intellectual Property Office</option>
-    <option value="LEGAID">Legal Aid Agency</option>
-    <option value="LEGSRV">Legal Services Commission</option>
-    <option value="MRTCST">Maritime and Coastguard Agency</option>
-    <option value="MRTFSH">Maritime and Fisheries Agency</option>
-    <option value="MEATHY">Meat Hygiene Service</option>
-    <option value="MEDPRD">Medicines and Healthcare products Regulatory Agency</option>
-    <option value="METOFF">Met Office</option>
-    <option value="MINDEF">Ministry of Defence</option>
-    <option value="HSCMLG">Ministry of Housing, Communities and Local Government</option>
-    <option value="MINJST">Ministry of Justice</option>
-    <option value="JSTGRP">Ministry of Justice (group)</option>
-    <option value="JSTARM">Ministry of Justice Arm's Length and Other Bodies</option>
-    <option value="NARCSC">National Archives of Scotland</option>
-    <option value="NATCRM">National Crime Agency</option>
-    <option value="NATINF">National Infrastructure Commission</option>
-    <option value="NATMSR">National Measurement and Regulation Office</option>
-    <option value="NTOFSV">National Offender Management Service</option>
-    <option value="NOMSHQ">National Offender Management Service headquarters</option>
-    <option value="NATPRB">National Probation Service</option>
-    <option value="NTRCSC">National Records of Scotland</option>
-    <option value="NATSAV">National Savings and Investments</option>
-    <option value="NTSCGV">National School of Government</option>
-    <option value="NHSTAT">NHS Test and Trace</option>
-    <option value="ONS">Office for National Statistics</option>
-    <option value="OFSTED">Office for Standards in Education, Children's Services and Skills </option>
-    <option value="FAIRTD">Office of Fair Trading</option>
-    <option value="OFGEM">Office of Gas and Electricity Markets</option>
-    <option value="OFGVCM">Office of Government Commerce</option>
-    <option value="OFQUAL">Office of Qualifications and Examinations Regulation</option>
-    <option value="OFRLRD">Office of Rail and Road</option>
-    <option value="OFPBGD">Office of the Public Guardian</option>
-    <option value="OFSCCR">Office of the Scottish Charity Regulator</option>
-    <option value="BUYSOL">OGC Buying Solutions</option>
-    <option value="ORDSRV">Ordnance Survey</option>
-    <option value="PLNISP">Planning Inspectorate</option>
-    <option value="PRBSRV">Probation Service</option>
-    <option value="PUBHEL">Public Health England</option>
-    <option value="REGSCT">Registers of Scotland</option>
-    <option value="REVSCT">Revenue Scotland</option>
-    <option value="RURPAY">Rural Payments Agency</option>
-    <option value="SCTOFF">Scotland Office and Office of the Advocate General</option>
-    <option value="SCTWLS">Scotland Office, Office of the Advocate General and Wales Office</option>
-    <option value="SCWLNI">Scotland, Wales and Northern Ireland Offices, and the Office of the Advocate General</option>
-    <option value="SCTCTS">Scottish Court Service</option>
-    <option value="SCTCTR">Scottish Courts and Tribunals Service</option>
-    <option value="SCFRST">Scottish Forestry</option>
-    <option value="SCTGVT">Scottish Government</option>
-    <option value="SCTHUS">Scottish Housing Regulator</option>
-    <option value="SCTPRS">Scottish Prison Service</option>
-    <option value="SCTPEN">Scottish Public Pensions Agency</option>
-    <option value="SCTTRB">Scottish Tribunals Service</option>
-    <option value="SRSFRD">Serious Fraud Office</option>
-    <option value="SKLFND">Skills Funding Agency</option>
-    <option value="SCSESC">Social Security Scotland</option>
-    <option value="SWISPE">Social Work Inspection Agency</option>
-    <option value="STAWSC">Student Awards Agency Scotland</option>
-    <option value="SUBDEL">Submarine Delivery Agency</option>
-    <option value="INSOLV">The Insolvency Service</option>
-    <option value="NATARC">The National Archives</option>
-    <option value="RYLPRK">The Royal Parks</option>
-    <option value="TRNSCT">Transport Scotland</option>
-    <option value="TSOL">Treasury Solicitor's Department</option>
-    <option value="TRBSRV">Tribunals Service</option>
-    <option value="UKBRDA">UK Border Agency</option>
-    <option value="UKDMO">UK Debt Management Office</option>
-    <option value="EXPFIN">UK Export Finance</option>
-    <option value="HELSEC">UK Health Security Agency</option>
-    <option value="HYDROG">UK Hydrographic Office</option>
-    <option value="UKSPCE">UK Space Agency</option>
-    <option value="UKSTAT">UK Statistics Agency</option>
-    <option value="STATGP">UK Statistics Agency (group)</option>
-    <option value="UKTRDI">UK Trade and Investment</option>
-    <option value="VALOFF">Valuation Office Agency</option>
-    <option value="VEHOPP">Vehicle and Operator Services Agency</option>
-    <option value="VEHCRT">Vehicle Certification Agency</option>
-    <option value="VETLAB">Veterinary Laboratories Agency</option>
-    <option value="VETMED">Veterinary Medicines Directorate</option>
-    <option value="WLSOFF">Wales Office</option>
-    <option value="OFWAT">Water Services Regulation Authority (Ofwat)</option>
-    <option value="WLSGVT">Welsh Government</option>
-    <option value="WLSREV">Welsh Revenue Authority</option>
-    <option value="WLTPRK">Wilton Park</option>
-</select>
-<input type="submit" id="org-results-go" class="action-button" value="Go" />
-</form>
-```
-
-```{js}
-console.log("hello")
-
-const org_select_form = document.getElementById("org-select-form");
-const org_select = document.getElementById("org-select");
-const go_button = document.getElementById("org-results-go");
-
-go_button.onclick = (e) => {
-    if (org_select.value === "") {
-        org_select_form.action = "";
-    } else if (org_select.value === "CABOFF") {
-        let org_url = "2024/" + org_select.value + ".html"
-        window.location.assign(org_url);
-    } else {
-        window.alert("Results not yet available")
-    };
-    
-};
-
+```{r}
+htmltools::includeHTML("../partials/org_select/org_select_2024.html")
+htmltools::includeScript("../partials/org_select/org_select_year.js")
 ```
 
 ## All organisations
@@ -328,13 +127,22 @@ summary_plot <- ggplot(csps_org_ee_summary, aes(x = year, group = uid_qm_txt)) +
     facet_wrap(vars(txt_label), nrow = 1) +
     theme_minimal() +
     theme(
+        text = element_text(family = "IBM Plex Sans", size = 9, colour = "#393939"),
+        axis.text = element_text(size = 9, colour = "#393939"),
+        strip.text = element_text(size = 9, colour = "#393939"),
         panel.grid.major = element_line(colour = "#e0e0e0", linewidth = 0.25),
         panel.grid.minor = element_blank(),
         panel.spacing.x = unit(12, "pt"),
-        axis.text.x = element_text(angle = 90, size = 8)
+        axis.text.x = element_text(angle = 90, size = 8),
+        axis.title.x.bottom = element_text(margin = margin(t = 6, b = 3)),
+        axis.title.y.left = element_text(margin = margin(l = 3, r = 6)),
+        legend.text = element_text(size = 9, color = "#393939")
     )
 
-inlinesvg::inline_svg_plot(summary_plot, width = 1000, height = 600)
+inlinesvg::inline_svg_plot(
+    summary_plot, width = 1000, height = 600,
+    web_fonts = svglite::fonts_as_import("IBM Plex Sans")
+)
 
 ```
 
@@ -368,7 +176,7 @@ org_diff <- csps_orgs |>
             "000.pay_benefits" ~ "Pay and benefits",
             "000.leadership_change" ~ "Leadership and managing change"
         ),
-        txt_label = stringr::str_wrap(txt_label, 12),
+        txt_label = stringr::str_wrap(txt_label, 20),
         txt_label = forcats::fct_inorder(txt_label)
     )
 
@@ -382,7 +190,7 @@ diff_plot <- ggplot(dplyr::filter(org_diff, !(diff > 10 | diff < -10))) +
     #     labels = NULL
     # ) +
     labs(
-        y = "Score", x = "Change in score 2023 to 2024"
+        y = "Score", x = "\nChange in score 2023 to 2024"
     ) +
     scale_color_gradient2(
         low = "#0072c3",
@@ -402,13 +210,24 @@ diff_plot <- ggplot(dplyr::filter(org_diff, !(diff > 10 | diff < -10))) +
     facet_wrap(vars(txt_label), nrow = 2) +
     theme_minimal() +
     theme(
+        text = element_text(family = "IBM Plex Sans", size = 9, colour = "#393939"),
+        axis.text = element_text(size = 9, color = "#393939"),
+        strip.text = element_text(size = 9, color = "#393939"),
         panel.grid.major = element_line(colour = "#e0e0e0", linewidth = 0.25),
         panel.grid.minor = element_blank(),
+        axis.title.x = element_text(margin = margin(t = 6, b = 3)),
+        axis.title.y = element_text(margin = margin(l = 3, r = 6)),
         legend.position = "none"
     )
 
-inlinesvg::inline_svg_plot(diff_plot, width = 1000, height = 500)
+inlinesvg::inline_svg_plot(
+    diff_plot, width = 1000, height = 500,
+    web_fonts = svglite::fonts_as_import("IBM Plex Sans")
+)
 ```
 
 ## Main departments
 
+This section reviews the results for the XX main Whitehall departments.
+
+.
