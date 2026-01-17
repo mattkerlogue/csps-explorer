@@ -10,8 +10,17 @@ The main results for the Civil Service are the
 [benchmark results](../index.qmd), this is the median of participating
 organisation scores. The figures presented here are the unweighted mean
 scores for all respondents. These results are heavily dominated by the
-views of civil servants in the very largest organisations: DWP, HMRC, MOD,
-Ministry of Justice and the Home Office.
+views of civil servants in the very largest organisations. Staff at the
+Department for Work and Pensions, HM Revenue and Customs, the Ministry of
+Defence, the Ministry of Justice and the Home Office account for around
+two-thirds of all Civil Servants[^size].
+
+[^size]: According to
+  [Civil Service Statistics 2025](https://www.gov.uk/government/statistics/civil-service-statistics-2025)
+  these five organisations (Department for Work and Pensions, HM Revenue and
+  Customs, the Ministry of Defence, the Ministry of Justice and the Home
+  Office, including their agencies) have a total headcount of
+  372,180 out of a total UK Civil Service headcount of 549,660.
 :::
 
 ...

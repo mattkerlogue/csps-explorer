@@ -1,8 +1,7 @@
 ---
-title: "UK Civil Service benchmark results"
+title: "Cabinet Office results"
 subtitle: |
-    The benchmark (median) results for organisations participating in the
-    UK Civil Service People Survey.
+    The 2024 People Survey results for the Cabinet Office.
 title-block-banner: true
 toc-location: left
 execute: 
@@ -17,11 +16,9 @@ extensions:
         style: "color: #a8a8a8"
 ---
 
-:::{.callout-note icon=false}
-The Civil Service benchmark is calculated for each measure as the
-median score of the participating organisations - half of organisations will
-score above this figure and half of organisations will score below this figure.
-The figures for [all respondents](all_respondents/index.qmd) are also available.
+:::{.callout-important title="Example content"}
+This page is a placeholder it currently shows the Civil Service benchmark
+results
 :::
 
 ## Headline results
@@ -646,18 +643,6 @@ This theme has a strong association with higher levels of employee engagement.
 
 :::
 
-:::{.callout-warning title="Caution when interpreting differences between years" collapse="true"}
-The benchmark figures are calculated as the median score across all
-participating organisations for each separate measure. For the questions on
-future intentions each question response is treated as a separate measure, as a
-result the net sum of differences may not be zero due to the underlying
-variation in organisation scores.
-
-Depending on the nature of your interest in this question, the results for
-[all respondents](all_respondents/index.qmd) may be more relevant than the
-Civil Service benchmark.
-:::
-
 ## Question results: Discrimination, bullying and harassment
 
 The People Survey asks civil servants if they have experienced either
@@ -681,30 +666,6 @@ better understand the nature of their experiences.
 | No | 86.5% | 86.4% | <span class="micro-chart"><span class="micro-bar" data-value="86"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
 | Prefer not to say | 6.3% | 6.5% | <span class="micro-chart"><span class="micro-bar" data-value="7"></span> | +0.2 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
 : Have you been discriminated against at work in the last 12 months?
-
-| Response (multiple-choice) | 2023 | 2024 | | Difference |
-| :---------------- | ----: | ----: | :- | ----: |
-| Age | 16.2% | 16.4% | <span class="micro-chart"><span class="micro-bar" data-value="16"></span> | +0.2 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Caring responsibilities | 10.0% | 10.7% | <span class="micro-chart"><span class="micro-bar" data-value="11"></span> | +0.7 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Disability | 14.7% | 18.9% | <span class="micro-chart"><span class="micro-bar" data-value="19"></span> | +4.2 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Ethnic background | 8.4% | 9.2% | <span class="micro-chart"><span class="micro-bar" data-value="9"></span> | +0.8 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Gender | 15.3% | 15.6% | <span class="micro-chart"><span class="micro-bar" data-value="16"></span> | +0.3 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Gender reassignment or perceived gender | 0.0% | 0.0% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
-| Grade or responsibility level | 23.2% | 25.4% | <span class="micro-chart"><span class="micro-bar" data-value="25"></span> | +2.2 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Main spoken, written language or language ability | 3.7% | 3.8% | <span class="micro-chart"><span class="micro-bar" data-value="4"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Marital status or civil partnership | 0.2% | 0.0% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | -0.2 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Mental health | 12.7% | 12.8% | <span class="micro-chart"><span class="micro-bar" data-value="13"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Pay | 7.6% | 7.2% | <span class="micro-chart"><span class="micro-bar" data-value="7"></span> | -0.4 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Pregnancy, maternity or paternity | 1.4% | 2.1% | <span class="micro-chart"><span class="micro-bar" data-value="2"></span> | +0.7 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Religion or belief | 2.1% | 2.0% | <span class="micro-chart"><span class="micro-bar" data-value="2"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Sex | 3.3% | 3.6% | <span class="micro-chart"><span class="micro-bar" data-value="4"></span> | +0.3 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Sexual orientation | 1.8% | 1.8% | <span class="micro-chart"><span class="micro-bar" data-value="2"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
-| Social or educational background | 4.1% | 5.1% | <span class="micro-chart"><span class="micro-bar" data-value="5"></span> | +1.0 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Working location | 14.7% | 14.8% | <span class="micro-chart"><span class="micro-bar" data-value="15"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Working pattern | 15.3% | 15.0% | <span class="micro-chart"><span class="micro-bar" data-value="15"></span> | -0.3 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Any other grounds | 10.8% | 10.3% | <span class="micro-chart"><span class="micro-bar" data-value="10"></span> | -0.5 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Prefer not to say | 10.6% | 11.1% | <span class="micro-chart"><span class="micro-bar" data-value="11"></span> | +0.5 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-: On which of the following grounds were you discriminated against? *(asked only to those whose who said they experienced discrimination at work in the past 12 months)*
 
 :::
 
@@ -732,48 +693,6 @@ better understand the nature of their experiences.
 
 :::
 
-#### Nature of bullying and harassment
-
-:::{.column-page-inset-right .results-table}
-
-| Response (multiple-choice) | 2023 | 2024 | | Difference |
-| :---------------- | ----: | ----: | :- | ----: |
-| Comments about my personal appearance or accent | 8.0% | 7.3% | <span class="micro-chart"><span class="micro-bar" data-value="7"></span> | -0.7 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Sexual harassment (for example, sexual comments or jokes, unwelcome sexual advances, touching or assault) | 3.8% | 2.7% | <span class="micro-chart"><span class="micro-bar" data-value="3"></span> | -1.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Spreading gossip or making false accusations about me | 22.3% | 25.0% | <span class="micro-chart"><span class="micro-bar" data-value="25"></span> | +2.7 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Intimidation, or verbal or written aggression (for example, shouting, making threats, sending aggressive emails) | 35.8% | 35.9% | <span class="micro-chart"><span class="micro-bar" data-value="36"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Physical assault (for example, object thrown at me, pushed, hit) | 0.0% | 0.0% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
-| Humiliated in front of team or others | 36.4% | 36.5% | <span class="micro-chart"><span class="micro-bar" data-value="37"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Negative micromanagement (for example, excessive control, made to feel incompetent) | 52.9% | 51.6% | <span class="micro-chart"><span class="micro-bar" data-value="52"></span> | -1.3 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Removal of job responsibilities, unconstructive criticism, or changing expectations | 30.9% | 30.9% | <span class="micro-chart"><span class="micro-bar" data-value="31"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
-| Treated less favourably to others | 37.8% | 39.1% | <span class="micro-chart"><span class="micro-bar" data-value="39"></span> | +1.3 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Ignored, excluded, marginalised | 35.3% | 37.3% | <span class="micro-chart"><span class="micro-bar" data-value="37"></span> | +2.0 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Undermining or taking credit for my work | 30.1% | 27.4% | <span class="micro-chart"><span class="micro-bar" data-value="27"></span> | -2.7 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Denied time off for personal ill health | 1.6% | 1.7% | <span class="micro-chart"><span class="micro-bar" data-value="2"></span> | +0.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Denied time off for family or caring responsibilities | 2.3% | 2.5% | <span class="micro-chart"><span class="micro-bar" data-value="3"></span> | +0.2 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Disclosure of personal or sensitive information to colleagues without my consent | 7.9% | 8.7% | <span class="micro-chart"><span class="micro-bar" data-value="9"></span> | +0.8 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Unhelpful comments about my mental health or being off sick | 10.0% | 11.1% | <span class="micro-chart"><span class="micro-bar" data-value="11"></span> | +1.1 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Something else not listed here | 7.3% | 7.7% | <span class="micro-chart"><span class="micro-bar" data-value="8"></span> | +0.4 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Prefer not to say | 2.9% | 3.5% | <span class="micro-chart"><span class="micro-bar" data-value="4"></span> | +0.6 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-: How would you describe the nature of the bullying and or harassment you experienced? *(asked only to those whose who said they experienced bullying or harassment at work in the past 12 months)*
-
-| Response (multiple-choice) | 2023 | 2024 | | Difference |
-| :---------------- | ----: | ----: | :- | ----: |
-| A colleague in my area, directorate or division | 33.7% | 36.0% | <span class="micro-chart"><span class="micro-bar" data-value="36"></span> | +2.3 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| A colleague in a different area, directorate, division of my organisation | 11.2% | 11.1% | <span class="micro-chart"><span class="micro-bar" data-value="11"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| My manager | 31.8% | 30.8% | <span class="micro-chart"><span class="micro-bar" data-value="31"></span> | -1.0 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Another senior member of staff in my organisation | 23.4% | 24.2% | <span class="micro-chart"><span class="micro-bar" data-value="24"></span> | +0.8 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Someone I manage | 4.8% | 5.1% | <span class="micro-chart"><span class="micro-bar" data-value="5"></span> | +0.3 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| Someone working in a different Civil Service organisation | 3.0% | 1.9% | <span class="micro-chart"><span class="micro-bar" data-value="2"></span> | -1.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Someone working for a non-Civil Service organisation | 0.5% | 0.0% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | -0.5 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| A contractor | 0.8% | 0.7% | <span class="micro-chart"><span class="micro-bar" data-value="1"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| A service user (for example, customer, claimant, offender) | 0.7% | 0.3% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | -0.4 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| A member of the public | 0.0% | 0.0% | <span class="micro-chart"><span class="micro-bar" data-value="0"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
-| Someone else not listed here | 4.1% | 3.9% | <span class="micro-chart"><span class="micro-bar" data-value="4"></span> | -0.2 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| Prefer not to say | 8.6% | 9.2% | <span class="micro-chart"><span class="micro-bar" data-value="9"></span> | +0.6 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-: Who bullied or harassed you? *(asked only to those whose who said they experienced bullying or harassment at work in the past 12 months)*
-
-:::
 
 #### Reporting bullying and harassment
 
@@ -785,24 +704,6 @@ better understand the nature of their experiences.
 | No | 45.1% | 45.6% | <span class="micro-chart"><span class="micro-bar" data-value="46"></span> | +0.5 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
 | Ptns | 13.9% | 13.9% | <span class="micro-chart"><span class="micro-bar" data-value="14"></span> | ±0.0 {{< iconify not-available title="Score unchanged icon" label="Score unchanged icon" >}} |
 : Did you report your experience of bullying and harassment? *(asked only to those whose who said they experienced bullying or harassment at work in the past 12 months)*
-
-| Response (multiple-choice) | 2023 | 2024 | | Difference |
-| :---------------- | ----: | ----: | :- | ----: |
-| I raised a formal complaint | 17.3% | 18.7% | <span class="micro-chart"><span class="micro-bar" data-value="19"></span> | +1.4 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| I reported it in another way, through less formal means | 58.5% | 59.2% | <span class="micro-chart"><span class="micro-bar" data-value="59"></span> | +0.7 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| I confided in someone (for example, a colleague) | 35.0% | 36.4% | <span class="micro-chart"><span class="micro-bar" data-value="36"></span> | +1.4 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| In another way | 6.1% | 5.2% | <span class="micro-chart"><span class="micro-bar" data-value="5"></span> | -0.9 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-: How did you report your experience of bullying and harassment? *(asked only to those who said they reported their experience of bullying and harassment)*
-
-| Response (multiple-choice) | 2023 | 2024 | | Difference |
-| :---------------- | ----: | ----: | :- | ----: |
-| I felt I might jeopardise my job | 40.0% | 39.2% | <span class="micro-chart"><span class="micro-bar" data-value="39"></span> | -0.8 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| I did not want to be seen as a troublemaker | 44.2% | 46.6% | <span class="micro-chart"><span class="micro-bar" data-value="47"></span> | +2.4 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| I did not believe that corrective action would be taken | 66.1% | 65.5% | <span class="micro-chart"><span class="micro-bar" data-value="66"></span> | -0.6 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| I did not know how to report it or who to speak to | 9.4% | 10.0% | <span class="micro-chart"><span class="micro-bar" data-value="10"></span> | +0.6 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-| The behaviour stopped before I could report it | 4.2% | 4.1% | <span class="micro-chart"><span class="micro-bar" data-value="4"></span> | -0.1 {{< iconify triangle-down-solid title="Score decreased icon" label="Score decreased icon" >}} |
-| I did not report it for another reason | 19.0% | 19.5% | <span class="micro-chart"><span class="micro-bar" data-value="20"></span> | +0.5 {{< iconify triangle-solid title="Score increased icon" label="Score increased icon" >}} |
-: Why did you not report your experience of bullying and harassment? *(asked only to those who said they did not report their experience of bullying and harassment)*
 
 :::
 

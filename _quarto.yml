@@ -12,13 +12,19 @@ website:
             href: results/index.qmd
           - text: "---"
           - text: Civil Service results
-          - text: Civil Service Benchmark
+          - text: Civil Service Benchmark 2024
             href: benchmark_results/index.qmd
-          - text: All respondents
+          - text: All respondents 2024
             href: benchmark_results/all_respondents/index.qmd
           - text: "---"
-          - text: Organisations
+          - text: Organisation results
+          - text: Organisation summary
+            href: organisation_results/index.qmd
+          - text: Individual organisations
+            href: organisation_results/2024/index.qmd
+          - text: "---"
           - text: Demographics
+          - text: "--"
           - text: Interactive
       - text: Insights
       - about.qmd
@@ -27,11 +33,13 @@ website:
 
 format:
   html:
+    title-block-banner: true
     theme:
       - custom.scss
     css: 
       - styles.css
     toc: true
+    toc-location: left
 
 
 extensions:

@@ -1,106 +1,134 @@
-Red 100 2d0709
-Red 90 520408
-Red 80 750e13
-Red 70 a2191f
-Red 60 da1e28
-Red 50 fa4d56
-Red 40 ff8389
-Red 30 ffb3b8
-Red 20 ffd7d9
-Red 10 fff1f1
-Magenta 100 2a0a18
-Magenta 90 510224
-Magenta 80 740937
-Magenta 70 9f1853
-Magenta 60 d02670
-Magenta 50 ee5396
-Magenta 40 ff7eb6
-Magenta 30 ffafd2
-Magenta 20 ffd6e8
-Magenta 10 fff0f7
-Purple 100 1c0f30
-Purple 90 31135e
-Purple 80 491d8b
-Purple 70 6929c4
-Purple 60 8a3ffc
-Purple 50 a56eff
-Purple 40 be95ff
-Purple 30 d4bbff
-Purple 20 e8daff
-Purple 10 f6f2ff
-Blue 100 001141
-Blue 90 001d6c
-Blue 80 002d9c
-Blue 70 0043ce
-Blue 60 0f62fe
-Blue 50 4589ff
-Blue 40 78a9ff
-Blue 30 a6c8ff
-Blue 20 d0e2ff
-Blue 10 edf5ff
-Cyan 100 061727
-Cyan 90 012749
-Cyan 80 003a6d
-Cyan 70 00539a
-Cyan 60 0072c3
-Cyan 50 1192e8
-Cyan 40 33b1ff
-Cyan 30 82cfff
-Cyan 20 bae6ff
-Cyan 10 e5f6ff
-Teal 100 081a1c
-Teal 90 022b30
-Teal 80 004144
-Teal 70 005d5d
-Teal 60 007d79
-Teal 50 009d9a
-Teal 40 08bdba
-Teal 30 3ddbd9
-Teal 20 9ef0f0
-Teal 10 d9fbfb
-Green 100 071908
-Green 90 022d0d
-Green 80 044317
-Green 70 0e6027
-Green 60 198038
-Green 50 24a148
-Green 40 42be65
-Green 30 6fdc8c
-Green 20 a7f0ba
-Green 10 defbe6
-Black 000000
-Cool Gray 100 121619
-Cool Gray 90 21272a
-Cool Gray 80 343a3f
-Cool Gray 70 4d5358
-Cool Gray 60 697077
-Cool Gray 50 878d96
-Cool Gray 40 a2a9b0
-Cool Gray 30 c1c7cd
-Cool Gray 20 dde1e6
-Cool Gray 10 f2f4f8
-White ffffff
-Black 000000
-Gray 100 161616
-Gray 90 262626
-Gray 80 393939
-Gray 70 525252
-Gray 60 6f6f6f
-Gray 50 8d8d8d
-Gray 40 a8a8a8
-Gray 30 c6c6c6
-Gray 20 e0e0e0
-Gray 10 f4f4f4
-White ffffff
-Black 000000
-Warm Gray 100 171414
-Warm Gray 90 272525
-Warm Gray 80 3c3838
-Warm Gray 70 565151
-Warm Gray 60 726e6e
-Warm Gray 50 8f8b8b
-Warm Gray 40 ada8a8
-Warm Gray 30 cac5c4
-Warm Gray 20 e5e0df
-Warm Gray 10 f7f3f2
-White
+blue-10 #edf5ff
+blue-20 #d0e2ff
+blue-30 #a6c8ff
+blue-40 #78a9ff
+blue-50 #4589ff
+blue-60 #0f62fe
+blue-70 #0043ce
+blue-80 #002d9c
+blue-90 #001d6c
+blue-100 #001141
+
+cyan-10 #e5f6ff
+cyan-20 #bae6ff
+cyan-30 #82cfff
+cyan-40 #33b1ff
+cyan-50 #1192e8
+cyan-60 #0072c3
+cyan-70 #00539a
+cyan-80 #003a6d
+cyan-90 #012749
+cyan-100 #061727
+
+green-10 #defbe6
+green-20 #a7f0ba
+green-30 #6fdc8c
+green-40 #42be65
+green-50 #24a148
+green-60 #198038
+green-70 #0e6027
+green-80 #044317
+green-90 #022d0d
+green-100 #071908
+
+magenta-10 #fff0f7
+magenta-20 #ffd6e8
+magenta-30 #ffafd2
+magenta-40 #ff7eb6
+magenta-50 #ee5396
+magenta-60 #d02670
+magenta-70 #9f1853
+magenta-80 #740937
+magenta-90 #510224
+magenta-100 #2a0a18
+
+orange-10 #fff2e8
+orange-20 #ffd9be
+orange-30 #ffb784
+orange-40 #ff832b
+orange-50 #eb6200
+orange-60 #ba4e00
+orange-70 #8a3800
+orange-80 #5e2900
+orange-90 #3e1a00
+orange-100 #231000
+
+purple-10 #f6f2ff
+purple-20 #e8daff
+purple-30 #d4bbff
+purple-40 #be95ff
+purple-50 #a56eff
+purple-60 #8a3ffc
+purple-70 #6929c4
+purple-80 #491d8b
+purple-90 #31135e
+purple-100 #1c0f30
+
+red-10 #fff1f1
+red-20 #ffd7d9
+red-30 #ffb3b8
+red-40 #ff8389
+red-50 #fa4d56
+red-60 #da1e28
+red-70 #a2191f
+red-80 #750e13
+red-90 #520408
+red-100 #2d0709
+
+teal-10 #d9fbfb
+teal-20 #9ef0f0
+teal-30 #3ddbd9
+teal-40 #08bdba
+teal-50 #009d9a
+teal-60 #007d79
+teal-70 #005d5d
+teal-80 #004144
+teal-90 #022b30
+teal-100 #081a1c
+
+yellow-10 #fcf4d6
+yellow-20 #fddc69
+yellow-30 #f1c21b
+yellow-40 #d2a106
+yellow-50 #b28600
+yellow-60 #8e6a00
+yellow-70 #684e00
+yellow-80 #483700
+yellow-90 #302400
+yellow-100 #1c1500
+
+black-100 #000000
+white-0 #ffffff
+
+gray-10 #f4f4f4
+gray-20 #e0e0e0
+gray-30 #c6c6c6
+gray-40 #a8a8a8
+gray-50 #8d8d8d
+gray-60 #6f6f6f
+gray-70 #525252
+gray-80 #393939
+gray-90 #262626
+gray-100 #161616
+
+warmGray-10 #f7f3f2
+warmGray-20 #e5e0df
+warmGray-30 #cac5c4
+warmGray-40 #ada8a8
+warmGray-50 #8f8b8b
+warmGray-60 #726e6e
+warmGray-70 #565151
+warmGray-80 #3c3838
+warmGray-90 #272525
+warmGray-100 #171414
+
+coolGray-10 #f2f4f8
+coolGray-20 #dde1e6
+coolGray-30 #c1c7cd
+coolGray-40 #a2a9b0
+coolGray-50 #878d96
+coolGray-60 #697077
+coolGray-70 #4d5358
+coolGray-80 #343a3f
+coolGray-90 #21272a
+coolGray-100 #121619

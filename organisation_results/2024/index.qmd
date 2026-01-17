@@ -1,0 +1,21 @@
+---
+title: "Organisation results: 2024"
+subtitle: "View the 2024 People Survey results of individual organisations"
+listing:
+    id: organisation-listing
+    type: table
+    sort: title
+    contents:
+        - "!(index.qmd)"
+        - "*.qmd"
+    fields: [title]
+    field-display-names: 
+      title: "Organisation"
+---
+
+In 2024 the Civil Service People Survey was carried out in 107 organisations.
+Use the table below to navigate to the results of the organisation you are
+interested in.
+
+:::{#organisation-listing}
+:::

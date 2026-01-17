@@ -542,3 +542,15 @@ body {
         width: 100px;
     }
 }
+
+form#org-select-form {
+    display: flex;
+    gap: 10px 20px;
+}
+
+.action-button {
+    color: $white;
+    background-color: $green;
+    border: 0;
+    padding: 0.5em;
+}
