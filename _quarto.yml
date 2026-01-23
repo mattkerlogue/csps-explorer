@@ -31,9 +31,13 @@ website:
           - text: "--"
           - text: Interactive
       - text: Insights
-      - about.qmd
+        href: insights/index.qmd
+      - text: "About"
+        href: about.qmd
   bread-crumbs: true
   back-to-top-navigation: true
+
+bibliography: bib.yml
 
 format:
   html:
@@ -44,7 +48,9 @@ format:
       - styles.css
     toc: true
     toc-location: left
-
+    fig-cap-location: top
+    tbl-cap-location: top
+    link-external-icon: true
 
 extensions:
   iconify:

@@ -1,0 +1,17 @@
+format:
+  html:
+    title-block-banner: true
+    toc-expand: 2
+    code-fold: true
+    code-overflow: wrap
+    code-link: true
+    include-in-header:
+      - text: >
+          <script>
+            window.onload = (e) => {
+              document.querySelector("a.nav-link[href$=\"insights/\"]").classList.add("active");
+            }
+          </script>
+knitr:
+    opts_chunk: 
+      collapse: true

@@ -97,6 +97,11 @@ body {
     text-transform: none !important;
 }
 
+#quarto-header .navbar-nav .nav-link.active {
+    color: $teal;
+    border-bottom: 2px solid $teal;
+}
+
 // callouts
 
 .callout {
@@ -553,4 +558,46 @@ form#org-select-form {
     background-color: $green;
     border: 0;
     padding: 0.5em;
+}
+
+.source-note {
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.insight-article main p:not(.source-note),
+.insight-article main ul {
+    font-family: 'Newsreader', sans-serif;
+}
+
+.quarto-listing .quarto-grid-item.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    background-color: #f4f4f4;
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .card-subtitle {
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+
+    .card-attribution {
+        font-size: 0.8rem;
+    }
+}
+
+figure.quarto-float-fig figcaption.quarto-float-caption-top,
+figure.quarto-float-tbl figcaption.quarto-float-caption-top {
+    text-align: left !important;
+    color: $teal;
+    font-family: $font-family-sans-thin;
+    font-weight: 500;
+}
+
+table.small {
+    font-size: 0.9em;
 }

@@ -1,0 +1,256 @@
+references:
+
+- id: cspshub
+  title: "Civil Service People Survey Hub - GOV.UK"
+  author:
+    - literal: Cabinet Office
+  type: webpage
+  url: https://www.gov.uk/government/collections/civil-service-people-survey-hub
+  issued:
+    - year: 2025
+      month: 01
+      day: 30
+  original-date:
+    - year: 2012
+      month: 08
+      day: 31
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsqualityinfo2024
+  title: Quality and Methodology Information
+  container-title: "Civil Service People Survey: 2024 results - GOV.UK"
+  author:
+    - literal: Cabinet Office
+  type: report
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2024-results/quality-and-methodology-information-for-the-civil-service-people-survey-2024
+  issued:
+    - year: 2025
+      month: 05
+      day: 06
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: Baileyengagement2015
+  title: >
+    Evaluating the evidence on employee engagement and its potential benefits
+    to NHS staff: a narrative synthesis of the literature
+  author:
+    - family: Bailey
+      given: Catherine
+    - family: Madden
+      given: Adrian
+    - family: Alfes
+      given: Kerstin
+    - family: Fletcher
+      given: Luke
+    - family: Robinson
+      given: Dilys
+    - family: Holmes
+      given: Jenny
+    - family: Buzzeo
+      given: Jonathan
+    - family: Currie
+      given: Graeme
+  type: article-journal
+  doi: 10.3310/hsdr03260
+  container-title: Health and Social Care Delivery Research
+  volume: 3
+  issue: 26
+  issued: 
+    - year: 2015
+  url: https://doi.org/10.3310/hsdr03260
+  accessed:
+    - year: 2026
+      month: 01
+      day: 02
+
+- id: holpublicservice1998
+  title: "Part 4: The Civil Service Today"
+  container-title: Public Service Committee Report (HL 1997-98 (55))
+  author: 
+    - literal: Public Service Select Committee
+  type: report
+  container title: Public Service Committee Report
+  url: https://publications.parliament.uk/pa/ld199798/ldselect/ldpubsrv/055/psrep10.htm
+  issued:
+    - year: 1998
+  accessed:
+    - year: 2026
+      month: 01
+      day: 02
+
+- id: cscareers2026
+  title: "Civil Service grades and salaries"
+  container-title: Civil Service Careers
+  author: Cabinet Office
+  type: website
+  url: https://www.civil-service-careers.gov.uk/civil-service-grades-and-pay/
+  accessed:
+    - year: 2026
+      month: 01
+      day: 02
+
+- id: cspsdata2013
+  title: "Civil Service People Survey 2013"
+  author: Cabinet Office
+  type: website
+  url: https://webarchive.nationalarchives.gov.uk/ukgwa/20140310230334/http://www.civilservice.gov.uk/about/improving/employee-engagement-in-the-civil-service/people-survey-2013
+  issued:
+    - year: 2013
+  accessed:
+    - year: 2026
+      month: 01
+      day: 10
+
+- id: cspsdata2014
+  title: "Civil Service People Survey: 2014 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2014-results
+  issued:
+    - year: 2014
+  accessed:
+    - year: 2026
+      month: 01
+      day: 10
+
+- id: cspsdata2015
+  title: "Civil Service People Survey: 2015 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2015-results
+  issued:
+    - year: 2015
+  accessed:
+    - year: 2026
+      month: 01
+      day: 10
+
+- id: cspsdata2016
+  title: "Civil Service People Survey: 2016 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2016-results
+  issued:
+    - year: 2016
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2017
+  title: "Civil Service People Survey: 2017 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2017-results--2
+  issued:
+    - year: 2017
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2018
+  title: "Civil Service People Survey: 2018 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2018-results
+  issued:
+    - year: 2018
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2019
+  title: "Civil Service People Survey: 2019 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2019-results
+  issued:
+    - year: 2020
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2020
+  title: "Civil Service People Survey: 2020 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2020-results
+  issued:
+    - year: 2021
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2021
+  title: "Civil Service People Survey: 2021 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2021-results
+  issued:
+    - year: 2022
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2022
+  title: "Civil Service People Survey: 2022 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2022-results
+  issued:
+    - year: 2023
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2023
+  title: "Civil Service People Survey: 2023 results"
+  author: Cabinet Office
+  type: website
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2023-results
+  issued:
+    - year: 2024
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspsdata2024
+  title: "Civil Service People Survey: 2024 results"
+  author: Cabinet Office
+  type: website
+  url:  https://www.gov.uk/government/publications/civil-service-people-survey-2024-results
+  issued:
+    - year: 2025
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10
+
+- id: cspstechguide2014
+  title: Technical guide
+  container-title: "Civil Service People Survey: 2014 results - GOV.UK"
+  author:
+    - literal: Cabinet Office
+  type: report
+  url: https://www.gov.uk/government/publications/civil-service-people-survey-2014-results
+  issued:
+    - year: 2014
+      month: 11
+      day: 20
+  accessed:
+    - year: 2025
+      month: 12
+      day: 10

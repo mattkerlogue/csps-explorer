@@ -1,0 +1,23 @@
+---
+title: People Survey Insights
+subtitle: >
+    Analysis and thought-pieces that explore the results and methodology of
+    the Civil Service People Survey.
+listing:
+    id: insight-listing
+    type: grid
+    contents:
+        - "!(index.qmd)"
+        - "*.qmd"
+    sort:
+        - "date"
+        - "title desc"
+    sort-ui: [title, date]
+    filter-ui: [title, subtitle, date]
+    categories: true
+    date-format: DD-MMM-YY
+    fields: [image, title, subtitle, author, date]
+---
+
+:::{#insight-listing}
+:::

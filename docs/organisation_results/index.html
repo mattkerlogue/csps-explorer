@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-8a5d2426d2772284d6c4e077af3c41fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d9cf2a6ef744244e6e9f9d409dc4f19d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ea681565ae43b25b77006b66d6ac1a42.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +68,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+  window.onload = (e) => {
+    console.log("hello");
+    document.getElementById("nav-menu-results").classList.add("active");
+  }
+</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -126,9 +132,8 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <span class="nav-link">
-<span class="menu-text">Insights</span>
-    </span>
+    <a class="nav-link" href="../insights/index.html"> 
+<span class="menu-text">Insights</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
@@ -318,13 +323,16 @@ go_button.onclick = (e) => {
 <h2 class="anchored" data-anchor-id="all-organisations">All organisations</h2>
 <p>Across all most all questions and measures in the People Survey there is substantial variation in organisation scores. In 2024 the range of organisation scores for the headline engagement index ranged from 52% to 80.5%.</p>
 <div class="cell column-page-inset-right fig-cap-location-top">
+<div class="cell-output cell-output-stderr">
+<pre data-cap-location="top"><code>/var/folders/vf/hq38kq_s4nn_kjwmhz7j0m380000gn/T//RtmpsRoLXi/file5c6c6455b536.svg</code></pre>
+</div>
 <div id="fig-org-summary" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-org-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Summary of organisation scores for the engagement index and theme scores 2009-2024
 </figcaption>
 <div aria-describedby="fig-org-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<svg viewbox="0 0 750.00 450.00" role="img" id="svg-10397b"><g class="svglite"><defs><style type="text/css">
+<svg viewbox="0 0 750.00 450.00" role="img" id="svg-15f145"><g class="svglite"><defs><style type="text/css">
     @import url("https://fonts.bunny.net/css2?family=IBM+Plex+Sans&display=swap");
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
@@ -366,13 +374,16 @@ Figure&nbsp;1: Summary of organisation scores for the engagement index and theme
 </div>
 </div>
 <div class="cell column-page-inset-right fig-cap-location-top">
+<div class="cell-output cell-output-stderr">
+<pre data-cap-location="top"><code>/var/folders/vf/hq38kq_s4nn_kjwmhz7j0m380000gn/T//RtmpsRoLXi/file5c6c37d124b5.svg</code></pre>
+</div>
 <div id="fig-org-diff" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-org-diff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Summary of changes in organisation scores for the engagement index and theme scores from 2023 to 2024
 </figcaption>
 <div aria-describedby="fig-org-diff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<svg viewbox="0 0 750.00 375.00" role="img" id="svg-c15b83"><g class="svglite"><defs><style type="text/css">
+<svg viewbox="0 0 750.00 375.00" role="img" id="svg-61e299"><g class="svglite"><defs><style type="text/css">
     @import url("https://fonts.bunny.net/css2?family=IBM+Plex+Sans&display=swap");
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
       fill: none;
@@ -518,6 +529,8 @@ Figure&nbsp;2: Summary of changes in organisation scores for the engagement inde
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

@@ -1,0 +1,9 @@
+format:
+  html:
+    include-in-header: 
+      - text: >
+          <script>
+            window.onload = (e) => {
+              document.getElementById("nav-menu-results").classList.add("active");
+            }
+          </script>

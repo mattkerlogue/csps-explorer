@@ -1,0 +1,288 @@
+# Glossary file
+# ==============
+# each entry should have a 'term' and either a 'definition' or a 'refers_to',
+# an 'id' should be included if the term is cross-referenced by other terms or
+# from outside the document
+#
+# definitions should be written in markdown, if including footnotes or
+# blockquotes within the definition ensure two-lines separate these from the
+# previous paragraph to enable proper parsing
+#
+# use `refers_to` to specify an `id` to cross-reference back to, for these the
+# definition will be constructed as "See [term](#id).", if you wish to
+# customise the display use markdown in the definition.
+
+- term: agency
+  refers_to: organisation
+- term: civil servant
+  definition: |
+    An official employed by the Crown that works in the UK
+    [Civil Service](#civil-service).
+- term: Civil Service
+  id: civil-service
+  definition: |
+    The term "Civil Service" means the
+    [UK Civil Service](https://www.gov.uk/government/organisations/civil-service),
+    that is the body of officials employed by the Crown that work in departments
+    and agencies of the UK's central government, the Scottish Government and the
+    Welsh Government. Historically, it has been called the *'Home Civil Service'*.
+    The vast majority of civil servants working for the UK Civil Service are
+    invited to take part in the survey[^participation].
+    
+    [^participation]: Very small organisations are not obliged to participate
+      in the People Survey. Some civil servants provide secretariat services to
+      advisory bodies that are independent of government, in most cases these
+      staff participate in the People Survey through their 'home department'
+      (as they are employed by the government that 'sponsors' the advisory
+      body) however in some cases these staff do not participate in the survey.
+    
+    The Diplomatic Service are the combination of Crown employees working for
+    the Foreign, Commonwealth and Development Office and staff employed locally
+    by British diplomatic missions and posts (e.g. High Commissions, Embassies
+    or Consulates). Staff of the diplomatic service, both FCDO Crown employees
+    and those locally employed, participate in the People Survey.
+
+    Unlike the Scottish and Welsh Governments, the Northern Ireland Executive is
+    supported by a legally separate body of civil servants called the Northern
+    Ireland Civil Service. Staff for the Northern Ireland Civil Service do not
+    participate in the People Survey. Staff of UK government departments or
+    agencies based in Northern Ireland do participate in the survey as they are
+    UK civil servants.
+- term: Civil Service People Survey
+  id: civil-service-people-survey
+  definition: |
+    The [Civil Service People Survey](https://www.gov.uk/government/collections/civil-service-people-survey-hub)
+    is the annual employee attitudes survey of civil servants working in the UK
+    [Civil Service](#civil-service).
+- term: core questionnaire
+  see_also:
+    - variable-term
+    - demographics
+  definition: |
+    The bulk of the People Survey uses a common questionnaire seen by all
+    respondents no matter which [organisation](#organisation) they participate
+    through, this is called the 'core questionnaire'. Some items of the core
+    questionnaire use ['variable terms'](#variable-term) that adapt the language
+    of the question so that it reflects the organisational context of the
+    respondent. In addition to the core questionnaire organisations can chose
+    a small number of additional 'local' questions bespoke to their needs, these
+    are not included in the central datasets published by the Cabinet Office.
+- term: CSPS
+  id: csps
+  definition: |
+    'CSPS' is a commonly used acronym to refer to the Civil Service People
+    Survey. Like many terms used in the Civil Service/government this acronym
+    is not unique. In the context of this companion and the data processing it
+    describes, 'CSPS' is only used to refer to the Civil Service People Survey.
+
+    The other main use in the context of the management of the Civil
+    Service is the Civil Service Pension Scheme (also 'CSPS', all capitalised).
+
+    Elsewhere in government, Community Safety Partnerships (local partnerships
+    of public service organisations in England and Wales) and Co-ordinated
+    Support Plans (a legal support plan in Scotland for children with
+    long-term, multiple or complex support needs) can both be referred to using
+    the acronym 'CSP' and is pluralised as 'CSPs' (note the lower-case 's').
+- term: demographic questions, demographic categories
+  id: demographics
+  see_also:
+    - core-questionnaire
+  definition: |
+    In addition to attitudinal questions the People Survey includes a number of
+    'demographic' questions that allow the results of the survey to be broken
+    down by different characteristics of respondents. The demographics are split
+    in to two major groups: work-related characteristics such as a respondent's
+    [grade](#grade), their working location or the type of role they do; and,
+    personal characteristics such as a respondent's [sex](#sex-and-gender),
+    their age or whether they have childcare responsibilities. Individual
+    responses to demographic questions are referred to as 'demographic
+    categories'.
+- term: department, departmental family, departmental group
+  refers_to: organisation
+- term: EEI, EES
+  refers_to: engagement-index
+- term: employee engagement
+  id: employee-engagement
+  definition: |
+    The concept underlying the measurement framework for the Civil Service
+    People Survey. There is no singular definition of employee engagement,
+    however @Baileyengagement2015 notes that many definitions have developed as
+    a result of the "positive psychology" movement. In regards to the People
+    Survey, the @cspsqualityinfo2024 describes employee engagement as:
+
+    > a workplace approach designed to ensure that employees are committed to
+    > their organisation's goals and values, motivated to contribute to
+    > organisational success, and are able at the same time to enhance their
+    > own sense of well-being.
+- term: employee engagement index
+  id: engagement-index
+  see_also:
+    - employee-engagement
+    - theme-scores
+  definition: |
+    The Civil Service People Survey measures
+    [employee engagement](#employee-engagement) through an 'employee engagement
+    index' (often simplified to 'engagement index'), which is calculated from
+    five questions that individual respondents levels of "pride, advocacy,
+    attachment, inspiration and motivation" with their organisation
+    [@cspsqualityinfo2024]. The index is calculated such that a score of 0%
+    reflects all respondents answering 'strongly disagree' to all five
+    questions, and a score of 100% reflects all respondents answering
+    'strongly agree' to all five questions.
+
+    The employee engagement index is sometimes referred to by the acronym EEI
+    (for employee engagement index) or EES (for employee engagement score).
+- term: executive agency
+  refers_to: organisation
+- term: gender, gender identity
+  refers_to: sex-and-gender
+- term: government department
+  refers_to: organisation
+- term: grade
+  id: grade
+  definition: |
+    Changes in 1991 and 1996 ended the collective pay and grading system in use
+    across the Civil Service and government departments were given flexibility
+    to set their own salary scales [@holpublicservice1998], often called
+    'grades'. For coordination purposes these departmental grades are aligned
+    into a cross-Civil Service framework of seven broad grades [@cscareers2026].
+- term: machinery of government change
+  id: mog-change
+  see_also:
+    - organisation
+  definition: |
+    A 'machinery of government change' or 'MoG' change (typically pronounced
+    "mog change") is the common term used for the transfer of functions between
+    different government/public service [organisations](#organisation).
+
+    Machinery of government changes present complications in analysing People
+    Survey time-series data as government departments and executive agencies
+    can be created, merged, split. While many MoG changes are visible in the
+    published data (typically through changes in organisation name), some MoG
+    changes involve the transfer of functions between existing organisations
+    without any visible external changes to organisation names/labels.
+
+    Machinery of government changes and their implications for the People
+    Survey are discussed further in the chapter on
+    [harmonising organisations](12_organisations_regex.qmd).
+- term: ministry
+  refers_to: organisation
+- term: MoG change
+  refers_to: mog-change
+- term: non-departmental public body
+  refers_to: organisation
+- term: non-ministerial department
+  refers_to: organisation
+- term: organisation
+  id: organisation
+  definition: |
+    The organisational structure of the UK Civil Service is not simple and nor
+    is it formally codified. While there are aspects common to the experiences
+    of civil servants and all are required to follow the Civil Service Code.
+    The UK Civil Service is not a single employer, rather it is the government
+    department or agency that is the employer of individual civil servants.
+
+    The People Survey is designed to support this flexibility as questions in
+    the core questionnaire include a ['variable term'](#variable-term) that
+    ensure respondents see terminology specific to their context rather than
+    use a generic term like 'organisation' or 'department' that may cause
+    confusion. Organisations also have the option to include bespoke local
+    questions in addition to the survey's core questionnaire.
+
+    In this context, individuals participate in the People Survey through one
+    of around 100 'organisations'. These agencies typically align with
+    individual government departments and agencies, however in some cases staff
+    in agencies are surveyed as part of their parent department, in other cases
+    for a department may have additional 'organisations' that split out a
+    specific group of staff for operational reasons. Individual organisations
+    are grouped into departmental groups (sometimes referred to as 'families').
+
+    The nature of the Civil Service's organisational structure, and its
+    implications for the People Survey is discussed further in the chapter on
+    [harmonising organisations](12_organisations_regex.qmd).
+- term: pay band, pay scale
+  refers_to: grade
+- term: People Survey
+  refers_to: civil-service-people-survey
+- term: regular expression
+  id: regular-expression
+  definition: |
+    A [regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
+    (often called a 'regex') is a method for pattern matching in text. They are
+    used in the People Survey to identify attitudinal questions, demographic
+    questions and categories, and organisation names within the People Survey
+    datasets.
+
+    See the [introduction to harmonisation](10_harmonisation.qmd) for further
+    details on how regular expressions are used in the processing of People
+    Survey data.
+- term: regex
+  refers_to: regular-expression
+- term: responsibility level
+  refers_to: grade
+- term: sex and gender
+  id: sex-and-gender
+  definition: |
+    Over the years of its operation there have been several changes to the way
+    the People Survey has measured sex, gender and gender identity. These
+    questionnaire changes and the particular choices made to harmonise People
+    Survey data over time are discussed in a dedicated
+    [appendix](99_demographics_sex_gender.qmd).
+- term: theme scores
+  id: theme-scores
+  see_also: engagement-index
+  definition: |
+    Alongside the [engagement index](#engagement-index), the survey results 
+    include a set of 'theme scores' which provide a summary score for the nine
+    main themes of the survey's questionnaire. Theme scores reflect the level
+    of positive response to the questions in the given theme, that is 'strongly
+    agree' or 'agree' answers. Theme scores are calculated on a per respondent
+    basis and as a result of missing data (i.e. if a does not answer all
+    questions in a theme) theme scores may not match a simple mean of the
+    published percent positive scores for a theme.
+- term: variable term
+  id: variable-term
+  see-also: core-questionnaire
+  definition: |
+    The [core questionnaire](#core-questionnaire) is seen by all respondents to
+    the survey, however to ensure questions are clear some questions include
+    'variable terms' which replace a generic term with terms that are bespoke
+    to the specific organisation. As of 2024 the only variable terms are 'my
+    organisation' and 'your organisation', which are substituted with the
+    organisation's actual name (or in some cases acronym, such as 'HMRC' for
+    staff in HM Revenue and Customs).
+
+    The question on [grade](#grade) can be considered a special variation of
+    the variable terms as it is part of the core questionnaire but the options
+    are bespoke to each organisation's grade structure. In practice each
+    organisation has a separate grade question for their respondents and the
+    answers are then matched to the Civil Service's common grade framework.
+- term: UID
+  refers_to: unique-identifier
+- term: unique identifier
+  id: unique-identifier
+  see_also:
+    - core-questionnaire
+    - organisation
+    - demographics
+  definition: | 
+    A unique identifier (UID) is a code that refers to a specific item.
+
+    In the context of the People Survey processing there are three sets of
+    UIDs that have been implements: UIDs for attitudinal questions and measures;
+    UIDs for organisations; and, UIDs for demographic questions and categories.
+- term: UK Civil Service
+  refers_to: civil-service
+- term: repo
+  refers_to: repository
+- term: repository
+  id: repository
+  definition: |
+    In the context of this companion the term 'repository', often shortened
+    to 'repo', typically means a collection of software code managed through
+    a version control system such as [git](#git) and often stored in a cloud
+    service such as [Github](https://www.github.com).
+- term: git
+  id: git
+  definition: |
+    A distributed version control system for managing source code and data.
