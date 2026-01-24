@@ -166,7 +166,7 @@ org_simple_reg <- lm(
     data = org_ee_tm_scores
 )
 
-org_simple_model <- broom::glance(org_simple_reg)
+org_simple_fit <- broom::glance(org_simple_reg)
 
 org_simple_coefs <- broom::tidy(org_simple_reg)
 
@@ -196,12 +196,12 @@ org_simple_coefs |>
 
 tibble::tribble(
     ~statistic, ~value,
-    "R<sup>2</sup>", scales::number(org_simple_model$r.squared, 0.001),
-    "Adjusted R<sup>2</sup>", scales::number(org_simple_model$adj.r.squared, 0.001),
-    "F-statistic", scales::comma(org_simple_model$statistic, 0.1),
-    "p-value", scales::pvalue(org_simple_model$p.value),
-    "df", paste(org_simple_model$df, scales::comma(org_simple_model$df.residual), sep = "; "),
-    "Observations", scales::comma(nrow(org_ee_tm_scores))
+    "R<sup>2</sup>", scales::number(org_simple_fit$r.squared, 0.001),
+    "Adjusted R<sup>2</sup>", scales::number(org_simple_fit$adj.r.squared, 0.001),
+    "F-statistic", scales::comma(org_simple_fit$statistic, 0.1),
+    "p-value", scales::pvalue(org_simple_fit$p.value),
+    "df", paste(org_simple_fit$df, scales::comma(org_simple_fit$df.residual), sep = "; "),
+    "Observations", scales::comma(org_simple_fit$nobs)
 ) |>
     knitr::kable(
         col.names = NULL,
@@ -393,8 +393,10 @@ of the 9 factors in the model. As can be observed in @fig-fa-loadings:
   *'organisational objectives and purpose'* theme as well as moderate
   correlation with two questions relating to objectives from the *'my manager'*
   and *'resources and workload'* themes.
-* Factor 7 has moderate correlations with the questions in the
-  *'learning and development'* theme.
+* Factor 7 has moderate correlations with the career-related questions in the
+  *'learning and development'* theme and weaker correlations with the learning
+  activities-related questions in that theme. There is only limited correlation
+  with other questions in the survey.
 * Factor 8 has moderate correlations with two of the questions in the
   *'my team'* theme. There is a weak correlation with the third question in
   the *'my team'* theme. All three questions in the *'my team'* theme have
@@ -520,7 +522,8 @@ loadings_plot <- ggplot(gdf_factor_loadings, aes(x = x, y = y)) +
     )
 
 inlinesvg::inline_svg_plot(
-    loadings_plot, here::here("partials/plots/fa_loadings_plot.svg"),
+    loadings_plot,
+    here::here("partials/plots/fa_loadings_plot.svg"),
     width = 1200, height = 1000, overwrite = TRUE,
     source_note = "Note: loadings between 0 and ±0.3 are shown at 40% transparency.",
     web_fonts = svglite::fonts_as_import("IBM Plex Sans")
@@ -538,18 +541,20 @@ further analysis.
 Let's first look at the correlation of these factor scores with the original
 theme scores (the simple percent positive response to the questions in each
 group) as this should further aid our understanding of what each factor
-represents. For the ease of interpretation in this analysis, I have given each
+represents.[^labels]
+
+[^labels]: For the ease of interpretation in this analysis, I have given each
 factor a single word label based on the structure of the factor model indicated
 by the factor loadings in @fig-fa-loadings (although prefixed with `f1` for
 factor 1, `f2` for factor 2 and so on).
 
-@fig-tm-fa-corr shows the correlation matrix of the theme scores with the
-factor scores, you can see in the upper triangle the high levels of correlation
-most themes have with each other while in the lower triangle you can see the
-very low level of correlation between each of the factor scores. Focussing on
-the square showing the correlations of the theme scores against the factor
-scores we see patterns that are similar to those in the factor loadings
-(@fig-fa-loadings):
+@fig-tm-fa-corr shows the correlation matrix of the engagement index and theme
+scores with the factor scores, you can see in the upper triangle the high
+levels of correlation most themes have with each other while in the lower
+triangle you can see the very low level of correlation between each of the
+factor scores. Focussing on the square showing the correlations of the theme
+scores against the factor scores we see patterns that are similar to those in
+the factor loadings (@fig-fa-loadings):
 
 * Factor 1 has a very strong correlation with the 'my manager' theme score,
   as well as moderate correlations with the 'my work', 'my team' and 'inclusion
@@ -586,13 +591,13 @@ fa_scores_org <- org_ee_tm_scores |>
         f4_workload = .fs4,
         f5_pay = .fs5,
         f6_objectives = .fs6,
-        f7_learning = .fs7,
+        f7_career = .fs7,
         f8_teamwork = .fs8,
         f9_feedback = .fs9
     )
 
 tm_fs_corr <- fa_scores_org |>
-    dplyr::select(my_work:f9_feedback) |>
+    dplyr::select(engagement_index:f9_feedback) |>
     as.matrix() |>
     Hmisc::rcorr()
 
@@ -600,7 +605,7 @@ tm_fs_cor_tidy <- broom::tidy(tm_fs_corr) |>
     dplyr::mutate(
         across(
             c(column1, column2),
-            ~factor(.x, levels = names(fa_scores_org)[c(-1, -2, -3)])
+            ~factor(.x, levels = names(fa_scores_org)[c(-1, -2)])
         ),
         alpha = !(p.value < 0.05),
     )
@@ -617,7 +622,7 @@ tm_fs_plot <- ggplot(tm_fs_cor_tidy, aes(x = column2, y = column1)) +
         yintercept = 9.5, linewidth = 0.3, colour = "#6f6f6f", linetype = "dashed"
     ) +
     geom_vline(
-        xintercept = 9.5, linewidth = 0.3, colour = "#6f6f6f", linetype = "dashed"
+        xintercept = 10.5, linewidth = 0.3, colour = "#6f6f6f", linetype = "dashed"
     ) +
     geom_text(
         aes(label = scales::number(estimate, 0.01), colour = round(estimate,2) > 0.75),
@@ -669,58 +674,104 @@ inlinesvg::inline_svg_plot(
 )
 ```
 
+<!--
+Based on the factor model structure and these correlations we can define names
+for each of these factors:
+
+* Factor 1: *management* &ndash; this factor
+-->
+
+### The updated driver analysis
+
+Now that factor scores have been calculated the regression model for the driver
+analysis can be updated to regress the factor scores against the engagement
+index instead of the theme scores, @tbl-updated-drivers shows the results of
+the regression model.
+
+Before discussing the model results, it is worth noting that the R<sup>2</sup>
+for the factor scores model is somewhat higher (0.843) than that of the model
+using theme scores (0.830). This suggests that using the factor scores provides
+a better way of explaining the variation in the engagement index than the theme
+scores.
+
+@tbl-updated-drivers shows the standardised, or beta, coefficients from the
+model as the engagement index and factor scores operate on different
+scales[^scales].
+
+[^scales]: The engagement index ranges from 0 to 100 whereas the factor scores
+range from -5.96 to +5.08, the simple coefficients from the regression model
+are therefore not easy to interpret. The
+[beta coefficients](https://en.wikipedia.org/wiki/Standardized_coefficient),
+standardise the variance in each variable of the model, as a result these
+coefficients represent the effect a one standard-deviation change in the
+the factor scores will have on the engagement index (in standard deviations of
+the engagement index).
+
+The *'leadership'* factor and the *'my work'* factor have the strongest effect
+and have similar levels of impact (coefficients of 0.519 and 0.485 respectively)
+on the engagement index. These are followed by the *'management'* factor
+(0.338), the *'workload'* and *'objectives'* factor (0.256 and 0.240
+respectively), and then *'pay and benefits'* and '*career*' themes (0.157 and
+0.151 respectively). The *'teamwork'* factor has only a limited effect on the
+engagement index (0.084), while the *'feedback'* factor does not have a
+statsitically significant effect.
+
 ```{r}
-# fa_scores_org <- tibble::as_tibble(fa_model_org$scores, .name_repair = "unique_quiet") |>
-#   dplyr::bind_cols(qm_input_org |> dplyr::select(uid_org_txt, year)) |>
-#   dplyr::left_join(
-#     csps_orgs |> 
-#       dplyr::filter(uid_qm_txt == "000.engagement_index") |>
-#       dplyr::select(uid_org_txt, year, engagement_index = value),
-#     by = c("uid_org_txt", "year")
-#   ) |>
-#   dplyr::select(
-#     uid_org_txt, 
-#     year,
-#     engagement_index,
-#     f1_manager = Factor1,
-#     f2_leadership = Factor2,
-#     f3_mywork = Factor3,
-#     f4_objectives = Factor4,
-#     f5_pay = Factor5,
-#     f6_workload = Factor6,
-#     f7_learning = Factor7,
-#     f8_fairness = Factor8,
-#     f9_resources = Factor9
-#   )
+#| label: tbl-updated-drivers
+#| tbl-cap: >
+#|   Regression of factor scores against the engagement index
+#| classes: small
 
-# drivers_fa <- lm(
-#   engagement_index ~ f1_manager + f2_leadership + f3_mywork +
-#     f4_objectives + f5_pay + f6_workload + f7_learning + f8_fairness +
-#     f9_resources,
-#   data = fa_scores
-# )
+drivers_fa <- lm(
+  engagement_index ~ f1_management + f2_leadership + f3_work +
+    f4_workload + f5_pay + f6_objectives + f7_career + f8_teamwork +
+    f9_feedback,
+  data = fa_scores_org
+)
 
-# drivers_beta <- lm.beta::lm.beta(drivers_fa)
+drivers_beta <- lm.beta::lm.beta(drivers_fa)
 
-# fa_scores_change <- fa_scores |>
-#   tidyr::pivot_longer(cols = c(-uid_org_txt, -year)) |>
-#   dplyr::arrange(uid_org_txt, name, year) |>
-#   dplyr::mutate(
-#     change = value - dplyr::lag(value),
-#     .by = c(uid_org_txt, name)
-#   ) |>
-#   dplyr::filter(!is.na(change)) |>
-#   dplyr::select(-value) |>
-#   tidyr::pivot_wider(names_from = name, values_from = change)
+drivers_fit <- broom::glance(drivers_fa)
 
-# drivers_fa_change <- lm(
-#   engagement_index ~ f1_manager + f2_leadership + f3_mywork +
-#     f4_objectives + f5_pay + f6_workload + f7_learning + f8_fairness +
-#     f9_resources,
-#   data = fa_scores_change
-# )
+drivers_coefs <- broom::tidy(drivers_beta)
 
-# drivers_fa_change_beta <- lm.beta::lm.beta(drivers_fa_change)
+drivers_coefs |>
+    dplyr::mutate(
+        term = dplyr::case_match(
+            term,
+            "f1_management" ~ "Factor 1: Management",
+            "f2_leadership" ~ "Factor 2: Leadership",
+            "f3_work" ~ "Factor 3: My work",
+            "f4_workload" ~ "Factor 4: Workload",
+            "f5_pay" ~ "Factor 5: Pay and benefits",
+            "f6_objectives" ~ "Factor 6: Objectives",
+            "f7_learning" ~ "Factor 7: Learning",
+            "f8_teamwork" ~ "Factor 8: Teamwork",
+            "f9_feedback" ~ "Factor 9: Feedback",
+            .default = term
+        ),
+        across(c(std_estimate, std.error), scales::number_format(0.001)),
+        p.value = scales::pvalue(p.value)
+    ) |>
+    dplyr::select(term, std_estimate, std.error, p.value) |>
+    knitr::kable(
+        col.names = c("", "Beta coefficient", "Std Error", "p-value"),
+        align = "lrrr"
+    )
+
+tibble::tribble(
+    ~statistic, ~value,
+    "R<sup>2</sup>", scales::number(drivers_fit$r.squared, 0.001),
+    "Adjusted R<sup>2</sup>", scales::number(drivers_fit$adj.r.squared, 0.001),
+    "F-statistic", scales::comma(drivers_fit$statistic, 0.1),
+    "p-value", scales::pvalue(drivers_fit$p.value),
+    "df", paste(drivers_fit$df, scales::comma(drivers_fit$df.residual), sep = "; "),
+    "Observations", scales::comma(drivers_fit$nobs)
+) |>
+    knitr::kable(
+        col.names = NULL,
+        align = "lr"
+    )
 
 ```
 
@@ -730,4 +781,5 @@ inlinesvg::inline_svg_plot(
 :::
 
 
-[^fa]: FACTOR ANALYSIS EXPLANATION
+[^fa]: See the section below for a brief introduction to
+[factor analysis](#a-brief-introduction-to-factor-analysis)

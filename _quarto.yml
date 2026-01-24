@@ -9,6 +9,7 @@ project:
 website:
   title: "CSPS Explorer"
   navbar:
+    title: "Civil Service People Survey Explorer"
     right:
       - text: Results
         menu: 
@@ -34,7 +35,7 @@ website:
         href: insights/index.qmd
       - text: "About"
         href: about.qmd
-  bread-crumbs: true
+  bread-crumbs: false
   back-to-top-navigation: true
 
 bibliography: bib.yml
