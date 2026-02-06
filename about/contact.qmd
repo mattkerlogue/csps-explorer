@@ -1,0 +1,18 @@
+---
+title: Contact
+---
+
+If you have a question or feedback about this website please use the form below
+to get in touch. Alternatively, if it is a technical issue you can also
+[raise an issue](https://github.com/mattkerlogue/csps-explorer/issues) on
+Github.
+
+If your query relates to a specific department's or agency's results please
+contact that [organisation](https://www.gov.uk/government/organisations)
+directly. If your query relates to the overall Civil Service results or the
+operation of the Civil Service People Survey please contact the People Survey
+team in the Cabinet Office (csps@cabinetoffice.gov.uk).
+
+<hr class="divider my-5">
+
+<iframe width="640" height="1147" src="https://forms.office.com/e/SGvD12DJxK?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; width: 100%; min-width:250px" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>

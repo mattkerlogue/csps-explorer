@@ -2,66 +2,78 @@
 
 // Colour
 
-$white:    #fff !default;
-$gray-100: #f4f4f4 !default;
-$gray-200: #e0e0e0 !default;
-$gray-300: #c6c6c6 !default;
-$gray-400: #a8a8a8 !default;
-$gray-500: #8d8d8d !default;
-$gray-600: #6f6f6f !default;
-$gray-700: #525252 !default;
-$gray-800: #393939 !default;
-$gray-900: #262626 !default;
-$black:    #161616 !default;
+$carbon-white: #fff !default;
+$carbon-gray-10: #f4f4f4 !default;
+$carbon-gray-20: #e0e0e0 !default;
+$carbon-gray-30: #c6c6c6 !default;
+$carbon-gray-40: #a8a8a8 !default;
+$carbon-gray-50: #8d8d8d !default;
+$carbon-gray-60: #6f6f6f !default;
+$carbon-gray-70: #525252 !default;
+$carbon-gray-80: #393939 !default;
+$carbon-gray-90: #262626 !default;
+$carbon-black: #161616 !default;
 
-$dark-cyan: #012749 !default;
-$green: #198038 !default;
-$cyan: #1192e8 !default;
-$yellow: #f1c21b !default;
-$red: #da1e28 !default;
-$teal: #007d79 !default;
+$carbon-cyan-90: #012749 !default;
+$carbon-cyan-60: #0072c3 !default;
 
-$primary:       $dark-cyan !default;
-$secondary:     $gray-800 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$carbon-green-60: #198038 !default;
 
-$min-contrast-ratio:   2.6 !default;
+$carbon-yellow-30: #f1c21b !default;
 
-$body-bg:       $white !default;
-$body-color:    $gray-900 !default;
-$link-color:    $cyan !default;
-$input-bg:      $gray-200 !default;
-$popover-bg:    $gray-200 !default;
+$carbon-red-60: #da1e28 !default;
+
+$carbon-teal-10: #d9fbfb !default;
+$carbon-teal-60: #007d79 !default;
+
+$blue: $carbon-teal-60 !default;
+$green: $carbon-green-60 !default;
+$yellow: $carbon-yellow-30 !default;
+$red: $carbon-red-60 !default;
+
+$primary: $carbon-cyan-90 !default;
+$secondary: $carbon-gray-80 !default;
+$success: $carbon-green-60 !default;
+$info: $carbon-teal-60 !default;
+$warning: $carbon-yellow-30 !default;
+$danger: $carbon-red-60 !default;
+$light: $carbon-gray-10 !default;
+$dark: $carbon-gray-80 !default;
+
+$min-contrast-ratio: 2.6 !default;
+
+$body-bg: $carbon-white !default;
+$body-color: $carbon-gray-90 !default;
+$link-color: $carbon-teal-60 !default;
+$input-bg: $carbon-gray-20 !default;
+$popover-bg: $carbon-gray-20 !default;
 
 // Fonts
 
-$font-family-sans-serif:    "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-sans-thin:     "IBM Plex Sans Condensed", "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-monospace:     "Inconsolata", monospace !default;
+$font-family-sans-serif:
+  "IBM Plex Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-thin:
+  "IBM Plex Sans Condensed", "IBM Plex Sans", Roboto, "Helvetica Neue", Arial,
+  sans-serif !default;
+$font-family-monospace: "Inconsolata", monospace !default;
 
-$headings-font-weight:      400 !default;
+$headings-font-weight: 400 !default;
 
 // navs
 
-$navbar-bg:     $white !default;
-$navbar-fg:     $teal !default;
-$footer-bg:     $gray-800 !default;
-$footer-fg:     $white !default;
+$navbar-bg: $carbon-white !default;
+$navbar-fg: $carbon-teal-60 !default;
+$footer-bg: $carbon-gray-80 !default;
+$footer-fg: $carbon-white !default;
 
 // callouts
 
 $callout-border-width: 3px !default;
-$callout-color-note: $cyan !default;
-$callout-color-warning: $yellow !default;
-$callout-color-tip: $yellow !default;
+$callout-color-note: $carbon-teal-60 !default;
+$callout-color-warning: $carbon-yellow-30 !default;
+$callout-color-tip: $carbon-yellow-30 !default;
 
 /*-- scss:rules --*/
-
 
 // Variables
 
@@ -78,526 +90,767 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.quarto-title h1.title {
+  font-size: 2.5rem;
+}
+
+.insight-article main p:not(.source-note, .source-note p, figure .source-note),
+.insight-article main ul {
+  font-family: "Newsreader", sans-serif;
+}
+
 .read-more {
-    font-family: $font-family-sans-thin;
-    font-size: 0.75rem;
+  font-family: $font-family-sans-thin;
+  font-size: 0.75rem;
 }
 
 // Navbar
 
 .navbar {
-    font-family: $font-family-sans-thin;
-    font-weight: 600;
-    padding-top: 20px;
-}
+  font-family: $font-family-sans-thin;
+  font-weight: 600;
+  padding-top: 20px;
+  border-bottom: 1px solid $carbon-gray-10;
 
-.navbar .dropdown-header {
+  .dropdown-header {
     font-family: $font-family-sans-serif;
-    color: $teal;
+    color: $carbon-teal-60;
     text-transform: none !important;
+  }
+
+  .navbar-brand-container a:hover {
+    color: $carbon-teal-60;
+  }
 }
 
-#quarto-header .navbar-nav .nav-link.active {
-    color: $teal;
-    border-bottom: 2px solid $teal;
+#quarto-header .navbar-nav > .nav-item > .nav-link {
+  color: $carbon-teal-60;
+  border-bottom: 2px solid $carbon-white;
+}
+
+#quarto-header .navbar-nav > .nav-item > .nav-link.active,
+body.about-page
+  #quarto-header
+  .navbar-nav
+  > .nav-item:nth-child(3)
+  > .nav-link {
+  color: $carbon-teal-60;
+  border-bottom: 2px solid $carbon-teal-60;
+}
+
+#quarto-header .navbar-nav > .nav-item > .nav-link:hover,
+body.about-page
+  #quarto-header
+  .navbar-nav
+  > .nav-item:nth-child(3)
+  > .nav-link:hover {
+  color: $carbon-teal-60;
+  border-bottom: 2px solid $carbon-teal-60;
+}
+
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon:hover {
+  color: $carbon-teal-60;
+}
+
+// announcement bar
+
+#quarto-announcement.alert-warning {
+  background-color: $carbon-black;
+  border-color: $carbon-black;
+  color: $carbon-yellow-30;
 }
 
 // callouts
 
 .callout {
-    font-family: $font-family-sans-thin;
-    color: $gray-700;
-    font-size: 0.9rem;
-    border-radius: 0px;
-    border-right: 0px !important;
-    border-top: 0px !important;
-    border-bottom: 0px !important;
+  font-family: $font-family-sans-thin;
+  color: $carbon-gray-70;
+  font-size: 0.9rem;
+  border-radius: 0px;
+  border-right: 0px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
 
-    .callout-header {
-        background-color: $body-bg !important;
-    }
+  .callout-header {
+    background-color: $body-bg !important;
+  }
 }
 
 .callout-note {
-    .callout-title-container {
-        color: $cyan;
-    }
+  .callout-title-container {
+    color: $carbon-teal-60;
+  }
 }
-
 
 // custom layout
 
 .headline {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid $teal;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid $carbon-teal-60;
 }
 
-.theme-card, .theme-card-wide {
-    background-color: $gray-100;
-    padding: 10px;
-    font-family: $font-family-sans-thin;
+.theme-card,
+.theme-card-wide {
+  background-color: $carbon-gray-10;
+  padding: 10px;
+  font-family: $font-family-sans-thin;
 
-    .theme-header {
-        font-weight: 700;
-        font-size: 1.25rem;
-    }
+  .theme-header {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
 
-    .driver-strength {
-        display: inline-block;
-    }
+  .driver-strength {
+    display: inline-block;
+  }
 
-    .data-value {
-        font-size: 2.25rem;
-        font-weight: 700;
-    }
+  .data-value {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
 
-    .change-value {
-        padding: 0px 10px;
-        font-size: 1.25rem;
-    }
+  .change-value {
+    padding: 0px 10px;
+    font-size: 1.25rem;
+  }
 
-    .change-value.increase::after{
-        content: "\25B2";
-        color: $green;
-        font-size: 0.75rem;
-        padding-left: 5px;
-    }
+  .change-value.increase::after {
+    content: "\25B2";
+    color: $carbon-green-60;
+    font-size: 0.75rem;
+    padding-left: 5px;
+  }
 
-    .change-value.decrease::after{
-        content: "\25BC";
-        color: $red;
-        font-size: 1rem;
-        padding-left: 5px;
-    }
-
+  .change-value.decrease::after {
+    content: "\25BC";
+    color: $carbon-red-60;
+    font-size: 1rem;
+    padding-left: 5px;
+  }
 }
 
 .card-row {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.theme-card, .theme-card-wide > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    
-    p:first-child {
-        justify-self: flex-start;
-        flex-grow: 3;
-    }
+.theme-card,
+.theme-card-wide > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
+  p:first-child {
+    justify-self: flex-start;
+    flex-grow: 3;
+  }
 }
 
 .theme-card {
-    .chart-container {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 50%;
-        max-width: 200px;
-        max-height: 100px;
+  .chart-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 50%;
+    max-width: 200px;
+    max-height: 100px;
 
-        .chart-iframe {
-            position:absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            max-width: 200px;
-            max-height: 100px;
-        }
-
+    .chart-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 200px;
+      max-height: 100px;
     }
-
+  }
 }
 
 .results-table {
-    table {
-        font-size: 0.8rem;
-        
-        td, th {
-            padding: 0.25rem;
-        }
+  table {
+    font-size: 0.8rem;
 
-        caption {
-            text-align: left;
-            color: $gray-800;
-            font-weight: 500;
-        }
+    td,
+    th {
+      padding: 0.25rem;
     }
+
+    caption {
+      text-align: left;
+      color: $carbon-gray-80;
+      font-weight: 500;
+    }
+  }
 }
 
 .micro-chart {
-    width: 100px;
-    display: flex;
-    background-color: $gray-100;
-    print-color-adjust: exact;
-    height: 1em;
-    
-    .micro-bar {
-        display: inline-block;
-        background-color: $cyan;
-        print-color-adjust: exact;
-    }
+  width: 100px;
+  display: flex;
+  background-color: $carbon-gray-10;
+  print-color-adjust: exact;
+  height: 1em;
 
-    .micro-bar[data-value="0"] {
-        width: 0px;
-    }
-    .micro-bar[data-value="1"] {
-        width: 1px;
-    }
-    .micro-bar[data-value="2"] {
-        width: 2px;
-    }
-    .micro-bar[data-value="3"] {
-        width: 3px;
-    }
-    .micro-bar[data-value="4"] {
-        width: 4px;
-    }
-    .micro-bar[data-value="5"] {
-        width: 5px;
-    }
-    .micro-bar[data-value="6"] {
-        width: 6px;
-    }
-    .micro-bar[data-value="7"] {
-        width: 7px;
-    }
-    .micro-bar[data-value="8"] {
-        width: 8px;
-    }
-    .micro-bar[data-value="9"] {
-        width: 9px;
-    }
-    .micro-bar[data-value="10"] {
-        width: 10px;
-    }
-    .micro-bar[data-value="11"] {
-        width: 11px;
-    }
-    .micro-bar[data-value="12"] {
-        width: 12px;
-    }
-    .micro-bar[data-value="13"] {
-        width: 13px;
-    }
-    .micro-bar[data-value="14"] {
-        width: 14px;
-    }
-    .micro-bar[data-value="15"] {
-        width: 15px;
-    }
-    .micro-bar[data-value="16"] {
-        width: 16px;
-    }
-    .micro-bar[data-value="17"] {
-        width: 17px;
-    }
-    .micro-bar[data-value="18"] {
-        width: 18px;
-    }
-    .micro-bar[data-value="19"] {
-        width: 19px;
-    }
-    .micro-bar[data-value="20"] {
-        width: 20px;
-    }
-    .micro-bar[data-value="21"] {
-        width: 21px;
-    }
-    .micro-bar[data-value="22"] {
-        width: 22px;
-    }
-    .micro-bar[data-value="23"] {
-        width: 23px;
-    }
-    .micro-bar[data-value="24"] {
-        width: 24px;
-    }
-    .micro-bar[data-value="25"] {
-        width: 25px;
-    }
-    .micro-bar[data-value="26"] {
-        width: 26px;
-    }
-    .micro-bar[data-value="27"] {
-        width: 27px;
-    }
-    .micro-bar[data-value="28"] {
-        width: 28px;
-    }
-    .micro-bar[data-value="29"] {
-        width: 29px;
-    }
-    .micro-bar[data-value="30"] {
-        width: 30px;
-    }
-    .micro-bar[data-value="31"] {
-        width: 31px;
-    }
-    .micro-bar[data-value="32"] {
-        width: 32px;
-    }
-    .micro-bar[data-value="33"] {
-        width: 33px;
-    }
-    .micro-bar[data-value="34"] {
-        width: 34px;
-    }
-    .micro-bar[data-value="35"] {
-        width: 35px;
-    }
-    .micro-bar[data-value="36"] {
-        width: 36px;
-    }
-    .micro-bar[data-value="37"] {
-        width: 37px;
-    }
-    .micro-bar[data-value="38"] {
-        width: 38px;
-    }
-    .micro-bar[data-value="39"] {
-        width: 39px;
-    }
-    .micro-bar[data-value="40"] {
-        width: 40px;
-    }
-    .micro-bar[data-value="41"] {
-        width: 41px;
-    }
-    .micro-bar[data-value="42"] {
-        width: 42px;
-    }
-    .micro-bar[data-value="43"] {
-        width: 43px;
-    }
-    .micro-bar[data-value="44"] {
-        width: 44px;
-    }
-    .micro-bar[data-value="45"] {
-        width: 45px;
-    }
-    .micro-bar[data-value="46"] {
-        width: 46px;
-    }
-    .micro-bar[data-value="47"] {
-        width: 47px;
-    }
-    .micro-bar[data-value="48"] {
-        width: 48px;
-    }
-    .micro-bar[data-value="49"] {
-        width: 49px;
-    }
-    .micro-bar[data-value="50"] {
-        width: 50px;
-    }
-    .micro-bar[data-value="51"] {
-        width: 51px;
-    }
-    .micro-bar[data-value="52"] {
-        width: 52px;
-    }
-    .micro-bar[data-value="53"] {
-        width: 53px;
-    }
-    .micro-bar[data-value="54"] {
-        width: 54px;
-    }
-    .micro-bar[data-value="55"] {
-        width: 55px;
-    }
-    .micro-bar[data-value="56"] {
-        width: 56px;
-    }
-    .micro-bar[data-value="57"] {
-        width: 57px;
-    }
-    .micro-bar[data-value="58"] {
-        width: 58px;
-    }
-    .micro-bar[data-value="59"] {
-        width: 59px;
-    }
-    .micro-bar[data-value="60"] {
-        width: 60px;
-    }
-    .micro-bar[data-value="61"] {
-        width: 61px;
-    }
-    .micro-bar[data-value="62"] {
-        width: 62px;
-    }
-    .micro-bar[data-value="63"] {
-        width: 63px;
-    }
-    .micro-bar[data-value="64"] {
-        width: 64px;
-    }
-    .micro-bar[data-value="65"] {
-        width: 65px;
-    }
-    .micro-bar[data-value="66"] {
-        width: 66px;
-    }
-    .micro-bar[data-value="67"] {
-        width: 67px;
-    }
-    .micro-bar[data-value="68"] {
-        width: 68px;
-    }
-    .micro-bar[data-value="69"] {
-        width: 69px;
-    }
-    .micro-bar[data-value="70"] {
-        width: 70px;
-    }
-    .micro-bar[data-value="71"] {
-        width: 71px;
-    }
-    .micro-bar[data-value="72"] {
-        width: 72px;
-    }
-    .micro-bar[data-value="73"] {
-        width: 73px;
-    }
-    .micro-bar[data-value="74"] {
-        width: 74px;
-    }
-    .micro-bar[data-value="75"] {
-        width: 75px;
-    }
-    .micro-bar[data-value="76"] {
-        width: 76px;
-    }
-    .micro-bar[data-value="77"] {
-        width: 77px;
-    }
-    .micro-bar[data-value="78"] {
-        width: 78px;
-    }
-    .micro-bar[data-value="79"] {
-        width: 79px;
-    }
-    .micro-bar[data-value="80"] {
-        width: 80px;
-    }
-    .micro-bar[data-value="81"] {
-        width: 81px;
-    }
-    .micro-bar[data-value="82"] {
-        width: 82px;
-    }
-    .micro-bar[data-value="83"] {
-        width: 83px;
-    }
-    .micro-bar[data-value="84"] {
-        width: 84px;
-    }
-    .micro-bar[data-value="85"] {
-        width: 85px;
-    }
-    .micro-bar[data-value="86"] {
-        width: 86px;
-    }
-    .micro-bar[data-value="87"] {
-        width: 87px;
-    }
-    .micro-bar[data-value="88"] {
-        width: 88px;
-    }
-    .micro-bar[data-value="89"] {
-        width: 89px;
-    }
-    .micro-bar[data-value="90"] {
-        width: 90px;
-    }
-    .micro-bar[data-value="91"] {
-        width: 91px;
-    }
-    .micro-bar[data-value="92"] {
-        width: 92px;
-    }
-    .micro-bar[data-value="93"] {
-        width: 93px;
-    }
-    .micro-bar[data-value="94"] {
-        width: 94px;
-    }
-    .micro-bar[data-value="95"] {
-        width: 95px;
-    }
-    .micro-bar[data-value="96"] {
-        width: 96px;
-    }
-    .micro-bar[data-value="97"] {
-        width: 97px;
-    }
-    .micro-bar[data-value="98"] {
-        width: 98px;
-    }
-    .micro-bar[data-value="99"] {
-        width: 99px;
-    }
-    .micro-bar[data-value="100"] {
-        width: 100px;
-    }
+  .micro-bar {
+    display: inline-block;
+    background-color: $carbon-teal-60;
+    print-color-adjust: exact;
+  }
+
+  .micro-bar[data-value="0"] {
+    width: 0px;
+  }
+  .micro-bar[data-value="1"] {
+    width: 1px;
+  }
+  .micro-bar[data-value="2"] {
+    width: 2px;
+  }
+  .micro-bar[data-value="3"] {
+    width: 3px;
+  }
+  .micro-bar[data-value="4"] {
+    width: 4px;
+  }
+  .micro-bar[data-value="5"] {
+    width: 5px;
+  }
+  .micro-bar[data-value="6"] {
+    width: 6px;
+  }
+  .micro-bar[data-value="7"] {
+    width: 7px;
+  }
+  .micro-bar[data-value="8"] {
+    width: 8px;
+  }
+  .micro-bar[data-value="9"] {
+    width: 9px;
+  }
+  .micro-bar[data-value="10"] {
+    width: 10px;
+  }
+  .micro-bar[data-value="11"] {
+    width: 11px;
+  }
+  .micro-bar[data-value="12"] {
+    width: 12px;
+  }
+  .micro-bar[data-value="13"] {
+    width: 13px;
+  }
+  .micro-bar[data-value="14"] {
+    width: 14px;
+  }
+  .micro-bar[data-value="15"] {
+    width: 15px;
+  }
+  .micro-bar[data-value="16"] {
+    width: 16px;
+  }
+  .micro-bar[data-value="17"] {
+    width: 17px;
+  }
+  .micro-bar[data-value="18"] {
+    width: 18px;
+  }
+  .micro-bar[data-value="19"] {
+    width: 19px;
+  }
+  .micro-bar[data-value="20"] {
+    width: 20px;
+  }
+  .micro-bar[data-value="21"] {
+    width: 21px;
+  }
+  .micro-bar[data-value="22"] {
+    width: 22px;
+  }
+  .micro-bar[data-value="23"] {
+    width: 23px;
+  }
+  .micro-bar[data-value="24"] {
+    width: 24px;
+  }
+  .micro-bar[data-value="25"] {
+    width: 25px;
+  }
+  .micro-bar[data-value="26"] {
+    width: 26px;
+  }
+  .micro-bar[data-value="27"] {
+    width: 27px;
+  }
+  .micro-bar[data-value="28"] {
+    width: 28px;
+  }
+  .micro-bar[data-value="29"] {
+    width: 29px;
+  }
+  .micro-bar[data-value="30"] {
+    width: 30px;
+  }
+  .micro-bar[data-value="31"] {
+    width: 31px;
+  }
+  .micro-bar[data-value="32"] {
+    width: 32px;
+  }
+  .micro-bar[data-value="33"] {
+    width: 33px;
+  }
+  .micro-bar[data-value="34"] {
+    width: 34px;
+  }
+  .micro-bar[data-value="35"] {
+    width: 35px;
+  }
+  .micro-bar[data-value="36"] {
+    width: 36px;
+  }
+  .micro-bar[data-value="37"] {
+    width: 37px;
+  }
+  .micro-bar[data-value="38"] {
+    width: 38px;
+  }
+  .micro-bar[data-value="39"] {
+    width: 39px;
+  }
+  .micro-bar[data-value="40"] {
+    width: 40px;
+  }
+  .micro-bar[data-value="41"] {
+    width: 41px;
+  }
+  .micro-bar[data-value="42"] {
+    width: 42px;
+  }
+  .micro-bar[data-value="43"] {
+    width: 43px;
+  }
+  .micro-bar[data-value="44"] {
+    width: 44px;
+  }
+  .micro-bar[data-value="45"] {
+    width: 45px;
+  }
+  .micro-bar[data-value="46"] {
+    width: 46px;
+  }
+  .micro-bar[data-value="47"] {
+    width: 47px;
+  }
+  .micro-bar[data-value="48"] {
+    width: 48px;
+  }
+  .micro-bar[data-value="49"] {
+    width: 49px;
+  }
+  .micro-bar[data-value="50"] {
+    width: 50px;
+  }
+  .micro-bar[data-value="51"] {
+    width: 51px;
+  }
+  .micro-bar[data-value="52"] {
+    width: 52px;
+  }
+  .micro-bar[data-value="53"] {
+    width: 53px;
+  }
+  .micro-bar[data-value="54"] {
+    width: 54px;
+  }
+  .micro-bar[data-value="55"] {
+    width: 55px;
+  }
+  .micro-bar[data-value="56"] {
+    width: 56px;
+  }
+  .micro-bar[data-value="57"] {
+    width: 57px;
+  }
+  .micro-bar[data-value="58"] {
+    width: 58px;
+  }
+  .micro-bar[data-value="59"] {
+    width: 59px;
+  }
+  .micro-bar[data-value="60"] {
+    width: 60px;
+  }
+  .micro-bar[data-value="61"] {
+    width: 61px;
+  }
+  .micro-bar[data-value="62"] {
+    width: 62px;
+  }
+  .micro-bar[data-value="63"] {
+    width: 63px;
+  }
+  .micro-bar[data-value="64"] {
+    width: 64px;
+  }
+  .micro-bar[data-value="65"] {
+    width: 65px;
+  }
+  .micro-bar[data-value="66"] {
+    width: 66px;
+  }
+  .micro-bar[data-value="67"] {
+    width: 67px;
+  }
+  .micro-bar[data-value="68"] {
+    width: 68px;
+  }
+  .micro-bar[data-value="69"] {
+    width: 69px;
+  }
+  .micro-bar[data-value="70"] {
+    width: 70px;
+  }
+  .micro-bar[data-value="71"] {
+    width: 71px;
+  }
+  .micro-bar[data-value="72"] {
+    width: 72px;
+  }
+  .micro-bar[data-value="73"] {
+    width: 73px;
+  }
+  .micro-bar[data-value="74"] {
+    width: 74px;
+  }
+  .micro-bar[data-value="75"] {
+    width: 75px;
+  }
+  .micro-bar[data-value="76"] {
+    width: 76px;
+  }
+  .micro-bar[data-value="77"] {
+    width: 77px;
+  }
+  .micro-bar[data-value="78"] {
+    width: 78px;
+  }
+  .micro-bar[data-value="79"] {
+    width: 79px;
+  }
+  .micro-bar[data-value="80"] {
+    width: 80px;
+  }
+  .micro-bar[data-value="81"] {
+    width: 81px;
+  }
+  .micro-bar[data-value="82"] {
+    width: 82px;
+  }
+  .micro-bar[data-value="83"] {
+    width: 83px;
+  }
+  .micro-bar[data-value="84"] {
+    width: 84px;
+  }
+  .micro-bar[data-value="85"] {
+    width: 85px;
+  }
+  .micro-bar[data-value="86"] {
+    width: 86px;
+  }
+  .micro-bar[data-value="87"] {
+    width: 87px;
+  }
+  .micro-bar[data-value="88"] {
+    width: 88px;
+  }
+  .micro-bar[data-value="89"] {
+    width: 89px;
+  }
+  .micro-bar[data-value="90"] {
+    width: 90px;
+  }
+  .micro-bar[data-value="91"] {
+    width: 91px;
+  }
+  .micro-bar[data-value="92"] {
+    width: 92px;
+  }
+  .micro-bar[data-value="93"] {
+    width: 93px;
+  }
+  .micro-bar[data-value="94"] {
+    width: 94px;
+  }
+  .micro-bar[data-value="95"] {
+    width: 95px;
+  }
+  .micro-bar[data-value="96"] {
+    width: 96px;
+  }
+  .micro-bar[data-value="97"] {
+    width: 97px;
+  }
+  .micro-bar[data-value="98"] {
+    width: 98px;
+  }
+  .micro-bar[data-value="99"] {
+    width: 99px;
+  }
+  .micro-bar[data-value="100"] {
+    width: 100px;
+  }
 }
 
 form#org-select-form {
-    display: flex;
-    gap: 10px 20px;
+  display: flex;
+  gap: 10px 20px;
 }
 
 .action-button {
-    color: $white;
-    background-color: $green;
-    border: 0;
-    padding: 0.5em;
+  color: $carbon-white;
+  background-color: $carbon-green-60;
+  border: 0;
+  padding: 0.5em;
 }
 
-.source-note {
-    font-size: 0.75em;
-    text-align: right;
-}
-
-.insight-article main p:not(.source-note),
-.insight-article main ul {
-    font-family: 'Newsreader', sans-serif;
+.source-note,
+.source-note p,
+figure .source-note * {
+  font-family: $font-family-sans-thin;
+  font-size: 0.75em;
+  text-align: right;
 }
 
 .quarto-listing .quarto-grid-item.card {
+  border: 1px solid $carbon-gray-20;
+  filter: drop-shadow(5px 5px 5px $carbon-gray-20);
+  border-radius: 0;
+
+  .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $carbon-teal-60;
+  }
+
+  .card-subtitle {
+    margin-top: 5px;
+    font-size: 0.8rem;
+  }
+
+  .listing-categories .listing-category {
+    font-family: $font-family-sans-thin;
     border: 1px solid #e0e0e0;
-    border-radius: 0;
-    background-color: #f4f4f4;
+    color: $carbon-teal-60;
+  }
 
-    .card-title {
-        font-size: 1rem;
-        font-weight: 500;
-    }
+  .card-attribution {
+    font-family: $font-family-sans-thin;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none;
+    color: $body-color;
+  }
+}
 
-    .card-subtitle {
-        margin-top: 5px;
-        font-size: 0.8rem;
-    }
-
-    .card-attribution {
-        font-size: 0.8rem;
-    }
+.quarto-listing .quarto-grid-item.card:hover {
+  border: 1px solid $carbon-gray-40;
 }
 
 figure.quarto-float-fig figcaption.quarto-float-caption-top,
 figure.quarto-float-tbl figcaption.quarto-float-caption-top {
-    text-align: left !important;
-    color: $teal;
-    font-family: $font-family-sans-thin;
-    font-weight: 500;
+  text-align: left !important;
+  color: $carbon-teal-60;
+  font-family: $font-family-sans-thin;
+  font-weight: 500;
 }
 
 table.small {
-    font-size: 0.9em;
+  font-size: 0.9em;
+}
+
+hr.divider {
+  border-top: 1px solid $carbon-gray-30;
+  opacity: 1;
+}
+
+// page footer
+
+footer {
+  .nav-footer {
+    display: flex;
+    justify-content: end;
+    background-color: $carbon-gray-10;
+    border-top: 1px solid $carbon-gray-20;
+    color: $carbon-gray-70;
+    font-family: $font-family-sans-thin;
+  }
+
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    flex: initial;
+    width: fit-content;
+    margin: 0px 30px;
+
+    .footer-items {
+      display: block;
+      text-align: left;
+      width: fit-content;
+
+      .nav-item {
+        display: block;
+        width: fit-content;
+
+        .nav-link {
+          padding: 0px;
+          color: $carbon-gray-70;
+        }
+      }
+    }
+  }
+
+  .nav-footer-left {
+    margin-right: auto;
+
+    li:first-child a.nav-link {
+      font-weight: 500;
+      color: $carbon-teal-60 !important;
+    }
+  }
+}
+
+// site home page
+
+body.site-home {
+  header#title-block-header {
+    padding: 10px 50px 20px;
+    background-color: $carbon-teal-60;
+    color: $carbon-white;
+    margin-bottom: 0px;
+
+    h1 {
+      font-family: $font-family-sans-thin;
+      font-weight: 200;
+      font-size: 4.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    h1:before {
+      content: "";
+      width: 150px;
+      height: 150px;
+      min-width: 50px;
+      min-height: 50px;
+      margin-right: 20px;
+      display: inline-block;
+      background-image: url("assets/images/user-data-white.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-self: flex-start;
+    }
+  }
+
+  main {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+
+    header {
+      display: none;
+    }
+
+    h1,
+    h2 {
+      border-bottom: 0px;
+    }
+
+    h1 {
+      color: $carbon-teal-60;
+      font-family: $font-family-sans-thin;
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: $carbon-teal-60;
+      font-family: $font-family-sans-thin;
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    #insights h2 {
+      font-weight: 300;
+    }
+
+    h3.listing-title {
+      font-size: 1rem;
+
+      a {
+        font-weight: 500;
+      }
+    }
+
+    .sub-head {
+      font-family: $font-family-sans-thin;
+      font-size: 1.5rem;
+      background-color: $carbon-teal-10;
+      padding: 20px 0px;
+
+      p {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .sub-head-secondary {
+        color: $carbon-gray-60;
+        font-size: 0.95rem;
+        display: block;
+      }
+    }
+
+    .quarto-post.image-right {
+      flex-direction: row;
+      padding-bottom: 1.5em;
+    }
+
+    #listing-results-listing {
+      margin-top: 2rem;
+      .quarto-post.image-right .metadata {
+        display: none;
+      }
+    }
+  }
+
+  // site-home navbar
+
+  .navbar {
+    background-color: $carbon-teal-60;
+    color: #ffffff;
+    border-bottom: 0px;
+
+    .navbar-brand-container {
+      display: none;
+    }
+  }
+
+  #quarto-header .navbar-nav > .nav-item > .nav-link {
+    color: $carbon-white;
+    border-bottom: 2px solid $carbon-teal-60;
+  }
+
+  #quarto-header .navbar-nav > .nav-item > .nav-link:hover {
+    color: $carbon-white;
+    border-bottom: 2px solid $carbon-white;
+  }
+
+  .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+    color: $carbon-white;
+  }
+
+  .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon:hover {
+    color: $carbon-white;
+  }
 }

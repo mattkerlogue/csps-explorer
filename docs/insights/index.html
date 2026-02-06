@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/user-data-teal-bg.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-8a5d2426d2772284d6c4e077af3c41fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5636cf4a60d3ab1c3f2ba5e9b49c310f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a5942d5eb8fdd57a23378cff610ed40e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,20 +74,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-insight-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-insight-all .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-author','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
       
       searchColumns: ["listing-title","listing-subtitle","listing-date"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-insight-listing'] = new List('listing-insight-listing', options);
+    window['quarto-listings']['listing-insight-all'] = new List('listing-insight-all', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -142,9 +143,16 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <div id="quarto-announcement" data-announcement-id="09d2ba2b3002948c573916f42d778edb" class="alert alert-warning hidden"><i class="bi bi-exclamation-diamond-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>This website is a prototype, things might be incomplete, subject to change or not work/display as expected.</p>
+</div></div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/user-data-teal.svg" alt="" class="navbar-logo light-content">
+    <img src="../assets/images/user-data-teal.svg" alt="" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Civil Service People Survey Explorer</span>
     </a>
@@ -195,7 +203,7 @@ window.Quarto = {
 <span class="menu-text">Insights</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -231,7 +239,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZHJpdmVyJTIwYW5hbHlzaXM=">driver analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50">employee engagement <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kb2xvZ3k=">methodology <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZHJpdmVyJTIwYW5hbHlzaXM=">driver analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50">employee engagement <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Z3VpZGU=">guide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWV0aG9kb2xvZ3k=">methodology <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -239,11 +247,12 @@ window.Quarto = {
 
 
 
-<div id="listing-insight-listing" class="quarto-listing quarto-listing-container-grid">
+<p>This section presents articles that explore the results and methodology of the Civil service People Survey. If you’re new to this site or the People Survey there are some <a href="#category=guide">short guides</a> that provide an overview of the survey’s key concepts or features on this website.</p>
+<div id="listing-insight-all" class="mt-5 quarto-listing quarto-listing-container-grid">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-insight-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-insight-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-insight-all-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-insight-all'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-title" data-direction="asc">
@@ -263,18 +272,60 @@ window.Quarto = {
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50JTJDZHJpdmVyJTIwYW5hbHlzaXMlMkNtZXRob2RvbG9neQ==" data-listing-date-sort="1768608000000" data-listing-file-modified-sort="1769259908424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="29" data-listing-word-count-sort="5636">
+<div class="g-col-1" data-index="0" data-categories="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50JTJDZHJpdmVyJTIwYW5hbHlzaXMlMkNndWlkZQ==" data-listing-date-sort="1769558400000" data-listing-file-modified-sort="1769996093970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<a href="../insights/2026_01-engagement-drivers/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../partials/plots/ee_drivers_framework.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Drivers of employee engagement
+</h5>
+<div class="card-subtitle listing-subtitle">
+<p>A guide to the relationship between the employee engagement index and the main People Survey themes.</p>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW1wbG95ZWUlMjBlbmdhZ2VtZW50'); return false;">employee engagement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZHJpdmVyJTIwYW5hbHlzaXM='); return false;">driver analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z3VpZGU='); return false;">guide</div>
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Matt Kerlogue
+</div>
+<div class="listing-date">
+28-Jan-26
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50JTJDZHJpdmVyJTIwYW5hbHlzaXMlMkNtZXRob2RvbG9neQ==" data-listing-date-sort="1768608000000" data-listing-file-modified-sort="1769996097517" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6551">
 <a href="../insights/2026_01-driver-analysis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../partials/plots/ee_framework.svg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../partials/plots/ee_drivers_framework.svg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Drivers of employee engagement (in-depth)
 </h5>
 <div class="card-subtitle listing-subtitle">
-<p>A technical demonstration of the relationship between employee engagement and other measures in the People Survey.</p>
+<p>An in-depth analysis of the relationship between the employee engagement index and the main People Survey themes.</p>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW1wbG95ZWUlMjBlbmdhZ2VtZW50'); return false;">employee engagement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZHJpdmVyJTIwYW5hbHlzaXM='); return false;">driver analysis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWV0aG9kb2xvZ3k='); return false;">methodology</div>
+
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -294,7 +345,7 @@ Matt Kerlogue
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -698,6 +749,67 @@ Matt Kerlogue
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+<p>Civil Service People Survey Explorer</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/legal.html#copyright">
+<p>© Matt Kerlogue 2026, licensed under CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about/contact.html">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../results/source_data.html">
+<p>Source data</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.github.com/mattkerlogue/csps-explorer">
+<p>Github</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about/index.html">
+<p>About this site</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/accessibility.html">
+<p>Accessibility</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/privacy.html">
+<p>Privacy</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../about/legal.html#disclaimer">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

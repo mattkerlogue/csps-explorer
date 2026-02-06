@@ -1,0 +1,43 @@
+---
+title: "About this site"
+---
+
+In this section you can find information about this site (its background and
+purpose, its author, and its development) and other important documentation
+(accessibility statement, contact information, copyright and legal terms, and
+privacy policy).
+
+:::{.about-toc .mb-5}
+
+* On this page:
+    * [Background and motivation](#background-and-motivation)
+    * [About the author/developer](#about-the-authordeveloper)
+    * [Site development](#site-development)
+* On other pages:
+    * [Accessibility statement](accessibility.qmd)
+    * [Contact](contact.qmd)
+    * [Copyright and legal terms](legal.qmd)
+    * [Privacy policy](privacy.qmd)
+
+:::
+
+## Background and motivation
+
+...
+
+## About the author/developer
+
+...
+
+## Site development
+
+This site is written using [Quarto](https://www.quarto.org), using
+[R](https://www.r-project.org) and [Observable](http://observablehq.com) to
+process/analyse data and report/visualise results. The look and feel of the
+website makes use of several aspects of IBM's
+[Carbon design system](https://carbondesignsystem.com) including the Plex Sans
+font, its colour palettes and icons.
+
+The source code for this website is available on Github:
+https://www.github.com/mattkerlogue/csps-explorer.
+

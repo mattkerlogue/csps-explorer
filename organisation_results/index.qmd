@@ -2,6 +2,7 @@
 title: "Organisation results"
 subtitle: |
     An overview of Civil Service People Survey results by organisation
+image: org_results_snapshot.png
 execute: 
   echo: false
 format:
@@ -36,9 +37,7 @@ scores for the headline engagement index ranged from 52% to 80.5%.
 #|   theme scores 2009-2024
 library(ggplot2)
 
-csps_orgs <- arrow::read_parquet(
-    "~/code/csps-data/data/02-organisations/csps_organisations_2009-2024_df950add.parquet"
-)
+csps_orgs <- arrow::read_parquet(here::here("../csps-data/data/02-organisations/csps_organisations_2009-2024_5b58c24b.parquet"))
 
 pctls <- function(df) {
     x <- quantile(df$value, probs = c(0, 0.25, 0.5, 0.75, 1))

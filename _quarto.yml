@@ -8,8 +8,15 @@ project:
 
 website:
   title: "CSPS Explorer"
+  announcement:
+    icon: exclamation-diamond-fill
+    dismissable: false
+    content: This website is a prototype, things might be incomplete, subject to change or not work/display as expected.
+    type: warning
+    position: above-navbar
   navbar:
     title: "Civil Service People Survey Explorer"
+    logo: "assets/images/user-data-teal.svg"
     right:
       - text: Results
         menu: 
@@ -34,9 +41,32 @@ website:
       - text: Insights
         href: insights/index.qmd
       - text: "About"
-        href: about.qmd
+        href: about/index.qmd
   bread-crumbs: false
-  back-to-top-navigation: true
+  favicon: "assets/images/user-data-teal-bg.png"
+  page-footer:
+    left:
+      - text: "Civil Service People Survey Explorer"
+        href: index.qmd
+      - text: "&copy; Matt Kerlogue 2026, licensed under CC-BY-4.0"
+        href: "about/legal.qmd#copyright"
+    center:
+      - text: "Contact"
+        href: "about/contact.qmd"
+      - text: "Source data"
+        href: "results/source_data.qmd"
+      - text: "Github"
+        href: "https://www.github.com/mattkerlogue/csps-explorer"
+    right:
+      - text: "About this site"
+        href: about/index.qmd
+      - text: "Accessibility"
+        href: "about/accessibility.qmd"
+      - text: "Privacy"
+        href: "about/privacy.qmd"
+      - text: "Legal"
+        href: "about/legal.qmd#disclaimer"
+      
 
 bibliography: bib.yml
 
@@ -52,6 +82,7 @@ format:
     fig-cap-location: top
     tbl-cap-location: top
     link-external-icon: true
+    email-obfuscation: javascript
 
 extensions:
   iconify:

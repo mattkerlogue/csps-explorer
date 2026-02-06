@@ -1,0 +1,52 @@
+---
+title: "Accessibility statement"
+date: 2026-02-06
+date-modified: last-modified
+---
+
+A core aim of this website is to make it easier for anybody to access and
+explore the results of the Civil Service People Survey. You should be able to:
+
+* Change colours, contrast levels and fonts using browser or device settings.
+* Zoom in up to 400% without the text spilling off the screen.
+* Navigate most of the website using a keyboard or speech recognition software.
+* Listen to most of the website using a screen reader.
+
+The website text should also be as simple as possible to understand.
+
+AbilityNet has advice on
+[making your device easier to use](https://mcmw.abilitynet.org.uk/)
+if you have a disability.
+
+## Aspects that are not fully accessible
+
+While every effort has been made to make this website as accessible as possible
+according to the WCAG 2.2 standard, some parts of this website are not fully
+accessible:
+
+* Some pages, especially technical guides, are not written in plain English as
+  they might discuss complex statistical, analytical or research methodology
+  terms and concepts.
+* Some table do not have row or column headings.
+* Some images, charts or other visuals may have poor colour contrast.
+* Some images do not have alt text or descriptions.
+* Interactive data visualisations and interactive tools to filter and query the
+  data may not have appropriate labels and may not be accessible using screen
+  readers or other assistive technologies.
+* Some information in tables may not be accessible using keyboard navigation.
+* Some heading elements and document structure may not be consistent.
+
+This website relies on a number third party components which limit the ability
+to directly address these limitations.
+
+## Testing
+
+During the development of this website sample of pages from this website
+have been tested using a number of automated accessibility checkers. For
+example, to check colour contrasts or missing alt text, descriptions and labels.
+The tools used include:
+
+* [IBM Equal Access Toolkit](https://www.ibm.com/able/toolkit/)
+* [Firefox Accessibility Checker](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/)
+* [Lighthouse for Google Chrome](https://developer.chrome.com/docs/lighthouse/overview/)
+* [WAVE by WebAIM](https://wave.webaim.org/)

@@ -1,52 +1,70 @@
 ---
-title: ""
-pagetitle: "UK Civil Service People Survey Explorer"
+title: "Civil Service People Survey Explorer"
 page-layout: full
+body-classes: "site-home"
 title-block-style: none
-title-block-banner: true
 toc: false
+anchor-sections: false
+listing:
+    - id: insights-listing
+      type: default
+      contents:
+          - "!(/insights/index.qmd)"
+          - "/insights/*/*.qmd"
+      sort:
+          - "date desc"
+          - "title desc"
+      max-items: 3
+      sort-ui: false
+      filter-ui: false
+      categories: false
+      fields: [image, title, subtitle, date]
+    - id: results-listing
+      type: default
+      contents:
+          - "/benchmark_results/index.qmd"
+          - "/organisation_results/index.qmd"
+      sort: false
+      sort-ui: false
+      filter-ui: false
+      categories: false
+      fields: [image, title, subtitle]
 ---
 
-:::{.column-screen .site-home .headline}
-:::{.column-screen-inset}
-This is a draft/experimental website and is regularly being developed and
-updated so things may change.
+:::{.column-screen .sub-head}
+:::{.column-page-inset}
+A website to access results and insights from the UK Civil Service People
+Survey.
+[This website is not an official publication of the UK Government or affiliated
+with the UK Civil Service. [Read more](about/legal.qmd#not-official){.read-more}]{.sub-head-secondary}
 :::
 :::
 
-This is a Quarto website.
+:::{.column-page-inset .grid}
 
-:::{.plex}
-This block uses IBM Plex
+:::{.g-col-6}
+# Results
+
+Explore the results of the People Survey, including: the overall Civil Service
+results, results for each organisation, results for demographic groups, and
+[more](results/index.qmd).
+
+:::{#results-listing}
 :::
 
-:::{.plex-thin}
-This block uses IBM Plex Condensed
 :::
 
-:::{.newsreader}
-This block uses Newsreader
+:::{.g-col-6}
+# Insights
+
+Read articles that explore the results and methodology of the Civil Service
+People Survey.
+
+## Latest articles
+
+:::{#insights-listing}
 :::
 
-:::{.inconsolata}
-This block uses Inconsolata
-:::
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-
-:::{.grid}
-
-:::{.g-col-4}
-Test 1
-:::
-
-:::{.g-col-4}
-Test 2
-:::
-
-:::{.g-col-4}
-Test 3
 :::
 
 :::

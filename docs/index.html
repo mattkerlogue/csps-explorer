@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>UK Civil Service People Survey Explorer – CSPS Explorer</title>
+<title>Civil Service People Survey Explorer – CSPS Explorer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,17 +30,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./assets/images/user-data-teal-bg.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-8a5d2426d2772284d6c4e077af3c41fb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ae0c39d8fcdb85f8c3af591bfb750e56.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5a85cd55b3c138b3fb6fc81dd0245d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,18 +70,111 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-insights-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-insights-listing'] = new List('listing-insights-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-results-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-results-listing'] = new List('listing-results-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="floating nav-fixed site-home quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <div id="quarto-announcement" data-announcement-id="09d2ba2b3002948c573916f42d778edb" class="alert alert-warning hidden"><i class="bi bi-exclamation-diamond-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>This website is a prototype, things might be incomplete, subject to change or not work/display as expected.</p>
+</div></div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/images/user-data-teal.svg" alt="" class="navbar-logo light-content">
+    <img src="./assets/images/user-data-teal.svg" alt="" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Civil Service People Survey Explorer</span>
     </a>
@@ -130,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Insights</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="./about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -141,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Civil Service People Survey Explorer</h1></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
@@ -150,52 +245,129 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content">
 
+<header id="title-block-header">
+
+
+</header>
+
+
+<div class="column-screen sub-head page-columns page-full">
+<div class="column-page-inset">
+<p>A website to access results and insights from the UK Civil Service People Survey. <span class="sub-head-secondary">This website is not an official publication of the UK Government or affiliated with the UK Civil Service. <a href="./about/legal.html#not-official" class="read-more">Read more</a></span></p>
+</div>
+</div>
+<div class="column-page-inset grid">
+<section id="results" class="level1 g-col-6">
+<h1>Results</h1>
+<p>Explore the results of the People Survey, including: the overall Civil Service results, results for each organisation, results for demographic groups, and <a href="./results/index.html">more</a>.</p>
+<div id="listing-results-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1770083784520" data-listing-reading-time-sort="45" data-listing-word-count-sort="8855">
+<div class="thumbnail"><a href="./benchmark_results/index.html" class="no-external">
+
+<img loading="lazy" src="./benchmark_results/ee_bench_snapshot.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title" data-anchor-id="results">
+<a href="./benchmark_results/index.html" class="no-external">UK Civil Service benchmark results</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./benchmark_results/index.html" class="no-external">The benchmark (median) results for organisations participating in the UK Civil Service People Survey. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./benchmark_results/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1770082602784" data-listing-reading-time-sort="10" data-listing-word-count-sort="1961">
+<div class="thumbnail"><a href="./organisation_results/index.html" class="no-external">
+
+<img loading="lazy" src="./organisation_results/org_results_snapshot.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./organisation_results/index.html" class="no-external">Organisation results</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./organisation_results/index.html" class="no-external">An overview of Civil Service People Survey results by organisation </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./organisation_results/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="insights" class="level1 g-col-6">
+<h1>Insights</h1>
+<p>Read articles that explore the results and methodology of the Civil Service People Survey.</p>
+<section id="latest-articles" class="level2">
+<h2 data-anchor-id="latest-articles">Latest articles</h2>
+<div id="listing-insights-listing" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50JTJDZHJpdmVyJTIwYW5hbHlzaXMlMkNndWlkZQ==" data-listing-date-sort="1769558400000" data-listing-file-modified-sort="1769996093970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<div class="thumbnail"><a href="./insights/2026_01-engagement-drivers/index.html" class="no-external">
+
+<img loading="lazy" src="./partials/plots/ee_drivers_framework.svg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./insights/2026_01-engagement-drivers/index.html" class="no-external">Drivers of employee engagement</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./insights/2026_01-engagement-drivers/index.html" class="no-external">A guide to the relationship between the employee engagement index and the main People Survey themes. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./insights/2026_01-engagement-drivers/index.html" class="no-external">
+<div class="listing-date">
+Jan 28, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="ZW1wbG95ZWUlMjBlbmdhZ2VtZW50JTJDZHJpdmVyJTIwYW5hbHlzaXMlMkNtZXRob2RvbG9neQ==" data-listing-date-sort="1768608000000" data-listing-file-modified-sort="1769996097517" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6551">
+<div class="thumbnail"><a href="./insights/2026_01-driver-analysis/index.html" class="no-external">
+
+<img loading="lazy" src="./partials/plots/ee_drivers_framework.svg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./insights/2026_01-driver-analysis/index.html" class="no-external">Drivers of employee engagement (in-depth)</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./insights/2026_01-driver-analysis/index.html" class="no-external">An in-depth analysis of the relationship between the employee engagement index and the main People Survey themes. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./insights/2026_01-driver-analysis/index.html" class="no-external">
+<div class="listing-date">
+Jan 17, 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+</section>
+</div>
 
 
 
-<div class="column-screen site-home headline page-columns page-full">
-<div class="column-screen-inset">
-<p>This is a draft/experimental website and is regularly being developed and updated so things may change.</p>
-</div>
-</div>
-<p>This is a Quarto website.</p>
-<div class="plex">
-<p>This block uses IBM Plex</p>
-</div>
-<div class="plex-thin">
-<p>This block uses IBM Plex Condensed</p>
-</div>
-<div class="newsreader">
-<p>This block uses Newsreader</p>
-</div>
-<div class="inconsolata">
-<p>This block uses Inconsolata</p>
-</div>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="grid">
-<div class="g-col-4">
-<p>Test 1</p>
-</div>
-<div class="g-col-4">
-<p>Test 2</p>
-</div>
-<div class="g-col-4">
-<p>Test 3</p>
-</div>
-</div>
 
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -590,6 +762,67 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page">
+<p>Civil Service People Survey Explorer</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about/legal.html#copyright">
+<p>© Matt Kerlogue 2026, licensed under CC-BY-4.0</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./about/contact.html">
+<p>Contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./results/source_data.html">
+<p>Source data</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.github.com/mattkerlogue/csps-explorer">
+<p>Github</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./about/index.html">
+<p>About this site</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about/accessibility.html">
+<p>Accessibility</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about/privacy.html">
+<p>Privacy</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about/legal.html#disclaimer">
+<p>Legal</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

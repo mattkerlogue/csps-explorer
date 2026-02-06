@@ -1,16 +1,24 @@
 ---
 title: "Drivers of employee engagement (in-depth)"
 subtitle: >
-    A technical demonstration of the relationship between employee engagement
-    and other measures in the People Survey.
+    An in-depth analysis of the relationship between the employee engagement
+    index and the main People Survey themes.
 body-classes: "insight-article"
 author: Matt Kerlogue
 date: 2026-01-17
 date-format: "DD MMM YYYY"
-image: ../../partials/plots/ee_framework.svg
+image: ../../partials/plots/ee_drivers_framework.svg
 categories: ["employee engagement", "driver analysis", "methodology"]
 execute: 
   cache: true
+extensions:
+    iconify:
+        set: "carbon"
+        width: "1.5em"
+        height: "1.5em"
+        inline: true
+        mode: "svg"
+        style: "color: #1192e8"
 ---
 
 The Civil Service People Survey's analytical framework is based around
@@ -25,7 +33,9 @@ that made it more operationally difficult to implement.
 
 This article recaps the historic analytical framework, replicates the analysis
 (as far as is possible) and explains how this has been used in the presentation
-of results on this website.
+of results on this website. For a simpler guide that summarises only the
+framework and outputs of the driver analysis please read the
+[driver analysis guide](/insights/2026_01-engagement-drivers/index.qmd) instead.
 
 ## An analytical framework for employee engagement
 
@@ -50,7 +60,7 @@ which raises performance and enhances wellbeing" [@cspstechguide2014, p12], see
 inlinesvg::inline_svg_file(
     here::here("partials/plots/ee_framework.svg"),
     dimensions = "strip",
-    source_note = "Source: based on the technical guide to the Civil Service People Survey (Cabinet Office, 2014)"
+    source_note = "Source: author's recreation from the technical guide to the Civil Service People Survey (Cabinet Office, 2014)"
 )
 ```
 
@@ -70,10 +80,28 @@ purpose; my manager; my team; learning and development; inclusion and fair
 treatment; resources and workload; pay and benefits; and, leadership and
 managing change.
 
-From 2009 to 2016 the PDF-reports of People Survey results for organisations
-and teams included a set of symbols that reported the outcome of 'driver
-analysis' that was conducted on the relevant group of respondents for each
-report.
+From 2009 to 2018 the PDF-reports of People Survey results for organisations
+and teams included the results 'driver analysis' that reported the relationship
+between the engagement index and the nine main themes of the survey. The driver
+analysis was presented in three places within the PDF reports: on the front
+page of the report (@fig-co-front), a dedicated summary table
+(@fig-historic-drivers!), and alongside the presentation of the question results
+for each theme (@fig-historic-drivers2).
+
+:::{#fig-historic-drivers}
+![Front page engagement index and theme summary](csps2016-co-front.png){#fig-co-front}
+
+![Driver analysis summary table](csps2016-co-drivers1.png){#fig-historic-drivers1 width=400}
+
+![Question results for the my work theme](csps2016-co-drivers2.png){#fig-historic-drivers2}
+
+:::{.source-note}
+Source: @csps2016-co-report
+:::
+
+Driver analysis as reported in the PDF results report for the Cabinet Office
+from the 2016 Civil Service People Survey
+:::
 
 The driver analysis was based on a linear regression model of the 'factor
 scores' against the engagement index to determine the 'strength of association'
@@ -96,11 +124,13 @@ employee engagement are negatively related to certain themes. In 2010 I
 instituted a change to the methodology to base the analysis on 'factor scores'
 to removed this multicollinearity.
 
-In 2017, after I had stopped being directly involved in the People Survey, the
+In 2018, after I had stopped being directly involved in the People Survey, the
 contractor instituted a methodological change to focus on question-level
-correlation analysis. In 2020, a change in contractor for resulted in a change
-in reporting options and platforms that significantly increased the level of
-effort required to implement the historic approach to driver analysis.
+correlation and regression analysis. In 2020, a change in contractor
+resulted in a switch to a new online-only reporting platform, ending the
+production of organisation- and team-level PDF reports. This new platform also
+significantly increase the level of effort and complexity required to
+re-implement the historic approach to driver analysis.
 
 ## Recreating the driver analysis
 
@@ -151,7 +181,7 @@ theme scores.
 #|   organisation scores)
 #| classes: small
 
-csps_orgs <- arrow::read_parquet(here::here("../csps-data/data/02-organisations/csps_organisations_2009-2024_df950add.parquet"))
+csps_orgs <- arrow::read_parquet(here::here("../csps-data/data/02-organisations/csps_organisations_2009-2024_5b58c24b.parquet"))
 
 org_ee_tm_scores <- csps_orgs |>
     dplyr::filter(grepl("^1.", uid_qm_num)) |>
@@ -541,12 +571,7 @@ further analysis.
 Let's first look at the correlation of these factor scores with the original
 theme scores (the simple percent positive response to the questions in each
 group) as this should further aid our understanding of what each factor
-represents.[^labels]
-
-[^labels]: For the ease of interpretation in this analysis, I have given each
-factor a single word label based on the structure of the factor model indicated
-by the factor loadings in @fig-fa-loadings (although prefixed with `f1` for
-factor 1, `f2` for factor 2 and so on).
+represents.
 
 @fig-tm-fa-corr shows the correlation matrix of the engagement index and theme
 scores with the factor scores, you can see in the upper triangle the high
@@ -558,24 +583,40 @@ the factor loadings (@fig-fa-loadings):
 
 * Factor 1 has a very strong correlation with the 'my manager' theme score,
   as well as moderate correlations with the 'my work', 'my team' and 'inclusion
-  and fair treatment' themes.
+  and fair treatment' themes. Let's call this theme *'management'* as it
+  relates both to respondents' direct relationship with their direct supervisor
+  but also other issues relating to team and working culture that managers
+  are responsible.
 * Factor 2 has a strong correlation with the 'leadership and managing change'
-  theme and only weak correlations with the other theme scores.
+  theme and only weak correlations with the other theme scores, so let's call
+  this factor *'leadership'*.
 * Factor 3 has a strong correlation with the 'my work' theme and only weak
-  correlations with the other theme scores.
+  correlations with the other theme scores, so let's call this factor *'work'*.
 * Factor 4 has a strong correlation with the 'resources and workload' theme and
-  only weak correlations with the other theme scores.
+  only weak correlations with the other theme scores. Let's call this factor
+  *'workload'* since in the factor structure it loads more strongly on the
+  workload related questions within the 'resources and workload' theme.
 * Factor 5 has a very strong correlation with the 'pay and benefits' theme and
-  only very weak corelation with the other theme scores.
+  only very weak corelation with the other theme scores, so let's call this
+  factor *'pay'*.
 * Factor 6 has a very strong correlation with the 'organisational objectives
-  and purpose' theme and only weak correlation with the other theme scores.
+  and purpose' theme. Since this theme has moderate loading with other
+  questions relating to an individual's work objectives, let's call this theme
+  *'objectives'*.
 * Factor 7 has a moderate correlation with the 'learning and development' theme
-  and only weak correlation with the other theme scores.
+  and is only weakly correlated with the other theme scores. In the factor
+  structure this factor loads more strongly on the questions relating to career
+  development and since the questions relating to learning activities have
+  correlations with other factors let's call this one *'career'*.
 * Factor 8 has a moderate correlation with the 'my team' theme and only minimal
-  correlation with the other theme scores, however 'my team' theme score has a
-  stronger correlation with factor 1 than with factor 8.
+  correlation with the other theme scores. Even though the questions in the
+  'my team' theme have strong correlation with factor 1 than factor 8 let's
+  still call this *'teamwork'* since it does not correlate with any other
+  measures in the survey.
 * Factor 9 has no strong or moderate correlation with any of the nine main
-  theme scores.
+  theme scores. Recalling from the factor structure that its strongest loadings
+  are on questions relating to feedback and work objectives let's call this
+  factor *'feedback'*.
 
 ```{r}
 #| label: fig-tm-fa-corr
@@ -668,18 +709,11 @@ tm_fs_plot <- ggplot(tm_fs_cor_tidy, aes(x = column2, y = column1)) +
 
 inlinesvg::inline_svg_plot(
     tm_fs_plot, here::here("partials/plots/tm_fs_correlation.svg"),
-    width = 800, height = 800, overwrite = TRUE,
+    width = 950, height = 840, overwrite = TRUE,
     source_note = "Note: correlations that are not statistically significant (p > 0.05) have a white background.",
     web_fonts = svglite::fonts_as_import("IBM Plex Sans")
 )
 ```
-
-<!--
-Based on the factor model structure and these correlations we can define names
-for each of these factors:
-
-* Factor 1: *management* &ndash; this factor
--->
 
 ### The updated driver analysis
 
@@ -711,7 +745,7 @@ The *'leadership'* factor and the *'my work'* factor have the strongest effect
 and have similar levels of impact (coefficients of 0.519 and 0.485 respectively)
 on the engagement index. These are followed by the *'management'* factor
 (0.338), the *'workload'* and *'objectives'* factor (0.256 and 0.240
-respectively), and then *'pay and benefits'* and '*career*' themes (0.157 and
+respectively), and then *'pay'* and '*career*' factors (0.157 and
 0.151 respectively). The *'teamwork'* factor has only a limited effect on the
 engagement index (0.084), while the *'feedback'* factor does not have a
 statsitically significant effect.
@@ -743,9 +777,9 @@ drivers_coefs |>
             "f2_leadership" ~ "Factor 2: Leadership",
             "f3_work" ~ "Factor 3: My work",
             "f4_workload" ~ "Factor 4: Workload",
-            "f5_pay" ~ "Factor 5: Pay and benefits",
+            "f5_pay" ~ "Factor 5: Pay",
             "f6_objectives" ~ "Factor 6: Objectives",
-            "f7_learning" ~ "Factor 7: Learning",
+            "f7_career" ~ "Factor 7: Career",
             "f8_teamwork" ~ "Factor 8: Teamwork",
             "f9_feedback" ~ "Factor 9: Feedback",
             .default = term
@@ -774,6 +808,102 @@ tibble::tribble(
     )
 
 ```
+
+### Reporting the driver analysis
+
+As discussed [above](#historic-driver-analysis) the previous driver analysis
+had used a set of icons that mimicked the icons used by mobile phones to
+indicate signal strength. I believe this continues to be a useful visual
+metaphor/semiotic for demonstrating the regression coefficients. The specific
+values of the coefficients are not helpful and are not easily interpretted,
+even by professional analysts, that does not mean they are irrelevant - they
+tell us that the *'leadership'* factor has a notably stronger impact on the
+engagement index than the *'pay'* factor. So we can continue to use some form of
+symbols to communicate this difference.
+
+However, the factor structure we have extracted from the data we have available
+does not align as neatly to the theme scores as that produced in 2009 based on
+the individual respondent-level data. The survey's *'learning and development'*,
+*'inclusion and fair treatment'* and *'resource and workload'* themes have
+a complex relationship with the factor structure having theme and question
+level correlations with multiple factors.
+
+To help people, both inside and outside the UK Civil Service, better understand
+the results of the People Survey I have included the outcomes of this driver
+analysis elsewhere on this website, in particular in the
+[Civil Service](/benchmark_results/index.qmd) and
+[organisation](/organisation_results/index.qmd) results sections and a simpler
+[driver analysis guide]() (TBC).
+
+In presenting the driver analysis I've adapted the framework diagram in
+@fig-ee-framework to include the results of the factor analysis.
+@fig-drivers-framework uses the correlations from @fig-tm-fa-corr and the
+coefficients from @tbl-updated-drivers to demonstrate the relationship between
+the theme scores, the factors (which for lay audiences I've labelled
+'engagement drivers') and the engagement index. The arrows between the themes
+and factors show both the dominant correlations (those greater than 0.5) as
+well as some of the more moderate ones (those greater than or equal to 0.4),
+the arrows are dual-headed to indicate that the themes (and their consitutent
+questions) and the factors are in-effect two different ways of looking at the
+same information. The arrows between the factors and the employee engagement
+index represent the coefficients from the regression model and are a simple
+arrow flowing from the factor to the engagement index, to imply that by
+taking action on the areas covered by the factors should have an impact on the
+engagement index[^circle]. The thickness of each arrow is proportionate to the
+relative size of the correlations and coefficients.
+
+[^circle]: Personally I think there is likely that there is some sort of
+feedback-loop in play between levels of employee engagement and opinions and
+attitudes about individuals' experiences work: that being in a state of high
+employee engagement is likely to make you view workplace experiences more
+positively and being in a low state of employee engagement may make you view
+experiences more negatively. And/or being in a team/organisation that has high
+or low levels of employee engagement is likely to influence how you view your
+experiences. However, this is difficult to analyse based on the publically
+available data.
+
+```{r}
+#| label: fig-drivers-framework
+#| fig-cap: >
+#|   An updated model of the relationship between survey theme scores and
+#|   employee engagement
+#| echo: false
+
+inlinesvg::inline_svg_file(
+    here::here("partials/plots/ee_drivers_framework.svg"),
+    dimensions = "strip"
+)
+```
+
+In the results sections of this website, as with the historic driver analysis,
+I've again opted to use a "signal bars" symbology, but have simplified it
+to three levels:
+
+* [{{< iconify skill-level-advanced title="Very strong association icon" label="Very strong association icon" >}}]{.driver-strength}
+  **Strong association:** themes connected to the factors with the beta
+  cofficients above 0.4, namely the *'leadership and managing change'* and
+  *'my work'* themes since these are closely associated with factors 2 and 3.
+* [{{< iconify skill-level-intermediate title="Strong association icon" label="Strong association icon" >}}]{.driver-strength}
+  **Moderate association:** themes connected to factors beta coefficients between
+  0.2 and 0.4, namely the *'my manager'* (factor 1), *'resources and workload'*
+  (factor 4) and *'organisational objectives and purpose'* (factor 6). In
+  addition to these theme-factor combinations, the *'my team'* and
+  *'learning and development'* themes have also been included given their more
+  complex relationship exposed through the factor and driver analysis.The 
+  *'my team'* theme has a stronger correlation with factor 1 (management) than
+  it does with its own unique factor, factor 8 (teamwork). The
+  *'learning and development'* theme is correlated with multiple factors, not
+  only factor 7 (career) but also factor 1 (management), factor 3 (work) and
+  factor 4 (workload). These more complex relationships suggest these themes
+  still have a moderate impact on the engagement index, albeit indirectly.
+* [{{< iconify skill-level-basic title="Moderate association icon" label="Moderate association icon" >}}]{.driver-strength}
+  **Weak association:** the remaining theme, namely *'pay and benefits'*, is
+  only closely related to a single factor (factor 5) which has a beta
+  coefficient of less than 0.2.
+
+## In summary
+
+...
 
 ## References
 

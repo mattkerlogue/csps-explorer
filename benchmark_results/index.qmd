@@ -5,6 +5,7 @@ subtitle: |
     UK Civil Service People Survey.
 title-block-banner: true
 toc-location: left
+image: ee_bench_snapshot.png
 execute: 
   echo: false
 extensions:

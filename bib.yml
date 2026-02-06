@@ -254,3 +254,18 @@ references:
     - year: 2025
       month: 12
       day: 10
+
+- id: csps2016-co-report
+  title: "Cabinet Office: Civil Service People Survey 2016 - GOV.UK"
+  author:
+    - literal: Cabinet Office
+  type: report
+  url: https://www.gov.uk/government/publications/cabinet-office-civil-service-people-survey-2016
+  issued:
+    - year: 2016
+      month: 11
+      day: 16
+  accessed:
+    - year: 2026
+      month: 01
+      day: 26

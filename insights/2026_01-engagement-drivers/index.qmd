@@ -1,0 +1,99 @@
+---
+title: "Drivers of employee engagement"
+subtitle: >
+    A guide to the relationship between the employee engagement
+    index and the main People Survey themes.
+body-classes: "insight-article"
+author: Matt Kerlogue
+date: 2026-01-28
+date-format: "DD MMM YYYY"
+image: ../../partials/plots/ee_drivers_framework.svg
+categories: ["employee engagement", "driver analysis", "guide"]
+execute: 
+  cache: true
+extensions:
+    iconify:
+        set: "carbon"
+        width: "1.5em"
+        height: "1.5em"
+        inline: true
+        mode: "svg"
+        style: "color: #1192e8"
+---
+
+This article is a short guide to the output of a 'driver analysis' that
+examines the relationship between employee engagement and the other main themes
+in the Civil Service People Survey.
+
+From 2009 to 2017 outputs from the People Survey included 'driver analysis'
+that illustrated how the different themes of the survey influences levels of
+employee engagement. Changes to methodology in 2018 and a change of contractor
+in 2020 have resulted in this analysis being excluded from the standard
+reporting.
+
+The [Civil Service](/benchmark_results/index.qmd) and
+[organisation](/organisation_results/index.qmd) results sections of this
+website include outputs of a new and updated driver analysis. This article
+provides a high-level overview of the analysis, an
+[in-depth article](/insights/2026_01-driver-analysis/index.qmd) provides a more
+detailed and technical discussion of the analysis.
+
+## What is 'driver analysis'?
+
+'Driver analysis' is a term regularly used by marketing and consultancy firms
+to refer to a range of statistical techniques that look at the relationship
+between different variables in a dataset, such as a survey.
+
+In this article, and website, 'driver analysis' involves three techniques:
+
+* *Factor analysis* which takes survey questions and identifies underlying
+  themes and structures in the data.
+* *Correlation analysis* to understand the relationship between the output of
+  the factor analysis and the 'theme scores' presented in the survey results.
+* *Linear regression analysis* to understand the relationship between the
+  output of the factor analysis and the People Survey's employee engagement
+  index.
+
+## The People Survey's analytical framework
+
+The Civil Service People Survey's is organised around measuring levels of
+employee engagement in the Civil Service. There is a wide body of evidence that
+indicates employee engagement is positively related to organisational
+performance and individual wellbeing. 
+
+The questions that make up the People Survey's employee engagement index
+measure individual's overall feelings towards the organisation they work for
+rather than specific aspects of an individual's experience of work (e.g. *"I
+would recommend my organisation as a great place to work"*). These experiences
+of work are instead covered by the questions that make up the survey's nine
+themes and measure more tangible aspects that managers and leaders can take
+action on (e.g. *"My manager is open to my ideas"*).
+
+The People Survey's technical guide [@cspstechguide2014, p12] summarises these
+relationships in a diagram of its analytical framework (@fig-ee-framework).
+
+```{r}
+#| label: fig-ee-framework
+#| fig-cap: The Civil Service People Survey's analytical framework
+#| echo: false
+
+inlinesvg::inline_svg_file(
+    here::here("partials/plots/ee_framework.svg"),
+    dimensions = "strip",
+    source_note = "Source: author's recreation from the technical guide to the Civil Service People Survey (Cabinet Office, 2014)"
+)
+```
+
+## Updated driver analysis
+
+As mentioned above, driver analysis based on the relationship between survey
+themes and the engagement index has not been included in outputs since
+2017[^historic].
+
+[^historic]: In 2018 and 2019, driver analysis based on the relationship between
+individual questions and the engagement index. In 2020, a change in contractor
+resulted in a switch to a new online-only reporting platform, which
+significantly increase the level of effort and complexity required to
+re-implement the historic approach to driver analysis.
+
+...

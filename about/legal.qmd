@@ -1,0 +1,69 @@
+---
+title: Copyright and Legal
+date: 2026-02-06
+date-modified: last-modified
+---
+
+## Copyright and licensing {#copyright}
+
+Unless otherwise stated, the contents of this website is copyright of Matt
+Kerlogue (2026) and are licensed under the
+[Creative Commons Attribution License 4.0 (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+The original raw data of the Civil Service People Survey is Crown Copyright,
+published and licensed under the
+[Open Government Licence](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+
+The software code written to develop this website and to reprocess the People
+Survey data is available on Github
+([website repository]({{< var urls.csps-explorer-repo >}}),
+[data repository]({{< var urls.csps-data-repo >}})). The software code is
+licensed under the MIT License (see the license files in the relevant
+repository).
+
+The recommended citation for this website is:
+
+> Kerlogue M (2026) Civil Service People Survey Explorer,
+> https://mattkerlogue.github.io/csps-data/
+
+The recommended citation for the re-processed data is:
+
+> Kerlogue M (2026) Civil Service People Survey harmonised datasets,
+> https://github.com/mattkerlogue/csps-data
+
+## Legal disclaimer {#disclaimer}
+
+This website and materials are provided as-is. 
+
+The author, Matt Kerlogue, provides no guarantees or warranties that the
+information provided in this website and associated materials are current,
+secure, accurate, complete, or free from viruses or other harmful components.
+
+The materials on this site comprise the author's views, they do not constitute
+legal or other professional advice.
+
+The author is not liable for any damages arising in contract, tort of otherwise
+from the use or inability to use this website, any material contained within it
+or any other website linked from this website, or from any action or decision
+taken as a result of using this website.
+
+This website includes links to other websites, the author is not responsible
+for the content of any linked website. The author is not responsible for any
+transmission received from any linked website. The linked websites are included
+to assist visitors but inclusion of a linked website does not imply that the
+author endorses, approves the website. The author makes no guarantee that
+links are current, accurate or working.
+
+## Not an official publication of the UK government {#not-official}
+
+This website presents data and analysis from the UK government's Civil Service
+People Survey. This website is not connected to the the Cabinet Office, UK
+Civil Service or UK government. Nothing presented here should be considered an
+official statement or publication of the UK government.
+
+Official publications, datasets and other information relating to the People
+Survey are available via the Civil Service People Survey Hub on GOV.UK:
+[{{< var urls.csps-hub >}}]({{< var urls.csps-hub >}}).
+
+Please refer to the dedicated about how this site has used and re-processed the
+People Survey [source data](/results/source_data.qmd).

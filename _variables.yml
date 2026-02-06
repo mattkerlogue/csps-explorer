@@ -1,0 +1,17 @@
+urls:
+  csps-hub: https://www.gov.uk/government/collections/civil-service-people-survey-hub
+  csps-data: https://www.gov.uk/government/collections/civil-service-people-surveys
+  csps-data-2013: https://webarchive.nationalarchives.gov.uk/ukgwa/20140310230334/http://www.civilservice.gov.uk/about/improving/employee-engagement-in-the-civil-service/people-survey-2013
+  csps-data2014: https://www.gov.uk/government/publications/civil-service-people-survey-2014-results
+  csps-data-2015: https://www.gov.uk/government/publications/civil-service-people-survey-2015-results
+  csps-data-2016: https://www.gov.uk/government/publications/civil-service-people-survey-2016-results
+  csps-data-2017: https://www.gov.uk/government/publications/civil-service-people-survey-2017-results--2
+  csps-data-2018: https://www.gov.uk/government/publications/civil-service-people-survey-2018-results
+  csps-data-2019: https://www.gov.uk/government/publications/civil-service-people-survey-2019-results
+  csps-data-2020: https://www.gov.uk/government/publications/civil-service-people-survey-2020-results
+  csps-data-2021: https://www.gov.uk/government/publications/civil-service-people-survey-2021-results
+  csps-data-2022: https://www.gov.uk/government/publications/civil-service-people-survey-2022-results
+  csps-data-2023: https://www.gov.uk/government/publications/civil-service-people-survey-2023-results
+  csps-data-2024: https://www.gov.uk/government/publications/civil-service-people-survey-2024-results
+  csps-data-repo: https://www.github.com/mattkerlogue/csps-data
+  csps-explorer-repo: https://www.github.com/mattkerlogue/csps-explorer
