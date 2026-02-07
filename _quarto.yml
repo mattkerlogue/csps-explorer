@@ -5,6 +5,8 @@ project:
     - "*.qmd"
     - "!R/"
     - "!partials/"
+  resources:
+    - "/assets/js/fullscreen-fig.js"
 
 website:
   title: "CSPS Explorer"
@@ -66,7 +68,6 @@ website:
         href: "about/privacy.qmd"
       - text: "Legal"
         href: "about/legal.qmd#disclaimer"
-      
 
 bibliography: bib.yml
 
@@ -83,6 +84,8 @@ format:
     tbl-cap-location: top
     link-external-icon: true
     email-obfuscation: javascript
+    include-in-header:
+      - text: <script src="/assets/js/fullscreen-fig.js"></script>
 
 extensions:
   iconify:

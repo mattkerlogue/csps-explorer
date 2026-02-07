@@ -855,3 +855,27 @@ body.site-home {
     color: $carbon-white;
   }
 }
+
+// svg-lightbox
+
+div.quarto-figure:fullscreen {
+  background-color: $body-bg;
+  padding: 10px;
+}
+
+div.quarto-figure.fig-fs {
+  figure.quarto-float-fig,
+  figure.quarto-subfloat-fig {
+    height: 100%;
+    div {
+      height: 100%;
+      padding: 20px;
+
+      img.img-fluid.figure-img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
